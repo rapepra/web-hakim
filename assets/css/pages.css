@@ -1,0 +1,199 @@
+/* =====================================================
+   SERVICIOS PAGE – Additional Styles
+   ===================================================== */
+
+/* Service detail section */
+.service-detail {
+  padding: var(--space-4xl) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.service-detail:nth-child(even) {
+  background: var(--color-off-white);
+}
+
+.service-detail-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.service-detail:nth-child(even) .service-detail-inner {
+  direction: rtl;
+}
+
+.service-detail:nth-child(even) .service-detail-inner > * {
+  direction: ltr;
+}
+
+.service-detail-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.service-detail-content p {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin-bottom: var(--space-md);
+}
+
+.service-detail-list {
+  list-style: none;
+  margin-bottom: var(--space-xl);
+}
+
+.service-detail-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.service-detail-list li::before {
+  content: '✓';
+  color: var(--color-accent);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+.service-detail-img {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.service-detail-img img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  background: var(--color-bg-section);
+}
+
+@media (max-width: 768px) {
+  .service-detail-inner {
+    grid-template-columns: 1fr;
+    direction: ltr !important;
+  }
+
+  .service-detail:nth-child(even) .service-detail-inner {
+    direction: ltr;
+  }
+}
+
+/* =====================================================
+   ZONAS PAGE – Additional Styles
+   ===================================================== */
+
+.zones-hero-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.zone-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-accent);
+}
+
+.zone-card h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.zone-card p {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .zones-hero-list { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .zones-hero-list { grid-template-columns: 1fr; }
+}
+
+/* =====================================================
+   GALLERY PAGE – Lightbox
+   ===================================================== */
+
+.gallery-full-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.gallery-full-grid .gallery-item {
+  cursor: pointer;
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.92);
+  z-index: 9000;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lightbox-overlay.is-open {
+  display: flex;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: var(--color-white);
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.5rem;
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: rgba(0,0,0,.5);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .gallery-full-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .gallery-full-grid { grid-template-columns: 1fr; }
+}

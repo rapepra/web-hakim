@@ -1,0 +1,5 @@
+.DS_Store
+imagenes /
+imagenes_originales/
+imagenes_seleccionadas/
+__pycache__/
