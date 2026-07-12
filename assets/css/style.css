@@ -1410,22 +1410,25 @@ a.contact-value:hover { text-decoration: underline; color: var(--color-accent); 
 
 /* Page Hero (for subpages) */
 .page-hero {
-  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  background: var(--color-bg-alt);
   padding: var(--space-4xl) 0 var(--space-3xl);
   text-align: center;
+  border-bottom: 8px solid var(--color-primary);
 }
 
 .page-hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 4vw, 2.75rem);
-  color: var(--color-white);
-  line-height: 1.2;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--color-primary);
+  line-height: 1.1;
   margin-bottom: var(--space-md);
+  text-transform: uppercase;
 }
 
 .page-hero p {
-  font-size: 1.05rem;
-  color: rgba(255,255,255,.78);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -1433,10 +1436,9 @@ a.contact-value:hover { text-decoration: underline; color: var(--color-accent); 
 /* Contact Form */
 .contact-form {
   background: var(--color-white);
-  border-radius: var(--border-radius-lg);
   padding: var(--space-2xl);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--color-border);
+  border: 4px solid var(--color-primary);
+  box-shadow: 8px 8px 0px var(--color-primary);
 }
 
 .form-group {
