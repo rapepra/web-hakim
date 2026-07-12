@@ -7,18 +7,18 @@
 /* ---- CSS Custom Properties ---- */
 :root {
   /* Colors */
-  --color-primary: #1a3a5c;        /* Deep navy blue */
-  --color-primary-dark: #122840;
-  --color-primary-light: #254e7a;
-  --color-accent: #e8860a;         /* Warm amber */
-  --color-accent-dark: #c47009;
-  --color-accent-light: #f5a832;
+  --color-primary: #111827;        /* Charcoal dark */
+  --color-primary-dark: #030712;   /* Almost black */
+  --color-primary-light: #374151;  /* Slate gray */
+  --color-accent: #d97706;         /* Sophisticated gold/amber */
+  --color-accent-dark: #b45309;    /* Deep terracotta */
+  --color-accent-light: #f59e0b;   /* Bright gold */
   --color-white: #ffffff;
-  --color-off-white: #f8f7f4;
-  --color-text: #1c1c1e;
-  --color-text-muted: #5a6272;
-  --color-border: #e2e5ea;
-  --color-bg-section: #f4f6f9;
+  --color-off-white: #f3f4f6;      /* Cool light gray */
+  --color-text: #1f2937;
+  --color-text-muted: #4b5563;
+  --color-border: #e5e7eb;
+  --color-bg-section: #f9fafb;     /* Very subtle off-white for sections */
   --color-whatsapp: #25d366;
   --color-whatsapp-dark: #1da851;
 
@@ -41,19 +41,19 @@
   /* Layout */
   --container-max: 1200px;
   --container-padding: 1.25rem;
-  --border-radius: 0.5rem;
-  --border-radius-lg: 1rem;
+  --border-radius: 0.75rem;     /* Slightly softer corners */
+  --border-radius-lg: 1.25rem;  /* Rounder cards */
 
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
-  --shadow-md: 0 4px 16px rgba(0,0,0,.10);
-  --shadow-lg: 0 10px 40px rgba(0,0,0,.12);
+  /* Shadows (Glass/Premium feel) */
+  --shadow-sm: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-md: 0 10px 20px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 25px 35px -5px rgb(0 0 0 / 0.08), 0 10px 15px -6px rgb(0 0 0 / 0.05);
 
   /* Transitions */
-  --transition: 0.22s ease;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother interaction */
 
   /* Header */
-  --header-height: 72px;
+  --header-height: 80px; /* Slightly taller for elegance */
 }
 
 /* ---- Reset & Base ---- */
@@ -234,9 +234,12 @@ address { font-style: normal; }
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--color-white);
-  box-shadow: var(--shadow-sm);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.05), var(--shadow-sm);
   height: var(--header-height);
+  transition: background var(--transition), box-shadow var(--transition);
 }
 
 .header-inner {
@@ -381,7 +384,9 @@ address { font-style: normal; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 40%, var(--color-primary-light) 100%);
+  background-image: url('../img/gallery/reforma-cocina-moderna-madera.webp');
+  background-size: cover;
+  background-position: center;
   z-index: 0;
 }
 
@@ -389,9 +394,8 @@ address { font-style: normal; }
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse at 70% 50%, rgba(232,134,10,.15) 0%, transparent 60%),
-    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.9) 0%, rgba(17, 24, 39, 0.7) 100%);
+  z-index: 1;
 }
 
 .hero-content {
@@ -460,7 +464,7 @@ address { font-style: normal; }
 
 /* ---- TRUST BAR ---- */
 .trust-bar {
-  background: var(--color-primary);
+  background: var(--color-primary-dark);
   padding: var(--space-xl) 0;
 }
 
@@ -515,13 +519,13 @@ address { font-style: normal; }
   border-radius: var(--border-radius-lg);
   padding: var(--space-xl);
   box-shadow: var(--shadow-sm);
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(0,0,0,0.03); /* Extremely subtle border instead of solid line */
   transition: box-shadow var(--transition), transform var(--transition);
 }
 
 .service-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
 }
 
 .service-icon {
@@ -775,10 +779,17 @@ address { font-style: normal; }
 }
 
 .gallery-item {
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.gallery-item:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
 }
 
 .gallery-item img {
