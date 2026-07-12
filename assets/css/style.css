@@ -517,8 +517,8 @@ address { font-style: normal; }
 }
 
 .btn-brutalist.whatsapp-b {
-  background: var(--color-whatsapp-dark);
-  color: var(--color-white);
+  background: #25D366;
+  color: var(--color-primary); /* texto oscuro para contrastar con verde claro */
   border-color: var(--color-primary);
   box-shadow: 4px 4px 0px var(--color-primary);
 }
