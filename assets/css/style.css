@@ -516,6 +516,13 @@ address { font-style: normal; }
   box-shadow: 4px 4px 0px var(--color-primary-dark);
 }
 
+.btn-brutalist.whatsapp-b {
+  background: var(--color-whatsapp-dark);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  box-shadow: 4px 4px 0px var(--color-primary);
+}
+
 .btn-brutalist:hover {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0px var(--color-primary);
