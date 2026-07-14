@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 290" width="100%" height="100%">
+  <defs>
+    <style>
+      .olive { fill: none; stroke: #687355; stroke-width: 18; stroke-linejoin: miter; stroke-linecap: butt; }
+      .dark { fill: none; stroke: #2C302E; stroke-width: 18; stroke-linejoin: miter; stroke-linecap: butt; }
+      .house { fill: none; stroke: #687355; stroke-width: 8; stroke-linejoin: miter; stroke-linecap: butt; }
+      .text-main { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-weight: 900; font-size: 42px; letter-spacing: 3px; }
+      .text-sub { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 7px; fill: #4A4A4A; }
+      .text-mini { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 5px; fill: #777; }
+    </style>
+  </defs>
+
+  <!-- House Roof and Walls -->
+  <polyline points="20,115 150,25 280,115" class="house" />
+  <line x1="50" y1="94" x2="50" y2="165" class="house" />
+  <line x1="250" y1="94" x2="250" y2="165" class="house" />
+
+  <!-- Center Hexagon Icon -->
+  <g transform="translate(0, 5)">
+    <!-- Olive C-Shape -->
+    <path d="M 175,55 L 150,40 L 98,70 L 98,130 L 150,160 L 185,140" class="olive" />
+    
+    <!-- Dark '3' Shape -->
+    <path d="M 135,70 L 190,70 L 190,130 L 135,130" class="dark" />
+    <line x1="145" y1="100" x2="190" y2="100" class="dark" />
+    
+    <!-- Diagonal cut for the middle prong to look more geometric -->
+    <polygon points="145,91 145,109 135,100" fill="#2C302E" />
+  </g>
+
+  <!-- Typography -->
+  <text x="153" y="215" text-anchor="middle" class="text-main">
+    <tspan fill="#2C302E">ELEGANT</tspan><tspan fill="#687355">3</tspan>
+  </text>
+  <text x="154" y="245" text-anchor="middle" class="text-sub">REFORMAS</text>
+  <text x="152" y="268" text-anchor="middle" class="text-mini">SERVICIOS INTEGRALES</text>
+</svg>
