@@ -253,10 +253,7 @@ address { font-style: normal; }
   gap: 0.5rem;
   flex-shrink: 0;
   text-decoration: none;
-  background: var(--color-primary);
-  color: var(--color-white);
-  padding: 0.5rem 1rem;
-  border-bottom: 4px solid var(--color-accent);
+  background: transparent;
 }
 
 .logo-icon {
