@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="100%">
+  <defs>
+    <style>
+      .roof { fill: none; stroke: #1A1A1A; stroke-width: 6; stroke-linecap: square; stroke-linejoin: miter; }
+      .hexagon { fill: none; stroke: #1A1A1A; stroke-width: 6; stroke-linejoin: miter; }
+      .e3 { fill: #1A1A1A; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 52px; letter-spacing: -3px; }
+      .title { fill: #1A1A1A; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 48px; letter-spacing: 1px; }
+      .subtitle { fill: #1A1A1A; font-family: 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 2px; }
+      .subsubtitle { fill: #4a4a4a; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <!-- Left: Emblem (Center X: 70) -->
+  <g transform="translate(10, 10)">
+    <!-- House Roof -->
+    <polyline class="roof" points="0,60 60,10 120,60" />
+    <polyline class="roof" points="25,40 25,18 40,18" />
+
+    <!-- Hexagon -->
+    <polygon class="hexagon" points="60,25 90,45 90,85 60,105 30,85 30,45" />
+
+    <!-- E3 Text -->
+    <text x="35" y="86" class="e3">E3</text>
+  </g>
+
+  <!-- Right: Text area -->
+  <text x="150" y="52" class="title">ELEGANT3</text>
+  <text x="152" y="82" class="subtitle">REFORMAS</text>
+  <text x="152" y="105" class="subsubtitle">SERVICIOS INTEGRALES</text>
+</svg>
