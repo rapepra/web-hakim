@@ -553,28 +553,56 @@ address { font-style: normal; }
 .service-card {
   background: var(--color-white);
   border-radius: var(--border-radius-lg);
-  padding: var(--space-xl);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--color-border);
+  overflow: hidden;
   transition: box-shadow var(--transition), transform var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
   box-shadow: var(--shadow-md);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+}
+
+.service-card-img {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-bg-alt);
+}
+
+.service-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-card-img img {
+  transform: scale(1.06);
+}
+
+.service-card-body {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .service-icon {
-  font-size: 2.2rem;
-  margin-bottom: var(--space-md);
+  font-size: 1.8rem;
+  margin-bottom: var(--space-xs);
   line-height: 1;
 }
 
 .service-title {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--color-primary);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .service-desc {
@@ -582,12 +610,14 @@ address { font-style: normal; }
   color: var(--color-text-muted);
   line-height: 1.6;
   margin-bottom: var(--space-md);
+  flex-grow: 1;
 }
 
 .service-link {
   font-size: 0.88rem;
   font-weight: 600;
   color: var(--color-accent);
+  margin-top: auto;
   transition: gap var(--transition);
 }
 .service-link:hover { text-decoration: underline; }
@@ -1438,4 +1468,29 @@ select.form-control {
   font-size: 0.95rem;
   color: var(--color-text-muted);
   line-height: 1.6;
+}
+
+.faq-answer p {
+  margin-bottom: var(--space-xs);
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-answer ul {
+  margin: var(--space-xs) 0 var(--space-sm) var(--space-md);
+  padding-left: 0.5rem;
+  list-style-type: disc;
+}
+
+.faq-answer ul li {
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+}
+
+.faq-answer a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  font-weight: 600;
 }
