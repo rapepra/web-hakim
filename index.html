@@ -35,7 +35,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -207,7 +207,7 @@
   <header class="site-header" id="site-header" role="banner">
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-label="Reforma Elegant3 – Inicio">
-        <img src="assets/img/logo-vector.svg" alt="Reforma Elegant3 Logo" style="height: 65px; width: auto; margin-top: -5px;">
+        <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 Logo" style="height: 55px;">
       </a>
       <nav class="main-nav" role="navigation" aria-label="Navegación principal">
         <ul class="nav-list" role="list">
@@ -245,34 +245,40 @@
 
   <main id="main-content">
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="container hero-content">
-        <div class="hero-text">
-          <div class="hero-badge">⭐ Más de 7 años de experiencia en Ermua y Bizkaia</div>
-          <h1 id="hero-heading" class="hero-title">
-            Reformas integrales en Ermua y comarca
-            <span class="hero-title-accent">con garantía y presupuesto sin compromiso</span>
-          </h1>
-          <p class="hero-subtitle">
-            Especialistas en reformas de viviendas, baños, cocinas, albañilería y fontanería en Ermua, Eibar, Durango y toda la comarca de Bizkaia. Atención personalizada desde el primer contacto hasta la entrega de la obra.
-          </p>
-          <div class="hero-ctas">
-            <a href="tel:+34613601880" class="btn btn-primary btn-lg">📞 Llamar ahora</a>
-            <a href="https://wa.me/34613601880?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20presupuesto%20sin%20compromiso." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">💬 Pedir presupuesto por WhatsApp</a>
-          </div>
-          <ul class="hero-trust" role="list">
-            <li>✅ Presupuesto sin compromiso</li>
-            <li>✅ Atención personalizada</li>
-            <li>✅ Gestión integral de obra</li>
-            <li>✅ L-V 8–20h / Sáb 9–14h</li>
-          </ul>
+    <!-- ===== HERO BRUTALIST ===== -->
+    <section class="hero-brutalist" aria-labelledby="hero-heading">
+      <div class="hero-b-laser-line" aria-hidden="true"></div>
+      
+      <div class="hero-b-text-column">
+        <div class="hero-b-badge">[ EST. 2017 ] EXPERIENCIA EN ERMUA | 🚨 URGENCIAS 24H</div>
+        
+        <h1 id="hero-heading" class="hero-b-title">
+          REFORMAS INTEGRALES <br>
+          <span class="hero-b-title-accent">EN ERMUA Y COMARCA.</span>
+        </h1>
+        
+        <p class="hero-b-subtitle">
+          Especialistas en viviendas, baños, cocinas y albañilería dura. No vendemos renders, construimos obras reales con garantía y presupuesto sin compromiso.
+        </p>
+        
+        <div class="hero-b-ctas">
+          <a href="tel:+34613601880" class="btn-brutalist primary-b">LLAMAR AHORA: 613 601 880</a>
+          <a href="https://wa.me/34613601880?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20presupuesto%20sin%20compromiso." class="btn-brutalist accent-b" target="_blank" rel="noopener">PRESUPUESTO POR WHATSAPP</a>
         </div>
-        <div class="hero-image-wrapper">
-          <div class="hero-image-decoration"></div>
-          <img src="assets/img/gallery/hero-reforma-ia.png" alt="Reforma integral en Ermua - Diseño moderno" class="hero-image" fetchpriority="high">
-        </div>
+        
+        <ul class="hero-b-trust" role="list">
+          <li>+ VISITA SIN COMPROMISO</li>
+          <li>+ GESTIÓN INTEGRAL DE OBRA</li>
+          <li>+ L-V 8–20H / SÁB 9–14H</li>
+        </ul>
+      </div>
+      
+      <div class="hero-b-image-column">
+        <div class="blueprint-crosshair top-left"></div>
+        <div class="blueprint-crosshair top-right"></div>
+        <div class="blueprint-crosshair bottom-left"></div>
+        <div class="blueprint-crosshair bottom-right"></div>
+        <img src="assets/img/gallery/reforma-bano-integral-antes-despues.webp" alt="Obra de reforma integral" class="hero-b-img">
       </div>
     </section>
 
@@ -309,65 +315,33 @@
           <h2 id="services-heading" class="section-title">¿Qué podemos hacer por ti?</h2>
           <p class="section-subtitle">Desde una pequeña reparación hasta una reforma integral completa. Gestionamos todo el proceso de principio a fin.</p>
         </header>
-        <div class="services-grid">
-          <article class="service-card" aria-labelledby="srv1">
-            <div class="service-card-img">
-              <img src="assets/img/services/reforma-integral-ermua.webp" alt="Reformas integrales de viviendas y locales en Ermua" width="400" height="250" loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 id="srv1" class="service-title">Reformas Integrales</h3>
-              <p class="service-desc">Transformamos tu vivienda, local o comunidad de arriba a abajo. Coordinamos todos los gremios para que no tengas que preocuparte de nada.</p>
-              <a href="servicios.html#reformas-integrales" class="service-link">Ver más →</a>
+        <div class="services-b-grid">
+          <article class="service-b-item">
+            <img src="assets/img/services/reforma-integral-ermua.webp" alt="Reformas Integrales" class="s-b-img">
+            <div class="s-b-label">
+              <h3 class="s-b-title">REFORMAS INTEGRALES</h3>
+              <a href="servicios.html#reformas-integrales" class="s-b-link">VER PROYECTOS +</a>
             </div>
           </article>
-          <article class="service-card" aria-labelledby="srv2">
-            <div class="service-card-img">
-              <img src="assets/img/services/reforma-bano-eibar.webp" alt="Reformas de baños y cambio de bañera por ducha" width="400" height="250" loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 id="srv2" class="service-title">Reformas de Baños y Fontanería</h3>
-              <p class="service-desc">Renovamos tu baño completo: alicatado, fontanería sin logos, mamparas, sanitarios y muebles. Cambio de bañera por ducha en 24h.</p>
-              <a href="servicios.html#reformas-banos" class="service-link">Ver más →</a>
+          <article class="service-b-item">
+            <img src="assets/img/services/reforma-bano-eibar.webp" alt="Baños y Fontanería sin logos" class="s-b-img">
+            <div class="s-b-label">
+              <h3 class="s-b-title">BAÑOS Y FONTANERÍA</h3>
+              <a href="servicios.html#reformas-banos" class="s-b-link">VER PROYECTOS +</a>
             </div>
           </article>
-          <article class="service-card" aria-labelledby="srv3">
-            <div class="service-card-img">
-              <img src="assets/img/services/reforma-cocina-bizkaia.webp" alt="Diseño de cocinas modernas en Bizkaia" width="400" height="250" loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 id="srv3" class="service-title">Diseño de Cocinas</h3>
-              <p class="service-desc">Renovación completa y diseño de cocinas modernas: armarios de madera, encimeras de cuarzo/mármol sin logotipos y electrodomésticos.</p>
-              <a href="servicios.html#reformas-cocinas" class="service-link">Ver más →</a>
+          <article class="service-b-item">
+            <img src="assets/img/services/reforma-cocina-bizkaia.webp" alt="Diseño de Cocinas sin logos" class="s-b-img">
+            <div class="s-b-label">
+              <h3 class="s-b-title">DISEÑO DE COCINAS</h3>
+              <a href="servicios.html#reformas-cocinas" class="s-b-link">VER PROYECTOS +</a>
             </div>
           </article>
-          <article class="service-card" aria-labelledby="srv4">
-            <div class="service-card-img">
-              <img src="assets/img/services/albanileria-ermua.webp" alt="Albañilería y acabados de calidad" width="400" height="250" loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 id="srv4" class="service-title">Albañilería</h3>
-              <p class="service-desc">Alicatados, solados, enfoscados, recrecidos, reparación de paredes, techos y fachadas. Trabajo limpio y acabados impecables.</p>
-              <a href="servicios.html#albanileria" class="service-link">Ver más →</a>
-            </div>
-          </article>
-          <article class="service-card" aria-labelledby="srv5">
-            <div class="service-card-img">
-              <img src="assets/img/services/fontaneria-ermua.webp" alt="Fontanería profesional para reformas" width="400" height="250" loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 id="srv5" class="service-title">Fontanería</h3>
-              <p class="service-desc">Instalaciones y reparaciones de fontanería. Averías, fugas, cambio de tuberías y sanitarios modernos sin marcas de agua.</p>
-              <a href="servicios.html#fontaneria" class="service-link">Ver más →</a>
-            </div>
-          </article>
-          <article class="service-card" aria-labelledby="srv6">
-            <div class="service-card-img">
-              <img src="assets/img/services/suelos-pladur-bizkaia.webp" alt="Albañilería dura, pladur y suelos laminados" width="400" height="250" loading="lazy">
-            </div>
-            <div class="service-card-body">
-              <h3 id="srv6" class="service-title">Albañilería Dura y Pladur</h3>
-              <p class="service-desc">Instalación de pladur, faldones foseados con luz LED, falsos techos, aislamiento y suelos laminados de roble.</p>
-              <a href="servicios.html#suelos-pladur" class="service-link">Ver más →</a>
+          <article class="service-b-item">
+            <img src="assets/img/services/suelos-pladur-bizkaia.webp" alt="Albañilería Dura y Pladur" class="s-b-img">
+            <div class="s-b-label">
+              <h3 class="s-b-title">ALBAÑILERÍA DURA Y PLADUR</h3>
+              <a href="servicios.html#albanileria" class="s-b-link">VER PROYECTOS +</a>
             </div>
           </article>
         </div>
@@ -401,49 +375,54 @@
     </section>
 
     <!-- ===== POR QUÉ ELEGIRNOS ===== -->
-    <section class="why-section section-padding" aria-labelledby="why-heading">
-      <div class="container why-inner">
-        <div class="why-text">
-          <span class="section-tag">¿Por qué Reforma Elegant3?</span>
-          <h2 id="why-heading" class="section-title">Profesionalidad, cercanía y garantía en cada obra</h2>
-          <p>Con más de 7 años de experiencia en reformas en Ermua y la comarca de Bizkaia, hemos ganado la confianza de cientos de familias, comunidades de vecinos y empresas que buscan un servicio serio, limpio y sin sorpresas.</p>
-          <ul class="why-list" role="list">
+    <section class="why-b-section section-padding" aria-labelledby="why-heading">
+      <div class="container why-b-inner">
+        <div class="why-b-text">
+          <span class="section-tag-b">/ 01. LA DIFERENCIA ELEGANT3</span>
+          <h2 id="why-heading" class="section-title-b">PROFESIONALIDAD CRUDA Y GARANTÍA EN CADA OBRA.</h2>
+          <p class="why-b-intro">Más de 7 años en Ermua y la comarca de Bizkaia. No vendemos palabras, entregamos obras rematadas con máxima exigencia técnica.</p>
+          
+          <ul class="why-b-list" role="list">
             <li>
-              <span class="why-icon" aria-hidden="true">📋</span>
-              <div>
-                <strong>Presupuesto gratuito y detallado</strong>
-                <p>Sin letra pequeña. Te explicamos cada partida antes de empezar.</p>
+              <span class="why-b-icon" aria-hidden="true">[ + ]</span>
+              <div class="why-b-item-text">
+                <strong>PRESUPUESTO CERRADO Y DETALLADO</strong>
+                <p>Sin letra pequeña ni sobrecostes fantasma. Cada partida medida y valorada antes de demoler.</p>
               </div>
             </li>
             <li>
-              <span class="why-icon" aria-hidden="true">🤝</span>
-              <div>
-                <strong>Gestión integral de principio a fin</strong>
-                <p>Coordinamos todos los gremios: electricistas, fontaneros, pintores... Tú solo tienes un interlocutor.</p>
+              <span class="why-b-icon" aria-hidden="true">[ + ]</span>
+              <div class="why-b-item-text">
+                <strong>GESTIÓN INTEGRAL DE GREMIOS</strong>
+                <p>Albañiles, electricistas, fontaneros, carpinteros. Tú solo tienes un interlocutor: nosotros.</p>
               </div>
             </li>
             <li>
-              <span class="why-icon" aria-hidden="true">🏆</span>
-              <div>
-                <strong>Experiencia avalada por resultados</strong>
-                <p>Más de 200 proyectos realizados en viviendas, locales y comunidades de Bizkaia.</p>
+              <span class="why-b-icon" aria-hidden="true">[ + ]</span>
+              <div class="why-b-item-text">
+                <strong>ACABADOS MILIMÉTRICOS</strong>
+                <p>Uso de niveles láser y herramientas de alta precisión. Materiales de primera calidad y ejecución limpia.</p>
               </div>
             </li>
             <li>
-              <span class="why-icon" aria-hidden="true">🔒</span>
-              <div>
-                <strong>Servicio para aseguradoras y administradores</strong>
-                <p>Trabajamos con compañías de seguros, administradores de fincas y empresas.</p>
+              <span class="why-b-icon" aria-hidden="true">[ + ]</span>
+              <div class="why-b-item-text">
+                <strong>SINIESTROS Y COMUNIDADES</strong>
+                <p>Solucionamos problemas estructurales y trabajamos con aseguradoras y administradores de fincas.</p>
               </div>
             </li>
           </ul>
-          <div class="why-ctas">
-            <a href="tel:+34613601880" class="btn btn-primary">📞 Llamar ahora</a>
-            <a href="contacto.html" class="btn btn-outline">Pedir presupuesto</a>
+          
+          <div class="why-b-ctas">
+            <a href="tel:+34613601880" class="btn-brutalist primary-b">LLAMAR AHORA</a>
+            <a href="contacto.html" class="btn-brutalist">PEDIR PRESUPUESTO</a>
           </div>
         </div>
-        <div class="why-image" aria-hidden="true">
-          <img src="assets/img/gallery/rehabilitacion-fachadas-bizkaia.webp" alt="Equipo de Reforma Elegant3 trabajando en una reforma en Ermua, Bizkaia" width="560" height="420" loading="lazy">
+        
+        <div class="why-b-image" aria-hidden="true">
+          <div class="blueprint-crosshair top-left"></div>
+          <div class="blueprint-crosshair bottom-right"></div>
+          <img src="assets/img/gallery/rehabilitacion-fachadas-bizkaia.webp" alt="Equipo de Reforma Elegant3 trabajando" class="why-b-img" loading="lazy">
         </div>
       </div>
     </section>
@@ -513,14 +492,6 @@
           <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery/reforma-cocina-moderna-madera.webp" alt="Cocina moderna con muebles en tono madera y electrodomésticos integrados" width="400" height="300" loading="lazy">
             <figcaption>Diseño de Cocina · Bizkaia</figcaption>
-          </figure>
-          <figure class="gallery-item" role="listitem">
-            <img src="assets/img/gallery/instalacion-suelo-laminado-madera.webp" alt="Instalación de suelo laminado de roble con rodapiés blancos" width="400" height="300" loading="lazy">
-            <figcaption>Suelos y Parqué · Eibar</figcaption>
-          </figure>
-          <figure class="gallery-item" role="listitem">
-            <img src="assets/img/gallery/pintura-decorativa-salon-moderno.webp" alt="Pintura decorativa combinación blanco y gris cálido en salón" width="400" height="300" loading="lazy">
-            <figcaption>Pintura y Alisado · Bizkaia</figcaption>
           </figure>
           <figure class="gallery-item" role="listitem">
             <img src="assets/img/gallery/plato-ducha-resina-blanco.webp" alt="Instalación de plato de ducha de resina extraplano blanco con textura pizarra" width="400" height="300" loading="lazy">
@@ -688,8 +659,8 @@
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="index.html" class="logo footer-logo" aria-label="Reforma Elegant3">
-          <img src="assets/img/logo-vector.svg" alt="Reforma Elegant3 Logo" style="height: 60px; width: auto; filter: grayscale(100%) brightness(200%);">
+        <a href="index.html" class="logo footer-logo">
+          <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 Logo" style="height: 55px; filter: invert(1);">
         </a>
         <p class="footer-tagline">Tu empresa de reformas de confianza en Ermua y Bizkaia</p>
         <address class="footer-address">
