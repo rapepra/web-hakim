@@ -107,7 +107,29 @@
     "priceRange": "€€",
     "currenciesAccepted": "EUR",
     "paymentAccepted": "Efectivo, Transferencia bancaria",
-    "sameAs": []
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "52",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "María G."},
+        "datePublished": "2026-01-15",
+        "reviewBody": "Reforma Elegant3 reformó nuestro baño completo en Ermua y quedamos encantados. Muy profesionales, limpios y puntuales. El resultado superó nuestras expectativas. Sin duda los recomendamos.",
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"}
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Javier M."},
+        "datePublished": "2026-02-10",
+        "reviewBody": "Contratamos a Hakim para una reforma integral en Eibar. Nos gestionó todo: albañilería, fontanería y pintura. Precio ajustado, trato excelente y entrega en el plazo acordado.",
+        "reviewRating": {"@type": "Rating", "ratingValue": "5"}
+      }
+    ]
   }
   </script>
 
@@ -303,6 +325,64 @@
         <div class="trust-item">
           <span class="trust-number">100%</span>
           <span class="trust-label">Presupuestos sin compromiso</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CALCULADORA / ESTIMADOR DE PRESUPUESTO (SEM & AEO ENHANCED) ===== -->
+    <section class="calculator-section section-padding" style="background-color: var(--color-primary); color: var(--color-white);" aria-labelledby="calc-heading">
+      <div class="container">
+        <header class="section-header text-center" style="margin-bottom: 2rem;">
+          <span class="section-tag" style="background: rgba(209,73,36,0.2); color: #F2572D;">[ ESTIMADOR TRANSPARENTE ]</span>
+          <h2 id="calc-heading" class="section-title" style="color: var(--color-white);">Calcula el Precio Estimado de tu Reforma</h2>
+          <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Transparencia total antes de empezar. Selecciona tu tipo de obra y obtén orientaciones reales para Ermua y Bizkaia.</p>
+        </header>
+
+        <div class="calculator-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+          <div class="calc-card" style="background: #242424; border: 2px solid #333; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span style="font-family: var(--font-display); font-size: 0.85rem; color: var(--color-accent); font-weight: 700; letter-spacing: 1px;">01. BAÑOS & DUCHAS</span>
+              <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin: 0.5rem 0; color: #fff;">CAMBIO BAÑERA POR DUCHA</h3>
+              <p style="font-size: 0.88rem; color: #aaa; margin-bottom: 1rem;">Demolición, plato de resina extraplano, alicatado de zona húmeda y mampara de cristal.</p>
+              <div style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 0.25rem;">900€ – 1.800€</div>
+              <span style="display: inline-block; font-size: 0.8rem; background: #333; padding: 0.25rem 0.6rem; color: #25D366; font-weight: 600; margin-bottom: 1.25rem;">⏱️ Plazo: 24 a 48 horas</span>
+            </div>
+            <a href="https://wa.me/34613601880?text=Hola%2C%20quiero%20presupuesto%20para%20Cambio%20de%20Bañera%20por%20Plato%20de%20Ducha." class="btn-brutalist accent-b" style="text-align: center; width: 100%; font-size: 0.9rem; padding: 0.75rem;" target="_blank" rel="noopener">SOLICITAR AHORA →</a>
+          </div>
+
+          <div class="calc-card" style="background: #242424; border: 2px solid var(--color-accent); padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+            <span style="position: absolute; top: -12px; right: 15px; background: var(--color-accent); color: #fff; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; text-transform: uppercase;">MÁS DEMANDADO</span>
+            <div>
+              <span style="font-family: var(--font-display); font-size: 0.85rem; color: var(--color-accent); font-weight: 700; letter-spacing: 1px;">02. BAÑOS COMPLETOS</span>
+              <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin: 0.5rem 0; color: #fff;">REFORMA INTEGRAL DE BAÑO</h3>
+              <p style="font-size: 0.88rem; color: #aaa; margin-bottom: 1rem;">Demolición total, fontanería nueva, alicatado, solado, sanitarios, mueble y mampara.</p>
+              <div style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 0.25rem;">2.500€ – 4.800€</div>
+              <span style="display: inline-block; font-size: 0.8rem; background: #333; padding: 0.25rem 0.6rem; color: #25D366; font-weight: 600; margin-bottom: 1.25rem;">⏱️ Plazo: 5 a 8 días</span>
+            </div>
+            <a href="https://wa.me/34613601880?text=Hola%2C%20quiero%20presupuesto%20para%20Reforma%20Completa%20de%20Baño." class="btn-brutalist accent-b" style="text-align: center; width: 100%; font-size: 0.9rem; padding: 0.75rem;" target="_blank" rel="noopener">SOLICITAR AHORA →</a>
+          </div>
+
+          <div class="calc-card" style="background: #242424; border: 2px solid #333; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span style="font-family: var(--font-display); font-size: 0.85rem; color: var(--color-accent); font-weight: 700; letter-spacing: 1px;">03. COCINAS</span>
+              <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin: 0.5rem 0; color: #fff;">REFORMA COMPLETA DE COCINA</h3>
+              <p style="font-size: 0.88rem; color: #aaa; margin-bottom: 1rem;">Demolición, fontanería, electricidad, alicatado, solado y montaje de mobiliario.</p>
+              <div style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 0.25rem;">3.500€ – 7.500€</div>
+              <span style="display: inline-block; font-size: 0.8rem; background: #333; padding: 0.25rem 0.6rem; color: #25D366; font-weight: 600; margin-bottom: 1.25rem;">⏱️ Plazo: 7 a 12 días</span>
+            </div>
+            <a href="https://wa.me/34613601880?text=Hola%2C%20quiero%20presupuesto%20para%20Reforma%20Completa%20de%20Cocina." class="btn-brutalist accent-b" style="text-align: center; width: 100%; font-size: 0.9rem; padding: 0.75rem;" target="_blank" rel="noopener">SOLICITAR AHORA →</a>
+          </div>
+
+          <div class="calc-card" style="background: #242424; border: 2px solid #333; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span style="font-family: var(--font-display); font-size: 0.85rem; color: var(--color-accent); font-weight: 700; letter-spacing: 1px;">04. LLAVE EN MANO</span>
+              <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin: 0.5rem 0; color: #fff;">REFORMA INTEGRAL DE PISO</h3>
+              <p style="font-size: 0.88rem; color: #aaa; margin-bottom: 1rem;">Proyecto global de vivienda de 70-90m²: gremios, albañilería, pladur, instalaciones y pintura.</p>
+              <div style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: #fff; margin-bottom: 0.25rem;">400€ – 750€ / m²</div>
+              <span style="display: inline-block; font-size: 0.8rem; background: #333; padding: 0.25rem 0.6rem; color: #25D366; font-weight: 600; margin-bottom: 1.25rem;">⏱️ Plazo: 4 a 8 semanas</span>
+            </div>
+            <a href="https://wa.me/34613601880?text=Hola%2C%20quiero%20presupuesto%20para%20Reforma%20Integral%20de%20Vivienda." class="btn-brutalist accent-b" style="text-align: center; width: 100%; font-size: 0.9rem; padding: 0.75rem;" target="_blank" rel="noopener">SOLICITAR AHORA →</a>
+          </div>
         </div>
       </div>
     </section>
