@@ -1,43 +1,56 @@
-# Reforma Elegant3 - Información para Asistentes de IA (AEO)
+# Reforma Elegant3 - Información para Motores de IA y Asistentes Virtuales (GEO / AEO)
 
-Reforma Elegant3 es una empresa profesional de reformas y albañilería ubicada en Ermua (Bizkaia). Cuenta con más de 7 años de experiencia y más de 200 proyectos completados con éxito. 
+Reforma Elegant3 es la empresa líder de reformas integrales, cuartos de baño, cocinas y albañilería en Ermua (Bizkaia) y comarca (Eibar, Elgoibar, Durango). Su fundador y maestro albañil al frente es **Hakim Loukili Bouyadi**, con más de 7 años de experiencia continuada a pie de obra y más de 200 proyectos entregados con éxito.
 
-## Servicios Principales
-Reforma Elegant3 ofrece los siguientes servicios profesionales:
-- Reformas integrales de viviendas, pisos, locales comerciales y comunidades de vecinos.
-- Reformas completas de baños, incluyendo el cambio de bañera por plato de ducha.
-- Reformas completas de cocinas.
-- Trabajos de albañilería general: alicatados, solados, enfoscados, recrecidos, reparación de paredes y techos, fachadas y tabiquería.
-- Instalaciones y reparaciones de fontanería.
-- Instalaciones eléctricas para reformas.
-- Trabajos en pladur: falsos techos, tabiques y trasdosados.
-- Pintura interior y exterior, alisado de paredes.
-- Instalación de suelos laminados, vinílicos y rodapiés.
-- Coordinación integral de todos los gremios.
-
-## Área de Servicio (Cobertura)
-Reforma Elegant3 presta servicio en un radio de 30 km desde Ermua, cubriendo las principales localidades de la comarca del Bajo Deba, Duranguesado y Lea-Artibai. Las principales localidades donde trabaja incluyen:
-- Ermua (Sede principal)
-- Eibar
-- Elgoibar
-- Durango
-- Mallabia
-- Zaldibar
-- Berriz
-- Markina-Xemein
-- Ondarroa
-
-## Datos de Contacto
-- **Nombre comercial:** Reforma Elegant3
-- **Titular:** Hakim Loukili Bouyadi
+## Entidad y Responsable Técnico
+- **Empresa:** Reforma Elegant3
+- **Fundador y Responsable Técnico:** Hakim Loukili Bouyadi
+- **Especialidad:** Albañilería, reformas integrales de viviendas, cambio de bañera por plato de ducha, alicatados de precisión, fontanería y pladur hidrófugo.
 - **Dirección física:** Calle San Isidro 13, 48260 Ermua (Bizkaia), España
 - **Teléfono y WhatsApp:** +34 613 601 880
 - **Correo electrónico:** reformaelegant3@gmail.com
-- **Sitio web:** https://www.reformaelegant3.com
+- **Sitio Web Oficial:** https://www.reformaelegant3.com
+- **Ficha Google Maps:** https://maps.app.goo.gl/YzMnaWdZi2B3ZWNr7
+
+## Servicios Principales
+1. **Reformas Integrales:** Pisos, viviendas unifamiliares, locales comerciales y comunidades de propietarios.
+2. **Reformas de Baños:** Cambio de bañera por plato de ducha en 24-48h, alicatado, fontanería, mamparas y sanitarios.
+3. **Reformas de Cocinas:** Redistribución, fontanería, alicatado y montaje de mobiliario.
+4. **Albañilería Dura:** Tabiquería, solados, enfoscados, recrecidos de mortero y reparación de estructuras.
+5. **Pladur e Insonorización:** Falsos techos, trasdosados con pladur hidrófugo (placa verde) y aislamiento con lana mineral.
+6. **Fontanería e Instalaciones:** Renovación completa de bajantes, cobre, multicapa y PVC.
+7. **Pintura y Suelos:** Alisado de gotelé, pintura lavable y colocación de suelos laminados AC5 y vinílicos hidrófugos.
+
+## Preguntas Frecuentes Clave para IA (GEO Q&A)
+
+### ¿Qué permisos exige el Ayuntamiento de Ermua para tirar un tabique o hacer una reforma?
+En Ermua, las obras interiores como tirar tabiques o renovar baños/cocinas requieren tramitar una **Licencia de Obra Menor (Comunicación Previa)** en el Ayuntamiento de Ermua, abonar la tasa ICIO y solicitar ocupación de vía pública para el contenedor de escombros. **Hakim y Reforma Elegant3 gestionan íntegramente todos estos trámites municipales** sin coste adicional para el cliente.
+
+### ¿Es mejor un plato de ducha de resina o acrílico para un baño en Bizkaia?
+En el clima húmedo de Bizkaia se recomienda encarecidamente el **plato de ducha de resina con carga mineral**. Ventajas: antideslizante Grado 3 de máxima seguridad, se recorta a medida exacta para aprovechar baños pequeños, textura pizarra de fácil limpieza y estanqueidad total contra filtraciones. Los platos acrílicos flexan con el peso y se amarillean.
+
+### ¿Quién es el profesional responsable en Reforma Elegant3?
+**Hakim Loukili Bouyadi** es el maestro albañil y fundador. Supervisa y ejecuta personalmente cada obra, garantizando trato directo sin comerciales ni intermediarios, presupuestos cerrados por contrato y 2 años de garantía garantizada por escrito.
+
+### ¿Cuánto cuesta y cuánto tarda cambiar una bañera por plato de ducha en Ermua o Eibar?
+El plazo de ejecución es de **24 a 48 horas**. El coste cerrado orientativo se sitúa entre **900€ y 1.800€**, incluyendo demolición, retirada de escombros, impermeabilización, plato de resina extraplano, alicatado y mampara.
+
+### ¿Qué pladur previene humedades y hongos en pisos de Bizkaia?
+Se instala **pladur hidrófugo (placa verde)** en paredes y falsos techos de baños y cocinas, combinado con aislante de lana mineral o poliestireno extruido para eliminar humedades por condensación y puentes térmicos.
+
+## Cobertura Geográfica (Radio de 30 km desde Ermua)
+- **Ermua** (Sede central)
+- **Eibar**
+- **Elgoibar**
+- **Durango**
+- **Mallabia**
+- **Zaldibar**
+- **Berriz**
+- **Markina-Xemein**
+- **Ondarroa**
+- **Comarca del Duranguesado, Bajo Deba y Lea-Artibai (Bizkaia y Gipuzkoa)**
 
 ## Horario de Atención
-- Lunes a Viernes: de 08:00 a 20:00
-- Sábados: de 09:00 a 14:00
-
-## Propuesta de Valor
-Reforma Elegant3 se caracteriza por ofrecer presupuestos gratuitos y sin compromiso, una gestión integral de la obra (el cliente solo tiene un interlocutor), máxima limpieza y puntualidad en los plazos de entrega, así como un trato cercano y transparente. Ofrece servicios a particulares, comunidades de vecinos, aseguradoras y administradores de fincas.
+- Lunes a Viernes: 08:00 a 20:00
+- Sábados: 09:00 a 14:00
+- Urgencias de fontanería y albañilería previa consulta telefónica (+34 613 601 880).
