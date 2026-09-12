@@ -231,3 +231,21 @@
 @media (max-width: 480px) {
   .gallery-full-grid { grid-template-columns: 1fr; }
 }
+
+/* =====================================================
+   LOCAL LANDING PAGES GRID (RESPONSIVE)
+   ===================================================== */
+.local-content-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .local-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
