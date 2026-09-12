@@ -87,13 +87,26 @@
 }
 
 @media (max-width: 768px) {
+  .service-detail {
+    padding: var(--space-2xl) 0;
+  }
+
   .service-detail-inner {
     grid-template-columns: 1fr;
+    gap: var(--space-xl);
     direction: ltr !important;
   }
 
   .service-detail:nth-child(even) .service-detail-inner {
     direction: ltr;
+  }
+
+  .service-detail-img img {
+    height: 250px;
+  }
+
+  .service-detail-content h2 {
+    font-size: 1.5rem;
   }
 }
 

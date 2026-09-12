@@ -1523,6 +1523,7 @@ a.contact-value:hover { text-decoration: underline; color: var(--color-accent); 
   .service-b-item { height: 300px; }
   .s-b-label { width: 95%; padding: 1rem; }
   .hero-b-text-column { padding: 4rem 1rem 2rem 1rem; }
+  .trust-bar .btn { width: 100%; justify-content: center; }
 }
 
 /* =====================================================
