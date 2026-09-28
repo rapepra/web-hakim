@@ -28,6 +28,10 @@
   <meta name="twitter:description" content="Especialistas en cuartos de baño, sustitución de bañera por ducha con saneamiento y reparaciones del hogar en Ermua y comarca.">
   <meta name="twitter:image" content="https://www.reformaelegant3.com/assets/img/gallery/reforma-bano-integral-antes-despues.webp">
 
+  <!-- Performance Resource Hints -->
+  <link rel="dns-prefetch" href="https://maps.googleapis.com">
+  <link rel="dns-prefetch" href="https://maps.gstatic.com">
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -131,6 +135,57 @@
             }
           ]
         },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "19",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "María G."
+            },
+            "datePublished": "2026-06-14",
+            "reviewBody": "Cambiamos la bañera por ducha y quedamos impresionados con el cuidado que pusieron. No solo instalaron el plato, sino que sanearon las tuberías antiguas que estaban dando problemas y dejaron todo rematado a la perfección. Trato inmejorable.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Javier M."
+            },
+            "datePublished": "2026-07-22",
+            "reviewBody": "Hakim reformó por completo el baño de nuestros padres en Eibar. Se adaptó a sus necesidades de accesibilidad, asesorando con honestidad y sin intentar vender de más. Muy limpio, puntual y profesional. Un acierto total.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Amaia E."
+            },
+            "datePublished": "2026-08-05",
+            "reviewBody": "Le llamé para sustituir la grifería y sanear el desagüe del plato de ducha en Durango y la respuesta fue inmediata. Se nota que tiene muchos años de experiencia detrás; trabaja con mimo y te da total tranquilidad.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          }
+        ],
         "priceRange": "€€",
         "currenciesAccepted": "EUR",
         "paymentAccepted": "Efectivo, Transferencia bancaria",
@@ -255,8 +310,8 @@
         </p>
         
         <div class="hero-b-ctas">
-          <a href="tel:+34613601880" class="btn-brutalist primary-b">LLAMAR AHORA: 613 601 880</a>
-          <a href="https://wa.me/34613601880?text=Hola%20Hakim%2C%20me%20gustar%C3%ADa%20solicitar%20un%20estudio%20para%20mi%20ba%C3%B1o." class="btn-brutalist accent-b" target="_blank" rel="noopener">PRESUPUESTO POR WHATSAPP</a>
+          <a href="tel:+34613601880" class="btn-brutalist primary-b" data-track-conversion="call" id="hero-btn-call">LLAMAR AHORA: 613 601 880</a>
+          <a href="https://wa.me/34613601880?text=Hola%20Hakim%2C%20me%20gustar%C3%ADa%20solicitar%20un%20estudio%20para%20mi%20ba%C3%B1o." class="btn-brutalist accent-b" target="_blank" rel="noopener" data-track-conversion="whatsapp" id="hero-btn-whatsapp">PRESUPUESTO POR WHATSAPP</a>
         </div>
         
         <ul class="hero-b-trust" role="list">
@@ -607,9 +662,14 @@
               </div>
             </li>
           </ul>
-          <a href="https://maps.app.goo.gl/CJQQLEkvSXCNbEWc7" class="btn btn-outline" target="_blank" rel="noopener">
-            🗺️ Cómo llegar en Google Maps
-          </a>
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:1.5rem;">
+            <a href="contacto.html" class="btn btn-primary" id="home-cta-form" data-track-conversion="form">
+              📋 Pedir Presupuesto Sin Compromiso
+            </a>
+            <a href="https://maps.app.goo.gl/CJQQLEkvSXCNbEWc7" class="btn btn-outline" target="_blank" rel="noopener">
+              🗺️ Cómo llegar en Google Maps
+            </a>
+          </div>
         </div>
         <div class="contact-map">
           <iframe

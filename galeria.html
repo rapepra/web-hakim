@@ -17,6 +17,33 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/pages.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.reformaelegant3.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Galería", "item": "https://www.reformaelegant3.com/galeria.html"}
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.reformaelegant3.com/galeria.html#webpage",
+        "url": "https://www.reformaelegant3.com/galeria.html",
+        "name": "Galería de Reformas en Ermua y Bizkaia | Reforma Elegant3",
+        "description": "Fotos reales de reformas de baños, platos de ducha con saneamiento, alicatados y trabajos de mantenimiento en Ermua, Eibar y comarca.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.reformaelegant3.com/#website",
+          "name": "Reforma Elegant3"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -264,39 +291,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-  // Gallery filter functionality
-  document.addEventListener('DOMContentLoaded', function() {
-    const filterBtns = document.querySelectorAll('.gallery-filter-btn');
-    const items = document.querySelectorAll('.gallery-item[data-category]');
-
-    filterBtns.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        const filter = this.dataset.filter;
-
-        // Update button states
-        filterBtns.forEach(b => {
-          b.classList.remove('btn-primary', 'active');
-          b.classList.add('btn-outline');
-          b.setAttribute('aria-selected', 'false');
-        });
-        this.classList.add('btn-primary', 'active');
-        this.classList.remove('btn-outline');
-        this.setAttribute('aria-selected', 'true');
-
-        // Filter items
-        items.forEach(function(item) {
-          if (filter === 'all' || item.dataset.category === filter) {
-            item.style.display = '';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-      });
-    });
-  });
-  </script>
 
   <script src="assets/js/main.js" defer></script>
 </body>

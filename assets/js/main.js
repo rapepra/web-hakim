@@ -163,63 +163,173 @@
     });
   }
 
-  /* ---- Contact Form Validation ---- */
+  /* ---- SEM & Analytics Conversion Tracking Helper ---- */
+  function trackConversion(action, label) {
+    // Google Analytics 4 / Google Ads (gtag)
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', action, {
+        event_category: 'Lead',
+        event_label: label || 'Website Interaction'
+      });
+    }
+    // Google Tag Manager dataLayer
+    if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push({
+        event: 'lead_conversion',
+        conversion_action: action,
+        conversion_label: label
+      });
+    }
+  }
+
+  // Auto-track direct Call & WhatsApp link clicks
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (callLink) {
+    callLink.addEventListener('click', function () {
+      trackConversion('click_call', 'Direct Phone Call 613 601 880');
+    });
+  });
+
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function (waLink) {
+    waLink.addEventListener('click', function () {
+      trackConversion('click_whatsapp', 'Direct WhatsApp Click');
+    });
+  });
+
+  /* ---- Contact Form Validation & Dual Submission (Form / WhatsApp) ---- */
   const contactForm = document.getElementById('contact-form');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      let isValid = true;
+    // Validate individual group helper
+    function validateGroup(field, isValidCondition) {
+      const group = field.closest('.form-group');
+      if (!isValidCondition) {
+        if (group) group.classList.add('has-error');
+        return false;
+      } else {
+        if (group) group.classList.remove('has-error');
+        return true;
+      }
+    }
 
-      // Clear previous errors
-      contactForm.querySelectorAll('.form-group').forEach(g => g.classList.remove('has-error'));
+    function checkFormValidity() {
+      let valid = true;
 
-      // Validate required fields
+      // Required text/select/checkbox
       contactForm.querySelectorAll('[required]').forEach(function (field) {
-        const group = field.closest('.form-group');
-        if (!field.value.trim()) {
-          if (group) group.classList.add('has-error');
-          isValid = false;
+        if (field.type === 'checkbox') {
+          if (!validateGroup(field, field.checked)) valid = false;
+        } else {
+          if (!validateGroup(field, field.value.trim().length > 0)) valid = false;
         }
       });
 
       // Validate phone
       const phoneField = contactForm.querySelector('#contact-phone');
       if (phoneField && phoneField.value.trim()) {
-        const phoneVal = phoneField.value.replace(/\s/g, '');
-        if (!/^[\d+\-()]{9,15}$/.test(phoneVal)) {
-          const group = phoneField.closest('.form-group');
-          if (group) group.classList.add('has-error');
-          isValid = false;
+        const phoneVal = phoneField.value.replace(/[\s\-\(\)]/g, '');
+        if (!validateGroup(phoneField, /^(\+34|0034)?[6789]\d{8}$/.test(phoneVal))) {
+          valid = false;
         }
       }
 
-      // Validate email if present
-      const emailField = contactForm.querySelector('#contact-email');
-      if (emailField && emailField.value.trim()) {
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value)) {
-          const group = emailField.closest('.form-group');
-          if (group) group.classList.add('has-error');
-          isValid = false;
-        }
-      }
+      return valid;
+    }
 
-      if (isValid) {
-        // Show success message (in production, replace with actual form submission)
+    // Standard submission
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (checkFormValidity()) {
+        trackConversion('submit_lead_form', 'Formulario Presupuesto Baño');
+
         const successMsg = contactForm.querySelector('.form-success');
-        if (successMsg) successMsg.classList.add('is-visible');
+        if (successMsg) {
+          successMsg.classList.add('is-visible');
+          successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
         contactForm.reset();
-
-        // Scroll to success
-        if (successMsg) successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     });
 
-    // Real-time error clearing
-    contactForm.querySelectorAll('.form-control').forEach(function (field) {
+    // Real-time error clearing on input/change
+    contactForm.querySelectorAll('.form-control, input[type="checkbox"]').forEach(function (field) {
       field.addEventListener('input', function () {
         const group = field.closest('.form-group');
         if (group && field.value.trim()) group.classList.remove('has-error');
+      });
+      field.addEventListener('change', function () {
+        const group = field.closest('.form-group');
+        if (group) group.classList.remove('has-error');
+      });
+    });
+
+    // Send Form Data directly to WhatsApp button
+    const btnSubmitWhatsapp = document.getElementById('btn-submit-whatsapp');
+    if (btnSubmitWhatsapp) {
+      btnSubmitWhatsapp.addEventListener('click', function () {
+        const nameField = contactForm.querySelector('#contact-name');
+        const phoneField = contactForm.querySelector('#contact-phone');
+        const cityField = contactForm.querySelector('#contact-city');
+        const serviceField = contactForm.querySelector('#contact-service');
+        const messageField = contactForm.querySelector('#contact-message');
+
+        const nameVal = nameField ? nameField.value.trim() : '';
+        const phoneVal = phoneField ? phoneField.value.trim() : '';
+        const cityVal = cityField ? cityField.value.trim() : 'Ermua / comarca';
+        const serviceVal = serviceField ? serviceField.value.trim() : 'Reforma de Baño';
+        const messageVal = messageField ? messageField.value.trim() : '';
+
+        // Minimum requirement: Name and Phone
+        let hasError = false;
+        if (!nameVal) {
+          if (nameField) validateGroup(nameField, false);
+          hasError = true;
+        }
+        if (!phoneVal) {
+          if (phoneField) validateGroup(phoneField, false);
+          hasError = true;
+        }
+
+        if (hasError) {
+          const firstErr = contactForm.querySelector('.form-group.has-error');
+          if (firstErr) firstErr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          return;
+        }
+
+        trackConversion('submit_whatsapp_data', 'Envio Formulario Directo WhatsApp');
+
+        let waText = `Hola Hakim, me llamo ${nameVal} (Tlf: ${phoneVal}).`;
+        if (cityVal) waText += ` Soy de ${cityVal}.`;
+        if (serviceVal) waText += ` Me interesa consultar sobre: ${serviceVal}.`;
+        if (messageVal) waText += ` Detalles: ${messageVal}`;
+
+        const waUrl = `https://wa.me/34613601880?text=${encodeURIComponent(waText)}`;
+        window.open(waUrl, '_blank', 'noopener,noreferrer');
+      });
+    }
+  }
+
+  /* ---- Centralized Gallery Filter ---- */
+  const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item[data-category]');
+
+  if (filterBtns.length > 0 && galleryItems.length > 0) {
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const filter = this.dataset.filter;
+
+        filterBtns.forEach(b => {
+          b.classList.remove('btn-primary', 'active');
+          b.classList.add('btn-outline');
+          b.setAttribute('aria-selected', 'false');
+        });
+        this.classList.add('btn-primary', 'active');
+        this.classList.remove('btn-outline');
+        this.setAttribute('aria-selected', 'true');
+
+        galleryItems.forEach(function (item) {
+          item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+        });
       });
     });
   }
