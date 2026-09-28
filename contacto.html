@@ -161,81 +161,41 @@
           </div>
 
           <div class="contact-form-wrapper">
-            <form class="contact-form" id="contact-form" novalidate>
-              <div class="form-header" style="margin-bottom: var(--space-lg); border-bottom: 2px solid var(--color-primary); padding-bottom: var(--space-sm);">
-                <span class="section-tag" style="margin-bottom: 0.25rem;">Presupuesto Sin Compromiso</span>
-                <h3 style="font-family: var(--font-display); font-size: 1.5rem; text-transform: uppercase; margin-bottom: 0.25rem; color: var(--color-primary);">Estudio in situ de tu baño</h3>
-                <p style="font-size: 0.88rem; color: var(--color-text-muted);">Completa tus datos para que Hakim te llame gratis, o envíalos directo a su WhatsApp.</p>
+            <div class="contact-form" style="display: flex; flex-direction: column; justify-content: center;">
+              <span class="section-tag" style="margin-bottom: 0.5rem; display: inline-block;">SIN FORMULARIOS · ATENCIÓN INMEDIATA</span>
+              <h3 style="font-family: var(--font-display); font-size: 1.85rem; text-transform: uppercase; margin-bottom: 0.75rem; color: var(--color-primary); line-height: 1.2;">
+                CONTACTA DIRECTAMENTE CON HAKIM
+              </h3>
+              <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 2rem;">
+                Sin intermediarios ni cuestionarios que rellenar. Puedes llamarnos directamente por teléfono o escribirnos un WhatsApp para contarnos tu idea, enviarnos fotos de tu baño o pedir que Hakim se acerque a valorarlo sin ningún compromiso.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%;">
+                <a href="tel:+34613601880" class="btn btn-primary w-full" style="font-size: 1.15rem; padding: 1.15rem 1rem; text-align: center; justify-content: center;" data-track-conversion="call">
+                  📞 LLAMAR AHORA: 613 601 880
+                </a>
+                <a href="https://wa.me/34613601880?text=Hola%20Hakim%2C%20quisiera%20pedir%20presupuesto%20para%20mi%20ba%C3%B1o." class="btn btn-whatsapp w-full" target="_blank" rel="noopener" style="font-size: 1.15rem; padding: 1.15rem 1rem; text-align: center; justify-content: center;" data-track-conversion="whatsapp">
+                  💬 ABRIR CHAT DE WHATSAPP
+                </a>
               </div>
 
-              <div class="form-group">
-                <label class="form-label" for="contact-name">Nombre y Apellidos *</label>
-                <input type="text" id="contact-name" name="name" class="form-control" placeholder="Ej. Aitor Gómez" required autocomplete="name">
-                <span class="form-error">Por favor, introduce tu nombre</span>
+              <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px dashed rgba(27,27,27,0.25); width: 100%;">
+                <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: var(--color-text);">
+                  <li style="display: flex; align-items: center; gap: 0.6rem;">
+                    <span style="color: var(--color-accent); font-weight: bold; font-size: 1.1rem;">✓</span>
+                    <span><strong>Visita in situ y estudio gratuito</strong> en Ermua, Eibar, Durango y comarca</span>
+                  </li>
+                  <li style="display: flex; align-items: center; gap: 0.6rem;">
+                    <span style="color: var(--color-accent); font-weight: bold; font-size: 1.1rem;">✓</span>
+                    <span><strong>Trato 1 a 1 con Hakim:</strong> habla y coordina con el maestro de obra</span>
+                  </li>
+                  <li style="display: flex; align-items: center; gap: 0.6rem;">
+                    <span style="color: var(--color-accent); font-weight: bold; font-size: 1.1rem;">✓</span>
+                    <span><strong>Sin precios trampa:</strong> presupuesto transparente y ajustado a tu baño</span>
+                  </li>
+                </ul>
               </div>
-
-              <div class="form-row-2col">
-                <div class="form-group">
-                  <label class="form-label" for="contact-phone">Teléfono de contacto *</label>
-                  <input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="600 000 000" required autocomplete="tel">
-                  <span class="form-error">Introduce un teléfono válido</span>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="contact-city">Municipio *</label>
-                  <select id="contact-city" name="city" class="form-control" required>
-                    <option value="" disabled selected>Selecciona municipio</option>
-                    <option value="Ermua">Ermua</option>
-                    <option value="Eibar">Eibar</option>
-                    <option value="Durango">Durango</option>
-                    <option value="Elgoibar">Elgoibar</option>
-                    <option value="Mallabia">Mallabia</option>
-                    <option value="Zaldibar">Zaldibar</option>
-                    <option value="Berriz">Berriz</option>
-                    <option value="Otro municipio">Otro en Bizkaia / Gipuzkoa</option>
-                  </select>
-                  <span class="form-error">Selecciona tu municipio</span>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="contact-service">Tipo de Trabajo *</label>
-                <select id="contact-service" name="service" class="form-control" required>
-                  <option value="" disabled selected>¿Qué necesitas en tu baño?</option>
-                  <option value="Reforma Integral de Baño">Reforma Integral de Baño</option>
-                  <option value="Cambio de Bañera por Ducha con Saneamiento">Cambio de Bañera por Ducha con Saneamiento</option>
-                  <option value="Reparaciones del Hogar / Fontanería">Reparaciones del Hogar / Fontanería puntual</option>
-                  <option value="Otro tipo de reforma">Otro tipo de proyecto</option>
-                </select>
-                <span class="form-error">Selecciona el tipo de trabajo</span>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="contact-message">Detalles del baño (opcional)</label>
-                <textarea id="contact-message" name="message" class="form-control" rows="3" placeholder="Medidas aproximadas, estado actual de tuberías, dudas..."></textarea>
-              </div>
-
-              <div class="form-group" style="margin-bottom: var(--space-md);">
-                <label style="display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.82rem; color: var(--color-text-muted); cursor: pointer;">
-                  <input type="checkbox" id="contact-privacy" name="privacy" required style="margin-top: 0.2rem;">
-                  <span>He leído y acepto la <a href="privacidad.html" target="_blank" style="text-decoration: underline; color: var(--color-primary);">política de privacidad</a> para el tratamiento de mis datos de contacto.</span>
-                </label>
-                <span class="form-error">Debes aceptar la política de privacidad</span>
-              </div>
-
-              <div class="form-actions" style="display: flex; flex-direction: column; gap: 0.75rem;">
-                <button type="submit" class="btn btn-primary w-full" id="btn-submit-form" data-track-conversion="form">
-                  📋 SOLICITAR VALORACIÓN GRATUITA
-                </button>
-                <button type="button" class="btn btn-whatsapp w-full" id="btn-submit-whatsapp" data-track-conversion="whatsapp">
-                  💬 ENVIAR DATOS DIRECTO POR WHATSAPP
-                </button>
-              </div>
-
-              <div class="form-success" role="alert">
-                ✓ ¡Solicitud recibida! Hakim se pondrá en contacto contigo a la mayor brevedad para coordinar la visita técnica sin coste.
-              </div>
-            </form>
+            </div>
           </div>
 
         </div>

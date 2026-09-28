@@ -165,14 +165,12 @@
 
   /* ---- SEM & Analytics Conversion Tracking Helper ---- */
   function trackConversion(action, label) {
-    // Google Analytics 4 / Google Ads (gtag)
     if (typeof window.gtag === 'function') {
       window.gtag('event', action, {
         event_category: 'Lead',
-        event_label: label || 'Website Interaction'
+        event_label: label || 'Direct Contact'
       });
     }
-    // Google Tag Manager dataLayer
     if (Array.isArray(window.dataLayer)) {
       window.dataLayer.push({
         event: 'lead_conversion',
@@ -194,120 +192,6 @@
       trackConversion('click_whatsapp', 'Direct WhatsApp Click');
     });
   });
-
-  /* ---- Contact Form Validation & Dual Submission (Form / WhatsApp) ---- */
-  const contactForm = document.getElementById('contact-form');
-
-  if (contactForm) {
-    // Validate individual group helper
-    function validateGroup(field, isValidCondition) {
-      const group = field.closest('.form-group');
-      if (!isValidCondition) {
-        if (group) group.classList.add('has-error');
-        return false;
-      } else {
-        if (group) group.classList.remove('has-error');
-        return true;
-      }
-    }
-
-    function checkFormValidity() {
-      let valid = true;
-
-      // Required text/select/checkbox
-      contactForm.querySelectorAll('[required]').forEach(function (field) {
-        if (field.type === 'checkbox') {
-          if (!validateGroup(field, field.checked)) valid = false;
-        } else {
-          if (!validateGroup(field, field.value.trim().length > 0)) valid = false;
-        }
-      });
-
-      // Validate phone
-      const phoneField = contactForm.querySelector('#contact-phone');
-      if (phoneField && phoneField.value.trim()) {
-        const phoneVal = phoneField.value.replace(/[\s\-\(\)]/g, '');
-        if (!validateGroup(phoneField, /^(\+34|0034)?[6789]\d{8}$/.test(phoneVal))) {
-          valid = false;
-        }
-      }
-
-      return valid;
-    }
-
-    // Standard submission
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      if (checkFormValidity()) {
-        trackConversion('submit_lead_form', 'Formulario Presupuesto Baño');
-
-        const successMsg = contactForm.querySelector('.form-success');
-        if (successMsg) {
-          successMsg.classList.add('is-visible');
-          successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-        contactForm.reset();
-      }
-    });
-
-    // Real-time error clearing on input/change
-    contactForm.querySelectorAll('.form-control, input[type="checkbox"]').forEach(function (field) {
-      field.addEventListener('input', function () {
-        const group = field.closest('.form-group');
-        if (group && field.value.trim()) group.classList.remove('has-error');
-      });
-      field.addEventListener('change', function () {
-        const group = field.closest('.form-group');
-        if (group) group.classList.remove('has-error');
-      });
-    });
-
-    // Send Form Data directly to WhatsApp button
-    const btnSubmitWhatsapp = document.getElementById('btn-submit-whatsapp');
-    if (btnSubmitWhatsapp) {
-      btnSubmitWhatsapp.addEventListener('click', function () {
-        const nameField = contactForm.querySelector('#contact-name');
-        const phoneField = contactForm.querySelector('#contact-phone');
-        const cityField = contactForm.querySelector('#contact-city');
-        const serviceField = contactForm.querySelector('#contact-service');
-        const messageField = contactForm.querySelector('#contact-message');
-
-        const nameVal = nameField ? nameField.value.trim() : '';
-        const phoneVal = phoneField ? phoneField.value.trim() : '';
-        const cityVal = cityField ? cityField.value.trim() : 'Ermua / comarca';
-        const serviceVal = serviceField ? serviceField.value.trim() : 'Reforma de Baño';
-        const messageVal = messageField ? messageField.value.trim() : '';
-
-        // Minimum requirement: Name and Phone
-        let hasError = false;
-        if (!nameVal) {
-          if (nameField) validateGroup(nameField, false);
-          hasError = true;
-        }
-        if (!phoneVal) {
-          if (phoneField) validateGroup(phoneField, false);
-          hasError = true;
-        }
-
-        if (hasError) {
-          const firstErr = contactForm.querySelector('.form-group.has-error');
-          if (firstErr) firstErr.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          return;
-        }
-
-        trackConversion('submit_whatsapp_data', 'Envio Formulario Directo WhatsApp');
-
-        let waText = `Hola Hakim, me llamo ${nameVal} (Tlf: ${phoneVal}).`;
-        if (cityVal) waText += ` Soy de ${cityVal}.`;
-        if (serviceVal) waText += ` Me interesa consultar sobre: ${serviceVal}.`;
-        if (messageVal) waText += ` Detalles: ${messageVal}`;
-
-        const waUrl = `https://wa.me/34613601880?text=${encodeURIComponent(waText)}`;
-        window.open(waUrl, '_blank', 'noopener,noreferrer');
-      });
-    }
-  }
 
   /* ---- Centralized Gallery Filter ---- */
   const filterBtns = document.querySelectorAll('.gallery-filter-btn');
