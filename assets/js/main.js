@@ -131,9 +131,9 @@
           const cap = item.querySelector('figcaption');
           if (!imgEl) return;
 
-          img.src = imgEl.src;
+          img.src = imgEl.currentSrc || imgEl.src;
           img.alt = imgEl.alt;
-          caption.textContent = cap ? cap.textContent : '';
+          caption.textContent = item.dataset.caption || (cap ? cap.textContent : '');
           overlay.classList.add('is-open');
           document.body.style.overflow = 'hidden';
           closeBtn.focus();
@@ -164,32 +164,42 @@
   }
 
   /* ---- SEM & Analytics Conversion Tracking Helper ---- */
-  function trackConversion(action, label) {
+  function trackConversion(action, label, location) {
     if (typeof window.gtag === 'function') {
       window.gtag('event', action, {
         event_category: 'Lead',
-        event_label: label || 'Direct Contact'
+        event_label: label || 'Direct Contact',
+        cta_location: location || 'unknown',
+        page_path: window.location.pathname
       });
     }
     if (Array.isArray(window.dataLayer)) {
       window.dataLayer.push({
         event: 'lead_conversion',
         conversion_action: action,
-        conversion_label: label
+        conversion_label: label,
+        cta_location: location || 'unknown',
+        page_path: window.location.pathname
       });
     }
   }
 
-  // Auto-track direct Call & WhatsApp link clicks
+  // Auto-track direct Call, WhatsApp & email link clicks (data-cta-location identifica el botón)
   document.querySelectorAll('a[href^="tel:"]').forEach(function (callLink) {
     callLink.addEventListener('click', function () {
-      trackConversion('click_call', 'Direct Phone Call 613 601 880');
+      trackConversion('click_call', 'Direct Phone Call 613 601 880', this.dataset.ctaLocation);
     });
   });
 
   document.querySelectorAll('a[href*="wa.me"]').forEach(function (waLink) {
     waLink.addEventListener('click', function () {
-      trackConversion('click_whatsapp', 'Direct WhatsApp Click');
+      trackConversion('click_whatsapp', 'Direct WhatsApp Click', this.dataset.ctaLocation);
+    });
+  });
+
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function (mailLink) {
+    mailLink.addEventListener('click', function () {
+      trackConversion('click_email', 'Direct Email Click', this.dataset.ctaLocation);
     });
   });
 
