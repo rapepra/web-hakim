@@ -1270,24 +1270,48 @@ a.contact-value:hover { text-decoration: underline; color: var(--color-accent); 
 
 .footer-bottom a:hover { color: var(--color-accent-light); }
 
-.footer-credit {
-  font-size: 0.8rem !important;
-  color: rgba(255, 255, 255, 0.65) !important;
-  margin: 0;
+/* Crédito de agencia: Presupuesta Estudios */
+.pe-credit {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+  padding: 1.25rem 0 0.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.footer-credit a {
-  color: var(--color-accent-light) !important;
-  font-weight: 700;
+.pe-credit a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem 0.45rem;
+  max-width: 100%;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #cbd5e1;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
   text-decoration: none;
-  border-bottom: 1px solid var(--color-accent);
-  transition: color 0.15s ease, background 0.15s ease, padding 0.15s ease;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
-.footer-credit a:hover {
-  color: var(--color-white) !important;
-  background: var(--color-accent);
-  padding: 1px 4px;
+.pe-credit a:hover,
+.pe-credit a:focus-visible {
+  border-color: var(--color-accent);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.pe-credit-brand {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.pe-credit-cta {
+  color: var(--color-accent);
+  font-weight: 700;
 }
 
 /* ---- WHATSAPP FLOAT ---- */
