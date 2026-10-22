@@ -1,81 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.reformaelegant3.com/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.reformaelegant3.com/servicios.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/servicios.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.reformaelegant3.com/banos-minimalista-fibrocemento.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/banos-minimalista-fibrocemento.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.reformaelegant3.com/zonas.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/zonas.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.reformaelegant3.com/reformas-integrales-ermua.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/reformas-integrales-ermua.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.reformaelegant3.com/reformas-integrales-eibar.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/reformas-integrales-eibar.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://www.reformaelegant3.com/reformas-integrales-elgoibar.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/reformas-integrales-elgoibar.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.reformaelegant3.com/reformas-integrales-durango.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/reformas-integrales-durango.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.reformaelegant3.com/galeria.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/galeria.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.reformaelegant3.com/nosotros.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/nosotros.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.reformaelegant3.com/contacto.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://reformaelegante.es/contacto.html</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.reformaelegant3.com/llms.txt</loc>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://www.reformaelegant3.com/llms-full.txt</loc>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
   </url>
 </urlset>

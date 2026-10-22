@@ -124,14 +124,14 @@
     galleryGrids.forEach(grid => {
       grid.querySelectorAll('.gallery-item').forEach(item => {
         item.setAttribute('tabindex', '0');
-        item.setAttribute('role', 'button');
+        // Enfocable con teclado (Enter o espacio la amplían); el aria-label describe la foto
 
         const openLightbox = function () {
           const imgEl = item.querySelector('img');
           const cap = item.querySelector('figcaption');
           if (!imgEl) return;
 
-          img.src = imgEl.currentSrc || imgEl.src;
+          img.src = imgEl.dataset.full || imgEl.currentSrc || imgEl.src;
           img.alt = imgEl.alt;
           caption.textContent = item.dataset.caption || (cap ? cap.textContent : '');
           overlay.classList.add('is-open');
@@ -265,4 +265,20 @@
     });
   }
 
+
+  /* ---- Mapa de contacto: carga el iframe de Google Maps solo al pulsar ---- */
+  document.querySelectorAll('.map-facade').forEach(function (facade) {
+    var btn = facade.querySelector('.map-facade-btn');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var iframe = document.createElement('iframe');
+      iframe.src = facade.dataset.mapSrc;
+      iframe.title = facade.dataset.mapTitle || 'Mapa';
+      iframe.loading = 'lazy';
+      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      iframe.allowFullscreen = true;
+      facade.replaceChildren(iframe);
+      facade.style.padding = '0';
+    });
+  });
 })();

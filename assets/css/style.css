@@ -5,12 +5,56 @@
    ===================================================== */
 
 /* ---- CSS Custom Properties ---- */
+/* ---- FUENTES AUTOALOJADAS (OFL) ----
+   Oswald (titulares) con font-display: optional: nunca provoca saltos de diseño (CLS).
+   IBM Plex Sans (texto) con respaldo en Arial ajustado a sus medidas. */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: optional;
+  src: url(../fonts/oswald-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: optional;
+  src: url(../fonts/oswald-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../fonts/ibm-plex-sans-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Plex Fallback';
+  src: local('Arial'), local('Helvetica Neue'), local('Roboto');
+  size-adjust: 96.85%;
+  ascent-override: 105.84%;
+  descent-override: 28.40%;
+  line-gap-override: 0%;
+}
+
 :root {
   /* Colors - Brutalismo de Obra */
   --color-primary: #1B1B1B;        /* Acero forjado / Asfalto */
   --color-primary-dark: #0D0D0D;   /* Negro profundo */
   --color-primary-light: #333333;  /* Gris plomo */
-  --color-accent: #D14924;         /* Ladrillo visto / Nivel láser */
+  --color-accent: #B83E1E;         /* Ladrillo visto (contraste AA sobre blanco y gris) */
   --color-accent-dark: #A6381A;    /* Óxido oscuro */
   --color-accent-light: #F2572D;   /* Naranja alerta */
   --color-white: #ffffff;
@@ -24,8 +68,8 @@
   --color-whatsapp-dark: #1da851;
 
   /* Typography */
-  --font-body: 'IBM Plex Sans', monospace, sans-serif;
-  --font-display: 'Oswald', sans-serif;
+  --font-body: 'IBM Plex Sans', 'Plex Fallback', Arial, sans-serif;
+  --font-display: 'Oswald', 'Arial Narrow', 'Roboto Condensed', Arial, sans-serif;
   --font-size-base: 1rem;       /* 16px */
   --line-height-base: 1.5;
 
@@ -219,7 +263,7 @@ address { font-style: normal; }
 
 .btn-whatsapp {
   background: var(--color-whatsapp);
-  color: var(--color-white);
+  color: var(--color-primary); /* texto oscuro: el blanco sobre verde claro no se lee */
   border-color: var(--color-primary);
   box-shadow: 4px 4px 0px var(--color-primary);
 }
@@ -429,6 +473,16 @@ address { font-style: normal; }
 
 .hero-bg::after {
   border-bottom: 8px solid var(--color-primary);
+}
+
+/* Hero en dos columnas: el texto (con el título invadiendo la foto) y la imagen.
+   En pantallas de 992px o menos pasa a una columna (ver media query más abajo). */
+.hero-brutalist {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: center;
+  min-height: min(calc(100vh - 80px), 760px);
 }
 
 .hero-b-laser-line {
@@ -1261,7 +1315,7 @@ a.contact-value:hover { text-decoration: underline; color: var(--color-accent); 
 
 .footer-bottom p {
   font-size: 0.78rem;
-  color: rgba(255,255,255,.4);
+  color: rgba(255,255,255,.66);
 }
 
 .footer-bottom a {
@@ -1401,7 +1455,7 @@ a.contact-value:hover { text-decoration: underline; color: var(--color-accent); 
 
 .mobile-cta-wa {
   background: var(--color-whatsapp);
-  color: var(--color-white);
+  color: var(--color-primary); /* texto oscuro sobre verde WhatsApp */
 }
 
 .mobile-cta-presupuesto {
@@ -1450,7 +1504,7 @@ a.contact-value:hover { text-decoration: underline; color: var(--color-accent); 
   color: rgba(255,255,255,.7);
 }
 
-.cookie-banner a { color: var(--color-accent-light); }
+.cookie-banner a { color: var(--color-accent-light); text-decoration: underline; }
 
 .cookie-actions {
   display: flex;
@@ -1803,3 +1857,54 @@ select.form-control {
   color: var(--color-text-muted);
   line-height: 1.6;
 }
+
+/* ---- AJUSTES RESPONSIVE (sin scroll horizontal) ---- */
+/* El título del hero sigue invadiendo la foto, pero sin ensanchar la página */
+.hero-brutalist { overflow-x: clip; }
+
+/* Las columnas de las cuadrículas pueden encogerse por debajo de su contenido */
+.contact-preview-inner > *,
+.service-detail-inner > * { min-width: 0; }
+.contact-info a { overflow-wrap: anywhere; }
+
+@media (max-width: 600px) {
+  /* Los botones con texto largo bajan de línea en vez de salirse de la pantalla */
+  .btn,
+  .btn-brutalist { white-space: normal; text-align: center; }
+}
+.zones-hero-list > * { min-width: 0; overflow-wrap: anywhere; }
+.lb-ctas { grid-template-columns: minmax(0, 1fr); }
+.zone-card .btn { white-space: normal; }
+.btn-brutalist { overflow-wrap: anywhere; }
+
+/* En escritorio el texto del hero empieza a la derecha de la línea láser (left: 5%) */
+@media (min-width: 993px) {
+  .hero-b-text-column { padding-left: calc(5vw + 2.5rem); }
+}
+
+/* Enlaces del pie distinguibles del texto (no solo por color) */
+.footer-bottom a { text-decoration: underline; text-underline-offset: 2px; }
+/* Sobre fondo oscuro, el acento claro mantiene el contraste AA */
+.pe-credit-cta { color: var(--color-accent-light); }
+.pe-credit a:hover, .pe-credit a:focus-visible { border-color: var(--color-accent-light); }
+
+/* ---- MAPA DE CONTACTO: se carga al pulsar (ahorra ~500 KB de Google Maps) ---- */
+.map-facade {
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  background-color: var(--color-bg-alt);
+  background-image:
+    linear-gradient(rgba(27, 27, 27, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27, 27, 27, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  border-top: 4px solid var(--color-primary);
+}
+.map-facade-address { font-weight: 700; color: var(--color-primary); }
+.map-facade-link { color: var(--color-primary); font-weight: 700; text-decoration: underline; }
+.map-facade iframe { width: 100%; height: 450px; border: 0; display: block; }

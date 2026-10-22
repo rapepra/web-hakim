@@ -202,3 +202,6 @@
   .lb-reviews { grid-template-columns: 1fr 1fr; }
   .lb-final-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: var(--space-3xl); align-items: center; }
 }
+
+/* Sobre secciones oscuras, el acento claro mantiene el contraste AA */
+.lb-section--dark .lb-eyebrow { color: var(--color-accent-light); }
