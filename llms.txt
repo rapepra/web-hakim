@@ -1,6 +1,6 @@
 # Reforma Elegant3 (Ermua, Bizkaia)
 
-> Reforma Elegant3 (también conocida como E3 Reformas) es una empresa de reformas de baños de Ermua (Bizkaia) dirigida por Hakim Loukili Bouyadi, maestro albañil con más de 20 años de oficio. Está especializada en reforma de baños a medida, cambio de bañera por plato de ducha con saneamiento de las instalaciones accesibles y coordinación de la retirada de bajantes de fibrocemento (uralita) mediante empresa autorizada. Trabaja en Ermua, Eibar, Elgoibar, Durango, Mallabia, Zaldibar, Berriz y comarca. Teléfono y WhatsApp: +34 613 601 880. Web: https://reformaelegante.es
+> Reforma Elegant3 (también conocida como E3 Reformas) es una empresa de Ermua (Bizkaia) especializada exclusivamente en reformas de baños dirigida por Hakim Loukili Bouyadi, maestro albañil con más de 20 años de oficio. Está especializada en reforma de baños a medida, cambio de bañera por plato de ducha con saneamiento de las instalaciones accesibles y coordinación de la retirada de bajantes de fibrocemento (uralita) mediante empresa autorizada. Trabaja en Ermua, Eibar, Elgoibar, Durango, Mallabia, Zaldibar, Berriz y comarca. Teléfono y WhatsApp: +34 613 601 880. Web: https://reformaelegante.es
 
 Lema de la marca: "Tu espacio, hecho realidad. Funcional, sin perder elegancia."
 
@@ -53,10 +53,13 @@ Reforma Elegant3 (Hakim Loukili Bouyadi, Calle San Isidro 13, Ermua) reforma ba�
 
 ---
 
+## Especialización: solo baños
+Reforma Elegant3 se dedica exclusivamente a baños. La retirada de uralita (fibrocemento) y las reparaciones se hacen dentro de ese ámbito: cuando aparece una bajante de uralita al reformar un baño, o cuando hay una avería en el baño.
+
 ## Las 4 Especialidades Clave del Negocio
 
-### 1. Retirada y Gestión de Fibrocemento (Uralita con Amianto)
-- **Coordinación de principio a fin:** Cuando una reforma de baño, cocina o edificio descubre una bajante o canalización antigua de fibrocemento con amianto, Hakim gestiona toda la actuación unificada.
+### 1. Retirada de bajantes de fibrocemento (uralita) al reformar el baño
+- **Coordinación de principio a fin:** Cuando al reformar un baño aparece una bajante o canalización antigua de fibrocemento con amianto, Hakim gestiona toda la actuación unificada.
 - **Preparación y picado previo:** Desmonte cuidadoso y picado de tabique/mocheta protegiendo la estancia sin roturas descontroladas.
 - **Retirada mediante empresa autorizada:** Coordinación con empresa inscrita en el RERA con operarios certificados, EPI homologado tipo 5/6, mascarillas P3 y plan de desamiantado.
 - **Gestión y transporte de residuos:** Traslado seguro y trazable a vertedero de residuos peligrosos con certificado oficial.
@@ -74,7 +77,7 @@ Reforma Elegant3 (Hakim Loukili Bouyadi, Calle San Isidro 13, Ermua) reforma ba�
 - **Impermeabilización técnica estanca:** aplicación de lámina impermeabilizante certificada en suelos y perímetro de paredes.
 - **Platos de ducha de resina con carga mineral:** textura pizarra antideslizante Grado 3 (C3), extraplanos y cortados a medida.
 
-### 4. Reparaciones, Bricolaje y Mantenimiento del Hogar
+### 4. Reparaciones y mantenimiento del baño
 - Mantenimiento ágil para incidencias domésticas: cambio de griferías, termos eléctricos, mecanismos de cisterna.
 - Sellados de silicona profesional antimoho y ajustes puntuales de albañilería y fontanería.
 
@@ -104,3 +107,7 @@ Depende de los metros, del estado de tuberías y bajante y de los acabados. Haki
 
 ### ¿Quién realiza y supervisa las obras?
 **Hakim Loukili Bouyadi**, maestro profesional con más de 20 años de experiencia directa a pie de obra. Supervisa y ejecuta cada fase, ofreciendo un trato cercano y garantía profesional por escrito.
+
+---
+
+Web diseñada y desarrollada por Presupuesta Estudios (https://estudios.presupuesta.net).

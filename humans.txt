@@ -1,0 +1,12 @@
+/* EQUIPO */
+Diseño, desarrollo y posicionamiento web: Presupuesta Estudios
+Web: https://estudios.presupuesta.net
+Ubicación: Euskadi, España
+
+/* CLIENTE */
+Reforma Elegant3 · Hakim Loukili Bouyadi · Ermua (Bizkaia)
+https://reformaelegante.es
+
+/* WEB */
+Última actualización: 2026-11-07
+Estándares: HTML5, CSS3, Schema.org (JSON-LD), llms.txt

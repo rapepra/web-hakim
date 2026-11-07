@@ -1929,3 +1929,11 @@ select.form-control {
 @media (min-width: 861px) and (max-width: 1060px) {
   .header-cta { display: none; }
 }
+
+/* ---- Imagen principal: el recuadro toma la proporción de la foto (16:10) y no recorta nada ---- */
+.hero-b-image-column { height: auto; max-height: none; aspect-ratio: 16 / 10; align-self: center; }
+.hero-b-img { display: block; filter: none; }
+@media (max-width: 992px) {
+  .hero-b-image-column { height: auto; max-height: none; }
+}
+.hero-b-image-column .blueprint-crosshair.bottom-left, .hero-b-image-column .blueprint-crosshair.bottom-right { display: none; }
