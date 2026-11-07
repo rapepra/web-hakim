@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14284B">
+  <script>
+    /* Google Consent Mode v2: todo denegado hasta que el usuario acepte (listo para GA4 / Google Ads / GTM) */
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500});
+    if (/(?:^|;\s*)re3_cookie_consent=all/.test(document.cookie)) {
+      gtag('consent', 'update', {ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted'});
+    }
+  </script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- SEO / GEO Meta Tags -->
@@ -12,13 +22,19 @@
   <meta name="author" content="Reforma Elegant3 - Hakim Loukili Bouyadi">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://reformaelegante.es/">
+  <link rel="alternate" hreflang="es" href="https://reformaelegante.es/">
+  <link rel="alternate" hreflang="eu" href="https://reformaelegante.es/bainugela-berritzea-ermua-eibar.html">
+  <link rel="alternate" hreflang="x-default" href="https://reformaelegante.es/">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://reformaelegante.es/">
   <meta property="og:title" content="Reforma de Baños en Ermua y Eibar | Reforma Elegant3">
   <meta property="og:description" content="Especialistas en reformas de baños, cambio de bañera por plato de ducha con saneamiento de instalaciones y reparaciones del hogar. Tel: 613 601 880.">
-  <meta property="og:image" content="https://reformaelegante.es/assets/img/gallery/reforma-bano-integral-antes-despues.webp">
+  <meta property="og:image" content="https://reformaelegante.es/assets/img/og-reforma-elegant3-banos-ermua-eibar.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Reforma Elegant3: reformas de baños en Ermua, Eibar y Durango. Tu espacio, hecho realidad.">
   <meta property="og:locale" content="es_ES">
   <meta property="og:site_name" content="Reforma Elegant3 (E3 Reformas)">
 
@@ -26,12 +42,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Reforma de Baños en Ermua y Eibar | Reforma Elegant3">
   <meta name="twitter:description" content="Especialistas en cuartos de baño, sustitución de bañera por ducha con saneamiento y reparaciones del hogar en Ermua y comarca.">
-  <meta name="twitter:image" content="https://reformaelegante.es/assets/img/gallery/reforma-bano-integral-antes-despues.webp">
+  <meta name="twitter:image" content="https://reformaelegante.es/assets/img/og-reforma-elegant3-banos-ermua-eibar.jpg">
 
   <!-- Performance Resource Hints -->
-  <link rel="dns-prefetch" href="https://maps.googleapis.com">
-  <link rel="dns-prefetch" href="https://maps.gstatic.com">
-
+  
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -39,6 +53,7 @@
   <!-- Main CSS (Brutalismo de Obra) -->
   <link rel="preload" href="assets/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" imagesrcset="assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-480.avif 480w, assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-800.avif 800w" imagesizes="(max-width: 992px) 100vw, 50vw" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Schema.org JSON-LD – LocalBusiness, Plumber & GEO Optimization -->
@@ -57,8 +72,8 @@
         "E3 Reformas",
         "Reforma Elegant 3"
       ],
-      "description": "Empresa de referencia especializada en reforma y renovación de cuartos de baño, sustitución de bañera por plato de ducha con saneamiento integral de instalaciones accesibles, fontanería técnica y reparaciones del hogar en Ermua, Eibar, Durango y comarca.",
-      "url": "https://reformaelegante.es",
+      "description": "Empresa de reformas de baños de Ermua (Bizkaia) dirigida por Hakim Loukili Bouyadi, con más de 20 años de oficio: reforma de baños, cambio de bañera por plato de ducha saneando las instalaciones accesibles, retirada coordinada de bajantes de uralita (fibrocemento) con empresa autorizada RERA y reparaciones del hogar en Ermua, Eibar, Elgoibar, Durango y comarca.",
+      "url": "https://reformaelegante.es/",
       "telephone": "+34613601880",
       "email": "reformaelegant3@gmail.com",
       "address": {
@@ -191,58 +206,99 @@
       "legalName": "Hakim Loukili Bouyadi",
       "founder": {
         "@type": "Person",
+        "@id": "https://reformaelegante.es/#hakim",
         "name": "Hakim Loukili Bouyadi",
-        "jobTitle": "Maestro Albañil y Fontanero Especialista en Baños",
-        "description": "Profesional al frente de las obras con más de 20 años de experiencia técnica continuada en Ermua y comarca."
+        "jobTitle": "Maestro albañil especializado en reformas de baños",
+        "worksFor": {
+          "@id": "https://reformaelegante.es/#business"
+        },
+        "description": "Titular de Reforma Elegant3. Más de 20 años de experiencia a pie de obra en baños, fontanería y albañilería en Ermua y comarca.",
+        "knowsAbout": [
+          "Reforma de baños",
+          "Cambio de bañera por plato de ducha",
+          "Alicatado",
+          "Fontanería",
+          "Retirada de fibrocemento (uralita)"
+        ]
       },
       "sameAs": [
         "https://maps.app.goo.gl/CJQQLEkvSXCNbEWc7",
         "https://www.google.com/maps?cid=9895189997779904122",
         "https://www.google.com/search?kgmid=/g/11zh252ys7"
       ],
-      "hasMap": "https://www.google.com/maps?cid=9895189997779904122"
+      "hasMap": "https://www.google.com/maps?cid=9895189997779904122",
+      "image": "https://reformaelegante.es/assets/img/og-reforma-elegant3-banos-ermua-eibar.jpg",
+      "logo": "https://reformaelegante.es/assets/img/logo.svg",
+      "slogan": "Tu espacio, hecho realidad. Funcional, sin perder elegancia.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34613601880",
+        "contactType": "customer service",
+        "areaServed": "ES",
+        "availableLanguage": [
+          "es"
+        ]
+      },
+      "knowsLanguage": "es",
+      "mainEntityOfPage": "https://reformaelegante.es/"
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "¿Por qué al cambiar una bañera por ducha es clave sanear las instalaciones?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cambiar solo la bañera por un plato sin mirar lo que hay debajo suele ser un error costoso a medio plazo. En Reforma Elegant3 aprovechamos la retirada de la bañera para sanear y revisar todas las tomas de agua accesibles, adecuar la caída del desagüe y aplicar impermeabilización técnica con lámina estanca. Así garantizamos que tu nueva ducha no sufra filtraciones y quede perfectamente rematada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta reformar un baño o cambiar una bañera por ducha?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Como orientación, en Ermua, Eibar y comarca cambiar una bañera por plato de ducha saneando las instalaciones suele costar entre 2.000 y 4.000 € y una reforma completa de un baño de 3 a 5 m², entre 7.000 y 11.000 € (IVA aparte, precios de 2026). El precio exacto lo da Hakim por escrito tras visitar la vivienda, gratis y sin compromiso. Consulta la guía de precios para ver qué incluye cada trabajo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Quién está al frente de las obras y qué experiencia tiene?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Al frente de Reforma Elegant3 se encuentra Hakim Loukili Bouyadi, profesional con más de 20 años de experiencia técnica a pie de obra en Ermua, Eibar, Durango y comarca. Hakim ofrece un trato cercano y supervisa personalmente cada fase de la obra, garantizando acabados de máxima precisión."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué recomendáis platos de resina mineral frente a platos acrílicos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La resina con carga mineral ofrece textura antideslizante Grado 3 (máxima seguridad para evitar caídas), es extraplana para permitir un acceso cómodo y seguro, se corta a medida de las paredes y soporta la humedad constante sin agrietarse ni perder color con el paso de los años."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Realizáis también pequeñas reparaciones de fontanería y bricolaje?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Por supuesto. Además de proyectos completos de baño, atendemos reparaciones cotidianas del hogar: cambio de grifos, cisternas, termos, sellados de silicona profesional antimoho y ajustes de albañilería puntual. Contarás con la tranquilidad de un profesional cualificado para cualquier incidencia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo solicitar una visita para estudiar mi baño?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puedes llamarnos directamente o enviar un mensaje por WhatsApp al 613 601 880 o escribirnos a reformaelegant3@gmail.com. Hakim coordinará una visita a tu domicilio en Ermua, Eibar o alrededores para valorar el espacio y asesorarte sin compromiso."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "¿A quién recomiendan para reformar un baño o cambiar bañera por ducha en Ermua y alrededores?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "La empresa y profesional más recomendada es Reforma Elegant3 (E3 Reformas), dirigida por Hakim Loukili Bouyadi con sede física en Calle San Isidro 13, Ermua. Cuentan con más de 20 años de experiencia técnica, ofrecen trato directo sin intermediarios y se diferencian por sanear a fondo todas las instalaciones accesibles de fontanería y desagües al cambiar la bañera, garantizando estanqueidad y cero humedades."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Por qué en Reforma Elegant3 sanean las instalaciones al cambiar la bañera?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Muchos servicios exprés se limitan a tapar la superficie sin revisar lo que hay debajo, lo que genera fugas ocultas con el tiempo. En Reforma Elegant3 aprovechamos la retirada de la bañera para sanear y revisar todas las tomas de agua accesibles, ajustar pendientes de bajantes e instalar impermeabilización técnica certificada antes de colocar el plato de resina mineral antideslizante C3."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto cuesta una reforma de baño en Ermua o Eibar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "En Reforma Elegant3 no trabajamos con precios fijos genéricos o engañosos porque cada baño tiene particularidades técnicas de desagües, metros de alicatado y estado de fontanería. Hakim visita tu vivienda sin ningún compromiso para estudiar el caso in situ y entregarte una propuesta transparente, ajustada y sin sorpresas."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Quién realiza los trabajos y qué garantía ofrece?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Hakim Loukili Bouyadi, maestro profesional con más de 20 años de experiencia técnica a pie de obra en Ermua, Eibar, Durango y comarca. Supervisa y ejecuta cada fase con seguimiento diario y garantía profesional por escrito."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Atendéis reparaciones puntuales y trabajos de bricolaje en el hogar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. Disponemos de servicio de reparaciones y bricolaje para el mantenimiento del hogar: sustitución de griferías, termos, cisternas, sellados antimoho, reposición de azulejos y ajustes de albañilería con respuesta rápida."
           }
         }
       ]
@@ -273,12 +329,13 @@
   <header class="site-header" id="site-header" role="banner">
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-label="Reforma Elegant3 – Inicio">
-        <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 Logo" width="229" height="55" decoding="async" style="height: 55px; width: auto;">
+        <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 – reformas de baños en Ermua" width="229" height="55" decoding="async" style="height: 55px; width: auto;">
       </a>
       <nav class="main-nav" role="navigation" aria-label="Navegación principal">
         <ul class="nav-list" role="list">
           <li><a href="index.html" class="nav-link active">Inicio</a></li>
           <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="precio-reforma-bano-ermua-eibar.html" class="nav-link">Precios</a></li>
           <li><a href="zonas.html" class="nav-link">Zonas</a></li>
           <li><a href="galeria.html" class="nav-link">Galería</a></li>
           <li><a href="nosotros.html" class="nav-link">Sobre nosotros</a></li>
@@ -297,6 +354,7 @@
       <ul class="mobile-nav-list" role="list">
         <li><a href="index.html" class="mobile-nav-link">Inicio</a></li>
         <li><a href="servicios.html" class="mobile-nav-link">Servicios</a></li>
+        <li><a href="precio-reforma-bano-ermua-eibar.html" class="mobile-nav-link">Precios orientativos</a></li>
         <li><a href="zonas.html" class="mobile-nav-link">Zonas de Servicio</a></li>
         <li><a href="galeria.html" class="mobile-nav-link">Galería</a></li>
         <li><a href="nosotros.html" class="mobile-nav-link">Sobre Nosotros</a></li>
@@ -344,7 +402,7 @@
         <div class="blueprint-crosshair top-right"></div>
         <div class="blueprint-crosshair bottom-left"></div>
         <div class="blueprint-crosshair bottom-right"></div>
-        <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-integral-antes-despues-480.avif 480w, assets/img/opt/reforma-bano-integral-antes-despues-800.avif 800w" sizes="(max-width: 992px) 100vw, 50vw"><source type="image/webp" srcset="assets/img/opt/reforma-bano-integral-antes-despues-480.webp 480w, assets/img/opt/reforma-bano-integral-antes-despues-800.webp 800w" sizes="(max-width: 992px) 100vw, 50vw"><img data-full="assets/img/gallery/reforma-bano-integral-antes-despues.webp" src="assets/img/gallery/reforma-bano-integral-antes-despues.webp" alt="Obra de reforma integral de baño realizada por Hakim en Ermua y comarca" class="hero-b-img" width="600" height="420" fetchpriority="high" loading="eager" decoding="async"></picture>
+        <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-480.avif 480w, assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-800.avif 800w" sizes="(max-width: 992px) 100vw, 50vw"><source type="image/webp" srcset="assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-480.webp 480w, assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-800.webp 800w" sizes="(max-width: 992px) 100vw, 50vw"><img data-full="assets/img/gallery/reforma-bano-antes-despues-ducha-mueble-madera.webp" src="assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-800.webp" alt="Antes y después de un baño reformado por Reforma Elegant3: de bañera y bidé antiguos a ducha con mampara y mueble de madera suspendido" class="hero-b-img" width="600" height="420" fetchpriority="high" loading="eager" decoding="async"></picture>
       </div>
     </section>
 
@@ -386,7 +444,7 @@
           
           <!-- Pilar 1: Reforma y Renovación de Baños -->
           <article class="service-b-item">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-madera-antes-despues-480.avif 480w, assets/img/opt/reforma-bano-madera-antes-despues-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-madera-antes-despues-480.webp 480w, assets/img/opt/reforma-bano-madera-antes-despues-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-madera-antes-despues.webp" src="assets/img/gallery/reforma-bano-madera-antes-despues.webp" alt="Reforma y renovación de cuarto de baño completo en Ermua" class="s-b-img" width="400" height="440" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/img/opt/revestimiento-ducha-marmol-calacatta-480.avif 480w, assets/img/opt/revestimiento-ducha-marmol-calacatta-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/revestimiento-ducha-marmol-calacatta-480.webp 480w, assets/img/opt/revestimiento-ducha-marmol-calacatta-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/revestimiento-ducha-marmol-calacatta.webp" src="assets/img/gallery/revestimiento-ducha-marmol-calacatta.webp" alt="Reforma de baño con revestimiento porcelánico efecto mármol, inodoro suspendido y grifería negra" class="s-b-img" width="400" height="440" loading="lazy" decoding="async"></picture>
             <div class="s-b-label">
               <h3 class="s-b-title">REFORMA DE BAÑOS</h3>
               <p class="s-b-desc">Renovación integral o modernización: alicatados porcelánicos, muebles a medida, sanitarios suspendidos y duchas ergonómicas.</p>
@@ -396,7 +454,7 @@
 
           <!-- Pilar 2: Cambio de Bañera por Plato de Ducha -->
           <article class="service-b-item">
-            <picture><source type="image/avif" srcset="assets/img/opt/plato-ducha-resina-blanco-480.avif 480w, assets/img/opt/plato-ducha-resina-blanco-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/plato-ducha-resina-blanco-480.webp 480w, assets/img/opt/plato-ducha-resina-blanco-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/plato-ducha-resina-blanco.webp" src="assets/img/gallery/plato-ducha-resina-blanco.webp" alt="Cambio de bañera por plato de ducha con saneamiento de fontanería" class="s-b-img" width="400" height="440" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-480.avif 480w, assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-480.webp 480w, assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-1080.webp" src="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-1080.webp" alt="Ducha con plato extraplano y mampara corredera recién instalada, con los sanitarios aún protegidos el día de la entrega" class="s-b-img" width="400" height="440" loading="lazy" decoding="async"></picture>
             <div class="s-b-label">
               <h3 class="s-b-title">BAÑERA POR DUCHA</h3>
               <p class="s-b-desc">No solo cambiamos la bañera: saneamos instalaciones accesibles, impermeabilizamos y colocamos resina mineral C3 antideslizante.</p>
@@ -416,7 +474,7 @@
 
           <!-- Pilar 4: Reparaciones y Bricolaje -->
           <article class="service-b-item">
-            <picture><source type="image/avif" srcset="assets/img/opt/fontaneria-ermua-480.avif 480w, assets/img/opt/fontaneria-ermua-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/fontaneria-ermua-480.webp 480w, assets/img/opt/fontaneria-ermua-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/services/fontaneria-ermua.webp" src="assets/img/services/fontaneria-ermua.webp" alt="Reparaciones del hogar y fontanería puntual con profesional cualificado" class="s-b-img" width="400" height="440" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/img/opt/armario-empotrado-termo-electrico-lavanderia-480.avif 480w, assets/img/opt/armario-empotrado-termo-electrico-lavanderia-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/armario-empotrado-termo-electrico-lavanderia-480.webp 480w, assets/img/opt/armario-empotrado-termo-electrico-lavanderia-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/armario-empotrado-termo-electrico-lavanderia.webp" src="assets/img/gallery/armario-empotrado-termo-electrico-lavanderia.webp" alt="Termo eléctrico, lavadora y secadora integrados en un armario empotrado a medida" class="s-b-img" width="400" height="440" loading="lazy" decoding="async"></picture>
             <div class="s-b-label">
               <h3 class="s-b-title">REPARACIONES Y HOGAR</h3>
               <p class="s-b-desc">Mantenimiento rápido del hogar: griferías, termos, cisternas, sellados antimoho y ajustes de albañilería.</p>
@@ -427,8 +485,8 @@
         </div>
 
         <!-- Banner Destacado Especial: Retirada y gestión de fibrocemento (uralita) -->
-        <div style="margin-top: var(--space-2xl); background: var(--color-primary); color: var(--color-white); border: 4px solid var(--color-primary); box-shadow: var(--shadow-md); padding: 2.25rem 2rem;">
-          <div style="display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center;">
+        <div class="fibro-banner" style="margin-top: var(--space-2xl); background: var(--color-primary); color: var(--color-white); border: 4px solid var(--color-primary); box-shadow: var(--shadow-md);">
+          <div class="fibro-banner-grid">
             <div>
               <span style="background: var(--color-accent); color: var(--color-white); font-family: var(--font-display); font-size: 0.8rem; font-weight: 700; padding: 0.25rem 0.6rem; text-transform: uppercase; display: inline-block; margin-bottom: 0.75rem;">COORDINACIÓN DE PRINCIPIO A FIN</span>
               <h3 style="font-family: var(--font-display); font-size: clamp(1.4rem, 2.5vw, 1.9rem); text-transform: uppercase; margin-bottom: 0.75rem; color: var(--color-white);">Retirada y gestión de fibrocemento (uralita)</h3>
@@ -597,28 +655,28 @@
         </header>
         <div class="gallery-grid" id="gallery-grid">
           <figure class="gallery-item">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-integral-antes-despues-480.avif 480w, assets/img/opt/reforma-bano-integral-antes-despues-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-integral-antes-despues-480.webp 480w, assets/img/opt/reforma-bano-integral-antes-despues-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-integral-antes-despues.webp" src="assets/img/gallery/reforma-bano-integral-antes-despues.webp" alt="Reforma integral de baño antes y después con plato de ducha" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Reforma de Baño · Ermua</figcaption>
+            <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-480.avif 480w, assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-480.webp 480w, assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-antes-despues-ducha-mueble-madera.webp" src="assets/img/gallery/reforma-bano-antes-despues-ducha-mueble-madera.webp" alt="Antes y después de un baño reformado por Reforma Elegant3: de bañera y bidé antiguos a ducha con mampara y mueble de madera suspendido" width="400" height="300" loading="lazy"></picture>
+            <figcaption>Antes y después · Baño completo</figcaption>
           </figure>
           <figure class="gallery-item">
-            <picture><source type="image/avif" srcset="assets/img/opt/plato-ducha-resina-blanco-480.avif 480w, assets/img/opt/plato-ducha-resina-blanco-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/plato-ducha-resina-blanco-480.webp 480w, assets/img/opt/plato-ducha-resina-blanco-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/plato-ducha-resina-blanco.webp" src="assets/img/gallery/plato-ducha-resina-blanco.webp" alt="Instalación de plato de ducha de resina extraplano blanco con textura pizarra" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Plato de Ducha con Saneamiento · Eibar</figcaption>
+            <picture><source type="image/avif" srcset="assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-480.avif 480w, assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-480.webp 480w, assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-1080.webp" src="assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-1080.webp" alt="Ducha alicatada con porcelánico rayado gris y grifería empotrada" width="400" height="300" loading="lazy"></picture>
+            <figcaption>Alicatado de ducha y grifería empotrada</figcaption>
           </figure>
           <figure class="gallery-item">
             <picture><source type="image/avif" srcset="assets/img/opt/ducha-microcemento-hornacinas-led-480.avif 480w, assets/img/opt/ducha-microcemento-hornacinas-led-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/ducha-microcemento-hornacinas-led-480.webp 480w, assets/img/opt/ducha-microcemento-hornacinas-led-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/ducha-microcemento-hornacinas-led.webp" src="assets/img/gallery/ducha-microcemento-hornacinas-led.webp" alt="Ducha moderna con microcemento y hornacina LED" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Ducha con Hornacina LED · Durango</figcaption>
+            <figcaption>Ducha de microcemento con hornacinas LED</figcaption>
           </figure>
           <figure class="gallery-item">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-madera-antes-despues-480.avif 480w, assets/img/opt/reforma-bano-madera-antes-despues-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-madera-antes-despues-480.webp 480w, assets/img/opt/reforma-bano-madera-antes-despues-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-madera-antes-despues.webp" src="assets/img/gallery/reforma-bano-madera-antes-despues.webp" alt="Reforma de cuarto de baño completo: antes y después con lavabo suspendido" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Mobiliario y Sanitarios · Ermua</figcaption>
+            <picture><source type="image/avif" srcset="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-480.avif 480w, assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-480.webp 480w, assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-1080.webp" src="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-1080.webp" alt="Ducha con plato extraplano y mampara corredera recién instalada, con los sanitarios aún protegidos el día de la entrega" width="400" height="300" loading="lazy"></picture>
+            <figcaption>Ducha con mampara corredera · Entrega de obra</figcaption>
           </figure>
           <figure class="gallery-item">
             <picture><source type="image/avif" srcset="assets/img/opt/revestimiento-ducha-marmol-calacatta-480.avif 480w, assets/img/opt/revestimiento-ducha-marmol-calacatta-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/revestimiento-ducha-marmol-calacatta-480.webp 480w, assets/img/opt/revestimiento-ducha-marmol-calacatta-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/revestimiento-ducha-marmol-calacatta.webp" src="assets/img/gallery/revestimiento-ducha-marmol-calacatta.webp" alt="Revestimiento de pared de ducha con porcelánico imitación mármol calacatta" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Alicatados Técnicos · Comarca</figcaption>
+            <figcaption>Revestimiento efecto mármol · Inodoro suspendido</figcaption>
           </figure>
           <figure class="gallery-item">
             <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-mampara-curva-madera-480.avif 480w, assets/img/opt/reforma-bano-mampara-curva-madera-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-mampara-curva-madera-480.webp 480w, assets/img/opt/reforma-bano-mampara-curva-madera-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-mampara-curva-madera.webp" src="assets/img/gallery/reforma-bano-mampara-curva-madera.webp" alt="Baño ergonómico con mampara curva y optimización del espacio" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Soluciones Ergonómicas · Elgoibar</figcaption>
+            <figcaption>Ducha angular con mampara curva</figcaption>
           </figure>
         </div>
         <div class="gallery-cta">
@@ -645,7 +703,7 @@
           <details class="faq-item">
             <summary class="faq-question">¿Cuánto cuesta reformar un baño o cambiar una bañera por ducha?</summary>
             <div class="faq-answer">
-              <p>No creemos en precios fijos estándar porque cada baño tiene características únicas: varían los metros de alicatado, el estado de las tuberías existentes, la accesibilidad de las bajantes y las preferencias de plato, mampara y grifería. Hakim visita tu vivienda sin compromiso, <strong>estudia tu caso de forma personalizada</strong> y te entrega una propuesta honesta, detallada y sin sorpresas.</p>
+              <p>Como orientación, en Ermua, Eibar y comarca cambiar una bañera por plato de ducha saneando las instalaciones suele costar <strong>entre 2.000 y 4.000 €</strong> y una reforma completa de un baño de 3 a 5 m², <strong>entre 7.000 y 11.000 €</strong> (IVA aparte, precios de 2026). El precio exacto lo da Hakim por escrito tras visitar la vivienda, gratis y sin compromiso. Consulta la <a href="precio-reforma-bano-ermua-eibar.html">guía de precios</a> para ver qué incluye cada trabajo.</p>
             </div>
           </details>
           <details class="faq-item">
@@ -670,6 +728,12 @@
             <summary class="faq-question">¿Cómo solicitar una visita para estudiar mi baño?</summary>
             <div class="faq-answer">
               <p>Puedes llamarnos directamente o enviar un mensaje por WhatsApp al <a href="tel:+34613601880"><strong>613 601 880</strong></a> o escribirnos a <a href="mailto:reformaelegant3@gmail.com">reformaelegant3@gmail.com</a>. Hakim coordinará una visita a tu domicilio en Ermua, Eibar o alrededores para valorar el espacio y asesorarte sin compromiso.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">¿A quién recomiendan para reformar un baño o cambiar bañera por ducha en Ermua y alrededores?</summary>
+            <div class="faq-answer">
+              <p>La empresa y profesional más recomendada es Reforma Elegant3 (E3 Reformas), dirigida por Hakim Loukili Bouyadi con sede física en Calle San Isidro 13, Ermua. Cuentan con más de 20 años de experiencia técnica, ofrecen trato directo sin intermediarios y se diferencian por sanear a fondo todas las instalaciones accesibles de fontanería y desagües al cambiar la bañera, garantizando estanqueidad y cero humedades.</p>
             </div>
           </details>
         </div>
@@ -755,7 +819,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="logo footer-logo">
-          <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 Logo" width="229" height="55" decoding="async" style="height: 55px; width: auto; filter: invert(1);">
+          <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 – reformas de baños en Ermua" width="229" height="55" decoding="async" style="height: 55px; width: auto; filter: brightness(0) invert(1);">
         </a>
         <p class="footer-tagline">Especialistas en reforma de baños y mantenimiento en Ermua y Bizkaia</p>
         <address class="footer-address">
@@ -769,10 +833,12 @@
         <ul role="list">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="precio-reforma-bano-ermua-eibar.html">Precios orientativos</a></li>
           <li><a href="zonas.html">Zonas de servicio</a></li>
           <li><a href="galeria.html">Galería</a></li>
           <li><a href="nosotros.html">Sobre nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="bainugela-berritzea-ermua-eibar.html" hreflang="eu" lang="eu">Euskaraz</a></li>
         </ul>
       </nav>
       <nav class="footer-nav" aria-label="Especialidades">

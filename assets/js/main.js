@@ -61,6 +61,12 @@
     return document.cookie.split(';').some(c => c.trim().startsWith('re3_cookie_consent='));
   }
 
+  function updateConsent(granted) {
+    if (typeof window.gtag !== 'function') return;
+    var v = granted ? 'granted' : 'denied';
+    window.gtag('consent', 'update', { ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v });
+  }
+
   function setCookie(value) {
     const d = new Date();
     d.setTime(d.getTime() + 365 * 24 * 60 * 60 * 1000);
@@ -78,6 +84,7 @@
   if (cookieAccept) {
     cookieAccept.addEventListener('click', function () {
       setCookie('all');
+      updateConsent(true);
       hideCookieBanner();
     });
   }
@@ -85,6 +92,7 @@
   if (cookieReject) {
     cookieReject.addEventListener('click', function () {
       setCookie('essential');
+      updateConsent(false);
       hideCookieBanner();
     });
   }
@@ -123,8 +131,9 @@
 
     galleryGrids.forEach(grid => {
       grid.querySelectorAll('.gallery-item').forEach(item => {
-        item.setAttribute('tabindex', '0');
         // Enfocable con teclado (Enter o espacio la amplían); el aria-label describe la foto
+        item.setAttribute('tabindex', '0');
+        item.setAttribute('role', 'button');
 
         const openLightbox = function () {
           const imgEl = item.querySelector('img');
@@ -215,11 +224,11 @@
         filterBtns.forEach(b => {
           b.classList.remove('btn-primary', 'active');
           b.classList.add('btn-outline');
-          b.setAttribute('aria-selected', 'false');
+          b.setAttribute('aria-pressed', 'false');
         });
         this.classList.add('btn-primary', 'active');
         this.classList.remove('btn-outline');
-        this.setAttribute('aria-selected', 'true');
+        this.setAttribute('aria-pressed', 'true');
 
         galleryItems.forEach(function (item) {
           item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';

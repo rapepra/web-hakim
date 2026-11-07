@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14284B">
+  <script>
+    /* Google Consent Mode v2: todo denegado hasta que el usuario acepte (listo para GA4 / Google Ads / GTM) */
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500});
+    if (/(?:^|;\s*)re3_cookie_consent=all/.test(document.cookie)) {
+      gtag('consent', 'update', {ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted'});
+    }
+  </script>
   <title>Contacto y Presupuesto de Baño en Ermua | Reforma Elegant3</title>
   <meta name="description" content="Contacta con Hakim en E3 Reformas para valorar tu reforma de baño, cambio de bañera por ducha o reparaciones en Ermua, Eibar y comarca. Llama al 613 601 880.">
   <meta name="robots" content="index, follow">
@@ -11,7 +21,10 @@
   <meta property="og:description" content="Estudio personalizado de tu baño sin compromiso. Atención directa en Ermua, Eibar y alrededores. Teléfono: 613 601 880.">
   <meta property="og:url" content="https://reformaelegante.es/contacto.html">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://reformaelegante.es/assets/img/gallery/reforma-bano-integral-antes-despues.webp">
+  <meta property="og:image" content="https://reformaelegante.es/assets/img/og-reforma-elegant3-banos-ermua-eibar.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Reforma Elegant3: reformas de baños en Ermua, Eibar y Durango. Tu espacio, hecho realidad.">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="preload" href="assets/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -79,12 +92,13 @@
   <header class="site-header" id="site-header" role="banner">
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-label="E3 Reformas – Inicio">
-        <img src="assets/img/logo-horizontal.svg" alt="E3 Reformas Logo" width="208" height="50" decoding="async" style="height: 50px; width: auto;">
+        <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 – reformas de baños en Ermua" width="208" height="50" decoding="async" style="height: 50px; width: auto;">
       </a>
       <nav class="main-nav" role="navigation" aria-label="Navegación principal">
         <ul class="nav-list" role="list">
           <li><a href="index.html" class="nav-link">Inicio</a></li>
           <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="precio-reforma-bano-ermua-eibar.html" class="nav-link">Precios</a></li>
           <li><a href="zonas.html" class="nav-link">Zonas</a></li>
           <li><a href="galeria.html" class="nav-link">Galería</a></li>
           <li><a href="nosotros.html" class="nav-link">Sobre nosotros</a></li>
@@ -100,6 +114,7 @@
       <ul class="mobile-nav-list" role="list">
         <li><a href="index.html" class="mobile-nav-link">Inicio</a></li>
         <li><a href="servicios.html" class="mobile-nav-link">Servicios</a></li>
+        <li><a href="precio-reforma-bano-ermua-eibar.html" class="mobile-nav-link">Precios orientativos</a></li>
         <li><a href="zonas.html" class="mobile-nav-link">Zonas de Atención</a></li>
         <li><a href="galeria.html" class="mobile-nav-link">Galería</a></li>
         <li><a href="nosotros.html" class="mobile-nav-link">Sobre Nosotros</a></li>
@@ -198,7 +213,7 @@
                 </a>
               </div>
 
-              <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px dashed rgba(27,27,27,0.25); width: 100%;">
+              <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px dashed rgba(20, 40, 75, 0.25); width: 100%;">
                 <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: var(--color-text);">
                   <li style="display: flex; align-items: center; gap: 0.6rem;">
                     <span style="color: var(--color-accent); font-weight: bold; font-size: 1.1rem;">✓</span>
@@ -236,7 +251,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="logo footer-logo">
-          <img src="assets/img/logo-horizontal.svg" alt="E3 Reformas Logo" width="208" height="50" decoding="async" style="height: 50px; width: auto; filter: invert(1);">
+          <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 – reformas de baños en Ermua" width="208" height="50" decoding="async" style="height: 50px; width: auto; filter: brightness(0) invert(1);">
         </a>
         <p class="footer-tagline">Especialistas en reforma y renovación de baños en Ermua, Eibar y comarca.</p>
         <address class="footer-address">Calle San Isidro 13, 48260 Ermua (Bizkaia)<br><a href="tel:+34613601880">613 601 880</a> · <a href="mailto:reformaelegant3@gmail.com">reformaelegant3@gmail.com</a></address>
@@ -246,10 +261,12 @@
         <ul role="list">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="precio-reforma-bano-ermua-eibar.html">Precios orientativos</a></li>
           <li><a href="zonas.html">Zonas de atención</a></li>
           <li><a href="galeria.html">Galería</a></li>
           <li><a href="nosotros.html">Sobre nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="bainugela-berritzea-ermua-eibar.html" hreflang="eu" lang="eu">Euskaraz</a></li>
         </ul>
       </nav>
       <nav class="footer-nav" aria-label="Especialidades">

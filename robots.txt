@@ -9,6 +9,7 @@ Disallow: /aviso-legal.html
 Disallow: /privacidad.html
 Disallow: /cookies.html
 Disallow: /nuevas imagenes/
+Disallow: /imagenes /
 Disallow: /imagenes_seleccionadas/
 Disallow: /404.html
 

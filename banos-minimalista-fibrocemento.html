@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14284B">
+  <script>
+    /* Google Consent Mode v2: todo denegado hasta que el usuario acepte (listo para GA4 / Google Ads / GTM) */
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500});
+    if (/(?:^|;\s*)re3_cookie_consent=all/.test(document.cookie)) {
+      gtag('consent', 'update', {ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted'});
+    }
+  </script>
 
   <!-- SEO / SEM: intención transaccional local -->
   <title>Baño Minimalista y Retirada de Uralita en Ermua y Eibar</title>
@@ -59,11 +69,10 @@
         "E3 Reformas",
         "Reforma Elegant 3"
       ],
-      "url": "https://reformaelegante.es",
+      "description": "Empresa de reformas de baños de Ermua (Bizkaia) dirigida por Hakim Loukili Bouyadi, con más de 20 años de oficio: reforma de baños, cambio de bañera por plato de ducha saneando las instalaciones accesibles, retirada coordinada de bajantes de uralita (fibrocemento) con empresa autorizada RERA y reparaciones del hogar en Ermua, Eibar, Elgoibar, Durango y comarca.",
+      "url": "https://reformaelegante.es/",
       "telephone": "+34613601880",
       "email": "reformaelegant3@gmail.com",
-      "image": "https://reformaelegante.es/assets/img/banos-fibrocemento/og-bano-minimalista-retirada-uralita-ermua-eibar.jpg",
-      "priceRange": "€€",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Calle San Isidro 13",
@@ -77,17 +86,158 @@
         "latitude": 43.1878962,
         "longitude": -2.5020058
       },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ermua",
+          "sameAs": "https://www.wikidata.org/wiki/Q12257047"
+        },
+        {
+          "@type": "City",
+          "name": "Eibar",
+          "sameAs": "https://www.wikidata.org/wiki/Q496570"
+        },
+        {
+          "@type": "City",
+          "name": "Elgoibar",
+          "sameAs": "https://www.wikidata.org/wiki/Q933391"
+        },
+        {
+          "@type": "City",
+          "name": "Durango",
+          "sameAs": "https://www.wikidata.org/wiki/Q674251"
+        },
+        {
+          "@type": "City",
+          "name": "Mallabia"
+        },
+        {
+          "@type": "City",
+          "name": "Zaldibar"
+        },
+        {
+          "@type": "City",
+          "name": "Berriz"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Bizkaia"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Gipuzkoa"
+        }
+      ],
+      "knowsAbout": [
+        "Reforma y renovación de cuartos de baño",
+        "Cambio de bañera por plato de ducha",
+        "Saneamiento técnico de fontanería y bajantes",
+        "Retirada y gestión de bajantes de fibrocemento con amianto",
+        "Coordinación de desamiantado mediante empresa autorizada RERA",
+        "Platos de ducha de resina mineral antideslizantes Grado 3",
+        "Impermeabilización técnica estanca",
+        "Alicatados porcelánicos de precisión",
+        "Reparaciones y mantenimiento del hogar"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Especialidades en Baño, Fontanería y Gestión de Amianto",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reforma y renovación de baños",
+              "description": "Renovación integral o modernización ergonómica de cuartos de baño con alicatados porcelánicos, mobiliario técnico a medida, sanitarios suspendidos e iluminación eficiente."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cambio de bañera por plato de ducha con saneamiento",
+              "description": "Sustitución técnica de bañera por plato de resina mineral antideslizante Grado 3 saneando tuberías accesibles, tomas y bajantes para evitar humedades e impermeabilizando toda la zona."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Retirada y gestión de fibrocemento (uralita)",
+              "description": "Coordinación completa de principio a fin para retirada de amianto en reformas: preparación y picado previo, coordinación con empresa autorizada (RERA), desmontaje, gestión y transporte de residuos a vertedero homologado, y posterior reparación y reconstrucción de albañilería."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reparaciones y bricolaje del hogar",
+              "description": "Mantenimiento del hogar, fontanería puntual, sustitución de griferías, termos, cisternas y sellados de silicona profesional antimoho."
+            }
+          }
+        ]
+      },
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Efectivo, Transferencia bancaria",
+      "legalName": "Hakim Loukili Bouyadi",
       "founder": {
         "@type": "Person",
+        "@id": "https://reformaelegante.es/#hakim",
         "name": "Hakim Loukili Bouyadi",
-        "jobTitle": "Maestro Albañil y Fontanero Especialista en Baños"
+        "jobTitle": "Maestro albañil especializado en reformas de baños",
+        "worksFor": {
+          "@id": "https://reformaelegante.es/#business"
+        },
+        "description": "Titular de Reforma Elegant3. Más de 20 años de experiencia a pie de obra en baños, fontanería y albañilería en Ermua y comarca.",
+        "knowsAbout": [
+          "Reforma de baños",
+          "Cambio de bañera por plato de ducha",
+          "Alicatado",
+          "Fontanería",
+          "Retirada de fibrocemento (uralita)"
+        ]
       },
       "sameAs": [
         "https://maps.app.goo.gl/CJQQLEkvSXCNbEWc7",
         "https://www.google.com/maps?cid=9895189997779904122",
         "https://www.google.com/search?kgmid=/g/11zh252ys7"
       ],
-      "hasMap": "https://www.google.com/maps?cid=9895189997779904122"
+      "hasMap": "https://www.google.com/maps?cid=9895189997779904122",
+      "image": "https://reformaelegante.es/assets/img/og-reforma-elegant3-banos-ermua-eibar.jpg",
+      "logo": "https://reformaelegante.es/assets/img/logo.svg",
+      "slogan": "Tu espacio, hecho realidad. Funcional, sin perder elegancia.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34613601880",
+        "contactType": "customer service",
+        "areaServed": "ES",
+        "availableLanguage": [
+          "es"
+        ]
+      },
+      "knowsLanguage": "es",
+      "mainEntityOfPage": "https://reformaelegante.es/"
     },
     {
       "@type": "Service",
@@ -279,7 +429,7 @@
           "name": "¿Se puede reformar el baño si hay una bajante de uralita dentro de la pared?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. Es muy habitual en edificios de Ermua y Eibar construidos entre los años 60 y 90. Reforma Elegant3 abre la mocheta con cuidado, coordina la retirada del fibrocemento con una empresa autorizada inscrita en el RERA, instala una bajante nueva de PVC y continúa con la reforma del baño hasta dejarlo terminado."
+            "text": "Sí. Es muy habitual en edificios de Ermua y Eibar construidos entre los años 60 y 90. Abrimos la mocheta con cuidado, coordinamos la retirada del fibrocemento con una empresa autorizada inscrita en el RERA, instalamos una bajante nueva de PVC y continuamos con la reforma del baño hasta dejarlo terminado."
           }
         },
         {
@@ -287,7 +437,7 @@
           "name": "¿Quién retira el fibrocemento con amianto?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "La retirada la ejecuta siempre una empresa inscrita en el Registro de Empresas con Riesgo de Amianto (RERA), con plan de trabajo aprobado por la autoridad laboral según el Real Decreto 396/2006. Reforma Elegant3 se encarga de coordinarla y de todos los trabajos de albañilería y fontanería de antes y después."
+            "text": "La retirada la ejecuta siempre una empresa inscrita en el Registro de Empresas con Riesgo de Amianto (RERA), con plan de trabajo aprobado por la autoridad laboral según el Real Decreto 396/2006. Nosotros la coordinamos y nos encargamos de toda la albañilería y fontanería de antes y después."
           }
         },
         {
@@ -319,7 +469,7 @@
           "name": "¿Cuánto cuesta y cuánto dura una reforma de baño con retirada de uralita?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Depende de los metros del baño, del acabado elegido y del tramo de bajante afectado. La retirada de amianto requiere además un plan de trabajo aprobado antes de empezar, lo que añade plazo administrativo. Hakim visita la vivienda sin compromiso y entrega una propuesta por escrito con precio y calendario."
+            "text": "Depende de los metros del baño, del acabado elegido y del tramo de bajante afectado. La retirada de amianto requiere además un plan de trabajo aprobado antes de empezar, lo que añade plazo administrativo. Hakim visita la vivienda sin compromiso y entrega una propuesta por escrito con precio y calendario. Como referencia, la retirada de la bajante de uralita con empresa RERA y la reconstrucción de la pared suelen añadir entre 1.500 y 3.500 € (IVA aparte) y de 1 a 3 semanas de trámites. Consulta la guía de precios."
           }
         }
       ]
@@ -334,12 +484,13 @@
   <header class="site-header" id="site-header" role="banner">
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-label="Reforma Elegant3 – Inicio">
-        <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 Logo" width="229" height="55" decoding="async" style="height: 55px; width: auto;">
+        <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 – reformas de baños en Ermua" width="229" height="55" decoding="async" style="height: 55px; width: auto;">
       </a>
       <nav class="main-nav" role="navigation" aria-label="Navegación principal">
         <ul class="nav-list" role="list">
           <li><a href="index.html" class="nav-link">Inicio</a></li>
           <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+          <li><a href="precio-reforma-bano-ermua-eibar.html" class="nav-link">Precios</a></li>
           <li><a href="zonas.html" class="nav-link">Zonas</a></li>
           <li><a href="galeria.html" class="nav-link">Galería</a></li>
           <li><a href="nosotros.html" class="nav-link">Sobre nosotros</a></li>
@@ -357,6 +508,7 @@
       <ul class="mobile-nav-list" role="list">
         <li><a href="index.html" class="mobile-nav-link">Inicio</a></li>
         <li><a href="servicios.html" class="mobile-nav-link">Servicios</a></li>
+        <li><a href="precio-reforma-bano-ermua-eibar.html" class="mobile-nav-link">Precios orientativos</a></li>
         <li><a href="zonas.html" class="mobile-nav-link">Zonas de Servicio</a></li>
         <li><a href="galeria.html" class="mobile-nav-link">Galería</a></li>
         <li><a href="nosotros.html" class="mobile-nav-link">Sobre Nosotros</a></li>
@@ -457,34 +609,34 @@
             <desc id="diag-desc">A la izquierda, la mocheta original con la bajante de fibrocemento dentro del tabique de ladrillo. A la derecha, la misma mocheta con bajante nueva de PVC, cerrada y revestida con porcelánico de gran formato.</desc>
             <defs>
               <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                <line x1="0" y1="0" x2="0" y2="8" stroke="#D14924" stroke-width="3"/>
+                <line x1="0" y1="0" x2="0" y2="8" stroke="#446838" stroke-width="3"/>
               </pattern>
               <pattern id="brick" width="24" height="12" patternUnits="userSpaceOnUse">
                 <rect width="24" height="12" fill="#E8E8E8"/>
                 <path d="M0 0H24M0 6H24M12 0V6M0 6V12M24 6V12" stroke="#8E979C" stroke-width="1" fill="none"/>
               </pattern>
             </defs>
-            <g font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#1B1B1B">
+            <g font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#14284B">
               <text x="150" y="24" text-anchor="middle" font-family="Oswald, sans-serif" font-size="18" font-weight="700">ANTES</text>
-              <text x="450" y="24" text-anchor="middle" font-family="Oswald, sans-serif" font-size="18" font-weight="700" fill="#D14924">DESPUÉS</text>
-              <line x1="300" y1="10" x2="300" y2="370" stroke="#1B1B1B" stroke-width="2" stroke-dasharray="6 6"/>
+              <text x="450" y="24" text-anchor="middle" font-family="Oswald, sans-serif" font-size="18" font-weight="700" fill="#446838">DESPUÉS</text>
+              <line x1="300" y1="10" x2="300" y2="370" stroke="#14284B" stroke-width="2" stroke-dasharray="6 6"/>
 
               <!-- Antes -->
-              <rect x="40" y="40" width="220" height="250" fill="url(#brick)" stroke="#1B1B1B" stroke-width="3"/>
-              <rect x="125" y="40" width="50" height="250" fill="url(#hatch)" stroke="#1B1B1B" stroke-width="2"/>
-              <rect x="40" y="40" width="10" height="250" fill="#F4F4F0" stroke="#1B1B1B" stroke-width="1"/>
+              <rect x="40" y="40" width="220" height="250" fill="url(#brick)" stroke="#14284B" stroke-width="3"/>
+              <rect x="125" y="40" width="50" height="250" fill="url(#hatch)" stroke="#14284B" stroke-width="2"/>
+              <rect x="40" y="40" width="10" height="250" fill="#F7F5EF" stroke="#14284B" stroke-width="1"/>
               <text x="150" y="315" text-anchor="middle" font-weight="700">Bajante de fibrocemento</text>
-              <text x="150" y="333" text-anchor="middle" fill="#596166">con amianto, oculta en la mocheta</text>
-              <text x="150" y="351" text-anchor="middle" fill="#D14924" font-weight="700">No se corta ni se perfora</text>
+              <text x="150" y="333" text-anchor="middle" fill="#55606B">con amianto, oculta en la mocheta</text>
+              <text x="150" y="351" text-anchor="middle" fill="#446838" font-weight="700">No se corta ni se perfora</text>
 
               <!-- Después -->
-              <rect x="340" y="40" width="220" height="250" fill="url(#brick)" stroke="#1B1B1B" stroke-width="3"/>
-              <rect x="430" y="40" width="40" height="250" fill="#1B1B1B"/>
-              <rect x="340" y="40" width="14" height="250" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="2"/>
+              <rect x="340" y="40" width="220" height="250" fill="url(#brick)" stroke="#14284B" stroke-width="3"/>
+              <rect x="430" y="40" width="40" height="250" fill="#14284B"/>
+              <rect x="340" y="40" width="14" height="250" fill="#FFFFFF" stroke="#14284B" stroke-width="2"/>
               <path d="M354 105H560M354 170H560M354 235H560" stroke="#8E979C" stroke-width="1"/>
               <text x="450" y="315" text-anchor="middle" font-weight="700">Bajante nueva de PVC</text>
-              <text x="450" y="333" text-anchor="middle" fill="#596166">mocheta cerrada y revestida</text>
-              <text x="450" y="351" text-anchor="middle" fill="#596166">en gran formato (pocas juntas)</text>
+              <text x="450" y="333" text-anchor="middle" fill="#55606B">mocheta cerrada y revestida</text>
+              <text x="450" y="351" text-anchor="middle" fill="#55606B">en gran formato (pocas juntas)</text>
             </g>
           </svg>
           <figcaption>Esquema de la intervención en la mocheta del baño. La retirada del tramo de fibrocemento la ejecuta siempre una empresa autorizada RERA.</figcaption>
@@ -875,7 +1027,7 @@
           </details>
           <details class="faq-item">
             <summary class="faq-question">¿Cuánto cuesta y cuánto dura una reforma de baño con retirada de uralita?</summary>
-            <div class="faq-answer"><p>Depende de los metros del baño, del acabado elegido y del tramo de bajante afectado. La retirada de amianto requiere además un plan de trabajo aprobado antes de empezar, lo que añade plazo administrativo. Hakim visita la vivienda sin compromiso y entrega una <strong>propuesta por escrito con precio y calendario</strong>.</p></div>
+            <div class="faq-answer"><p>Depende de los metros del baño, del acabado elegido y del tramo de bajante afectado. La retirada de amianto requiere además un plan de trabajo aprobado antes de empezar, lo que añade plazo administrativo. Hakim visita la vivienda sin compromiso y entrega una propuesta por escrito con precio y calendario. Como referencia, la retirada de la bajante de uralita con empresa RERA y la reconstrucción de la pared suelen añadir entre 1.500 y 3.500 € (IVA aparte) y de 1 a 3 semanas de trámites. Consulta la <a href="precio-reforma-bano-ermua-eibar.html">guía de precios</a>.</p></div>
           </details>
         </div>
       </div>
@@ -909,7 +1061,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="logo footer-logo">
-          <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 Logo" width="229" height="55" decoding="async" loading="lazy" style="height: 55px; width: auto; filter: invert(1);">
+          <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 – reformas de baños en Ermua" width="229" height="55" decoding="async" loading="lazy" style="height: 55px; width: auto; filter: brightness(0) invert(1);">
         </a>
         <p class="footer-tagline">Especialistas en reforma de baños y mantenimiento en Ermua y Bizkaia</p>
         <address class="footer-address">
@@ -923,10 +1075,12 @@
         <ul role="list">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="precio-reforma-bano-ermua-eibar.html">Precios orientativos</a></li>
           <li><a href="zonas.html">Zonas de servicio</a></li>
           <li><a href="galeria.html">Galería</a></li>
           <li><a href="nosotros.html">Sobre nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="bainugela-berritzea-ermua-eibar.html" hreflang="eu" lang="eu">Euskaraz</a></li>
         </ul>
       </nav>
       <nav class="footer-nav" aria-label="Especialidades">

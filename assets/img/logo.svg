@@ -2,12 +2,12 @@
   <defs>
     <!-- Geometric font for brutalist look -->
     <style>
-      .roof { fill: none; stroke: #1A1A1A; stroke-width: 8; stroke-linecap: square; stroke-linejoin: miter; }
-      .hexagon { fill: none; stroke: #1A1A1A; stroke-width: 8; stroke-linejoin: miter; }
-      .e3 { fill: #1A1A1A; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 70px; letter-spacing: -4px; }
-      .title { fill: #1A1A1A; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 46px; letter-spacing: 1px; }
-      .subtitle { fill: #1A1A1A; font-family: 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 2px; }
-      .subsubtitle { fill: #4a4a4a; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 3px; }
+      .roof { fill: none; stroke: #14284B; stroke-width: 8; stroke-linecap: square; stroke-linejoin: miter; }
+      .hexagon { fill: none; stroke: #14284B; stroke-width: 8; stroke-linejoin: miter; }
+      .e3 { fill: #446838; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 70px; letter-spacing: -4px; }
+      .title { fill: #14284B; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 46px; letter-spacing: 1px; }
+      .subtitle { fill: #14284B; font-family: 'IBM Plex Sans', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 2px; }
+      .subsubtitle { fill: #55606B; font-family: 'IBM Plex Sans', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 3px; }
     </style>
   </defs>
 

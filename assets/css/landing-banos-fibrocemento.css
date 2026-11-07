@@ -96,7 +96,7 @@
 /* ---- TRUST STRIP ---- */
 .lb-trust { background: var(--color-primary); color: var(--color-white); }
 .lb-trust ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; }
-.lb-trust li { padding: 1rem 0.75rem; border: 1px solid #333; font-size: 0.8rem; line-height: 1.35; }
+.lb-trust li { padding: 1rem 0.75rem; border: 1px solid rgba(255,255,255,.14); font-size: 0.8rem; line-height: 1.35; }
 .lb-trust strong { display: block; font-family: var(--font-display); font-size: 1.25rem; color: var(--color-accent-light); }
 
 /* ---- PROBLEMA / AGITACIÓN ---- */
@@ -151,7 +151,7 @@
 
 /* ---- GARANTÍAS ---- */
 .lb-guarantees { list-style: none; display: grid; gap: var(--space-md); margin-top: var(--space-xl); }
-.lb-guarantees li { border: 2px solid #444; padding: var(--space-lg); }
+.lb-guarantees li { border: 2px solid rgba(255,255,255,.2); padding: var(--space-lg); }
 .lb-guarantees strong { display: block; font-family: var(--font-display); text-transform: uppercase; font-size: 1.1rem; margin-bottom: 0.35rem; color: var(--color-white); }
 .lb-guarantees p { color: #cbd5e1; font-size: 0.92rem; line-height: 1.55; }
 

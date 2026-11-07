@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14284B">
+  <script>
+    /* Google Consent Mode v2: todo denegado hasta que el usuario acepte (listo para GA4 / Google Ads / GTM) */
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500});
+    if (/(?:^|;\s*)re3_cookie_consent=all/.test(document.cookie)) {
+      gtag('consent', 'update', {ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted'});
+    }
+  </script>
   <title>Sobre Hakim Loukili | Reforma Elegant3 en Ermua</title>
   <meta name="description" content="Hakim Loukili Bouyadi, maestro albañil con más de 20 años de oficio. Reformas de baños y saneamiento de instalaciones en Ermua, Eibar y comarca.">
   <meta name="keywords" content="Hakim Loukili, E3 reformas Ermua, reforma banos Ermua, especialista banos Eibar, fontaneria Ermua, reformas comarca Bizkaia">
@@ -13,7 +23,10 @@
   <meta property="og:description" content="Más de 20 años de experiencia en renovación de cuartos de baño, saneamiento y reparaciones del hogar en Ermua y alrededores.">
   <meta property="og:url" content="https://reformaelegante.es/nosotros.html">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://reformaelegante.es/assets/img/gallery/reforma-bano-integral-antes-despues.webp">
+  <meta property="og:image" content="https://reformaelegante.es/assets/img/og-reforma-elegant3-banos-ermua-eibar.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Reforma Elegant3: reformas de baños en Ermua, Eibar y Durango. Tu espacio, hecho realidad.">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="preload" href="assets/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -42,11 +55,17 @@
       ]
     },
     {
-      "@type": "LocalBusiness",
+      "@type": [
+        "HomeAndConstructionBusiness",
+        "Plumber"
+      ],
       "@id": "https://reformaelegante.es/#business",
-      "name": "E3 Reformas (Reforma Elegant3)",
-      "legalName": "Hakim Loukili Bouyadi",
-      "description": "Especialistas en renovación de baños, cambio de bañera por ducha con saneamiento de instalaciones y reparaciones del hogar en Ermua, Eibar y comarca.",
+      "name": "Reforma Elegant3",
+      "alternateName": [
+        "E3 Reformas",
+        "Reforma Elegant 3"
+      ],
+      "description": "Empresa de reformas de baños de Ermua (Bizkaia) dirigida por Hakim Loukili Bouyadi, con más de 20 años de oficio: reforma de baños, cambio de bañera por plato de ducha saneando las instalaciones accesibles, retirada coordinada de bajantes de uralita (fibrocemento) con empresa autorizada RERA y reparaciones del hogar en Ermua, Eibar, Elgoibar, Durango y comarca.",
       "url": "https://reformaelegante.es/",
       "telephone": "+34613601880",
       "email": "reformaelegant3@gmail.com",
@@ -54,8 +73,8 @@
         "@type": "PostalAddress",
         "streetAddress": "Calle San Isidro 13",
         "addressLocality": "Ermua",
-        "postalCode": "48260",
         "addressRegion": "Bizkaia",
+        "postalCode": "48260",
         "addressCountry": "ES"
       },
       "geo": {
@@ -63,29 +82,174 @@
         "latitude": 43.1878962,
         "longitude": -2.5020058
       },
-      "areaServed": [
-        "Ermua",
-        "Eibar",
-        "Elgoibar",
-        "Mallabia",
-        "Zaldibar",
-        "Berriz",
-        "Durango",
-        "Bizkaia",
-        "Gipuzkoa"
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
       ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ermua",
+          "sameAs": "https://www.wikidata.org/wiki/Q12257047"
+        },
+        {
+          "@type": "City",
+          "name": "Eibar",
+          "sameAs": "https://www.wikidata.org/wiki/Q496570"
+        },
+        {
+          "@type": "City",
+          "name": "Elgoibar",
+          "sameAs": "https://www.wikidata.org/wiki/Q933391"
+        },
+        {
+          "@type": "City",
+          "name": "Durango",
+          "sameAs": "https://www.wikidata.org/wiki/Q674251"
+        },
+        {
+          "@type": "City",
+          "name": "Mallabia"
+        },
+        {
+          "@type": "City",
+          "name": "Zaldibar"
+        },
+        {
+          "@type": "City",
+          "name": "Berriz"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Bizkaia"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Gipuzkoa"
+        }
+      ],
+      "knowsAbout": [
+        "Reforma y renovación de cuartos de baño",
+        "Cambio de bañera por plato de ducha",
+        "Saneamiento técnico de fontanería y bajantes",
+        "Retirada y gestión de bajantes de fibrocemento con amianto",
+        "Coordinación de desamiantado mediante empresa autorizada RERA",
+        "Platos de ducha de resina mineral antideslizantes Grado 3",
+        "Impermeabilización técnica estanca",
+        "Alicatados porcelánicos de precisión",
+        "Reparaciones y mantenimiento del hogar"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Especialidades en Baño, Fontanería y Gestión de Amianto",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reforma y renovación de baños",
+              "description": "Renovación integral o modernización ergonómica de cuartos de baño con alicatados porcelánicos, mobiliario técnico a medida, sanitarios suspendidos e iluminación eficiente."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cambio de bañera por plato de ducha con saneamiento",
+              "description": "Sustitución técnica de bañera por plato de resina mineral antideslizante Grado 3 saneando tuberías accesibles, tomas y bajantes para evitar humedades e impermeabilizando toda la zona."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Retirada y gestión de fibrocemento (uralita)",
+              "description": "Coordinación completa de principio a fin para retirada de amianto en reformas: preparación y picado previo, coordinación con empresa autorizada (RERA), desmontaje, gestión y transporte de residuos a vertedero homologado, y posterior reparación y reconstrucción de albañilería."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reparaciones y bricolaje del hogar",
+              "description": "Mantenimiento del hogar, fontanería puntual, sustitución de griferías, termos, cisternas y sellados de silicona profesional antimoho."
+            }
+          }
+        ]
+      },
+      "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Efectivo, Transferencia bancaria",
+      "legalName": "Hakim Loukili Bouyadi",
       "founder": {
         "@type": "Person",
+        "@id": "https://reformaelegante.es/#hakim",
         "name": "Hakim Loukili Bouyadi",
-        "jobTitle": "Fundador y Maestro Especialista en Reformas de Baño",
-        "description": "Profesional a pie de obra con más de 20 años de experiencia técnica."
+        "jobTitle": "Maestro albañil especializado en reformas de baños",
+        "worksFor": {
+          "@id": "https://reformaelegante.es/#business"
+        },
+        "description": "Titular de Reforma Elegant3. Más de 20 años de experiencia a pie de obra en baños, fontanería y albañilería en Ermua y comarca.",
+        "knowsAbout": [
+          "Reforma de baños",
+          "Cambio de bañera por plato de ducha",
+          "Alicatado",
+          "Fontanería",
+          "Retirada de fibrocemento (uralita)"
+        ]
       },
       "sameAs": [
         "https://maps.app.goo.gl/CJQQLEkvSXCNbEWc7",
         "https://www.google.com/maps?cid=9895189997779904122",
         "https://www.google.com/search?kgmid=/g/11zh252ys7"
       ],
-      "hasMap": "https://www.google.com/maps?cid=9895189997779904122"
+      "hasMap": "https://www.google.com/maps?cid=9895189997779904122",
+      "image": "https://reformaelegante.es/assets/img/og-reforma-elegant3-banos-ermua-eibar.jpg",
+      "logo": "https://reformaelegante.es/assets/img/logo.svg",
+      "slogan": "Tu espacio, hecho realidad. Funcional, sin perder elegancia.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34613601880",
+        "contactType": "customer service",
+        "areaServed": "ES",
+        "availableLanguage": [
+          "es"
+        ]
+      },
+      "knowsLanguage": "es",
+      "mainEntityOfPage": "https://reformaelegante.es/"
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://reformaelegante.es/nosotros.html#webpage",
+      "url": "https://reformaelegante.es/nosotros.html",
+      "name": "Sobre Reforma Elegant3 y Hakim Loukili Bouyadi",
+      "isPartOf": {
+        "@id": "https://reformaelegante.es/#website"
+      },
+      "about": {
+        "@id": "https://reformaelegante.es/#business"
+      },
+      "mainEntity": {
+        "@id": "https://reformaelegante.es/#hakim"
+      },
+      "inLanguage": "es"
     }
   ]
 }
@@ -97,12 +261,13 @@
   <header class="site-header" id="site-header" role="banner">
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-label="E3 Reformas – Inicio">
-        <img src="assets/img/logo-horizontal.svg" alt="E3 Reformas Logo" width="208" height="50" decoding="async" style="height: 50px; width: auto;">
+        <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 – reformas de baños en Ermua" width="208" height="50" decoding="async" style="height: 50px; width: auto;">
       </a>
       <nav class="main-nav" role="navigation" aria-label="Navegación principal">
         <ul class="nav-list" role="list">
           <li><a href="index.html" class="nav-link">Inicio</a></li>
           <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="precio-reforma-bano-ermua-eibar.html" class="nav-link">Precios</a></li>
           <li><a href="zonas.html" class="nav-link">Zonas</a></li>
           <li><a href="galeria.html" class="nav-link">Galería</a></li>
           <li><a href="nosotros.html" class="nav-link active">Sobre nosotros</a></li>
@@ -118,6 +283,7 @@
       <ul class="mobile-nav-list" role="list">
         <li><a href="index.html" class="mobile-nav-link">Inicio</a></li>
         <li><a href="servicios.html" class="mobile-nav-link">Servicios</a></li>
+        <li><a href="precio-reforma-bano-ermua-eibar.html" class="mobile-nav-link">Precios orientativos</a></li>
         <li><a href="zonas.html" class="mobile-nav-link">Zonas de Atención</a></li>
         <li><a href="galeria.html" class="mobile-nav-link">Galería</a></li>
         <li><a href="nosotros.html" class="mobile-nav-link">Sobre Nosotros</a></li>
@@ -201,7 +367,7 @@
           <div class="nosotros-image-card">
             <div class="blueprint-crosshair top-left"></div>
             <div class="blueprint-crosshair bottom-right"></div>
-            <picture><source type="image/avif" srcset="assets/img/opt/obra-albanileria-alicatado-proceso-480.avif 480w, assets/img/opt/obra-albanileria-alicatado-proceso-800.avif 800w" sizes="(max-width: 768px) 100vw, 600px"><source type="image/webp" srcset="assets/img/opt/obra-albanileria-alicatado-proceso-480.webp 480w, assets/img/opt/obra-albanileria-alicatado-proceso-800.webp 800w" sizes="(max-width: 768px) 100vw, 600px"><img data-full="assets/img/gallery/obra-albanileria-alicatado-proceso.webp" src="assets/img/gallery/obra-albanileria-alicatado-proceso.webp" alt="Hakim ejecutando trabajos de albañilería técnica y alicatado a plomo en Ermua" width="600" height="450" loading="lazy" decoding="async"></picture>
+            <picture><source type="image/avif" srcset="assets/img/opt/obra-albanileria-alicatado-proceso-480.avif 480w, assets/img/opt/obra-albanileria-alicatado-proceso-800.avif 800w" sizes="(max-width: 768px) 100vw, 600px"><source type="image/webp" srcset="assets/img/opt/obra-albanileria-alicatado-proceso-480.webp 480w, assets/img/opt/obra-albanileria-alicatado-proceso-800.webp 800w" sizes="(max-width: 768px) 100vw, 600px"><img data-full="assets/img/gallery/obra-albanileria-alicatado-proceso.webp" src="assets/img/gallery/obra-albanileria-alicatado-proceso.webp" alt="Baño en obra: alicatado a plomo con sistema de nivelación de piezas, trabajo de Hakim" width="600" height="450" loading="lazy" decoding="async"></picture>
             <div class="nosotros-exp-tag">
               <span class="exp-number">+20</span>
               <div class="exp-label">
@@ -268,7 +434,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="logo footer-logo">
-          <img src="assets/img/logo-horizontal.svg" alt="E3 Reformas Logo" width="208" height="50" decoding="async" style="height: 50px; width: auto; filter: invert(1);">
+          <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 – reformas de baños en Ermua" width="208" height="50" decoding="async" style="height: 50px; width: auto; filter: brightness(0) invert(1);">
         </a>
         <p class="footer-tagline">Especialistas en reforma y renovación de baños en Ermua, Eibar y comarca.</p>
         <address class="footer-address">Calle San Isidro 13, 48260 Ermua (Bizkaia)<br><a href="tel:+34613601880">613 601 880</a> · <a href="mailto:reformaelegant3@gmail.com">reformaelegant3@gmail.com</a></address>
@@ -278,10 +444,12 @@
         <ul role="list">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="precio-reforma-bano-ermua-eibar.html">Precios orientativos</a></li>
           <li><a href="zonas.html">Zonas de atención</a></li>
           <li><a href="galeria.html">Galería</a></li>
           <li><a href="nosotros.html">Sobre nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="bainugela-berritzea-ermua-eibar.html" hreflang="eu" lang="eu">Euskaraz</a></li>
         </ul>
       </nav>
       <nav class="footer-nav" aria-label="Especialidades">

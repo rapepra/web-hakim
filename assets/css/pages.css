@@ -186,7 +186,7 @@
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(13, 13, 13, 0.94);
+  background: rgba(11, 26, 51, 0.94);
   z-index: 9000;
   align-items: center;
   justify-content: center;
@@ -530,3 +530,55 @@
 }
 
 
+
+/* Galería: filtros */
+.gallery-filters { display: flex; gap: .5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem; }
+.gallery-filters .btn { min-height: 44px; }
+.gallery-note { margin-top: 2rem; text-align: center; color: var(--color-text-muted); }
+.gallery-note a { color: var(--color-accent-dark); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+/* =====================================================
+   GUÍA DE PRECIOS / PÁGINAS INFORMATIVAS
+   ===================================================== */
+.price-wrap { max-width: 1000px; }
+.answer-box { background: var(--color-white); border: 4px solid var(--color-primary); box-shadow: var(--shadow-md); padding: 1.5rem 1.25rem; margin-bottom: 3rem; }
+.answer-box-label { display: inline-block; background: var(--color-accent); color: var(--color-white); font-family: var(--font-display); font-weight: 700; font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; padding: .25rem .6rem; margin-bottom: .75rem; }
+.answer-box p { font-size: 1.08rem; line-height: 1.7; margin: 0; }
+.price-h2 { text-align: left; margin-bottom: .75rem; }
+.price-note, .price-related, .price-updated { color: var(--color-text-muted); line-height: 1.7; }
+.price-note { margin-bottom: 1.25rem; }
+.price-related { margin-top: 1.5rem; }
+.price-related a { color: var(--color-accent-dark); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.price-updated { text-align: center; margin-top: 2rem; font-size: .9rem; }
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 4px solid var(--color-primary); box-shadow: var(--shadow-sm); margin-bottom: 3rem; background: var(--color-white); }
+.table-scroll:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+.price-table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: .95rem; }
+.price-table th, .price-table td { padding: .9rem 1rem; text-align: left; vertical-align: top; border-bottom: 2px solid var(--color-bg-alt); line-height: 1.55; }
+.price-table thead th { background: var(--color-primary); color: var(--color-white); font-family: var(--font-display); text-transform: uppercase; letter-spacing: .03em; font-size: .85rem; }
+.price-table tbody th { font-family: var(--font-display); font-size: 1rem; color: var(--color-primary); min-width: 150px; }
+.price-table .price-cell { font-weight: 700; color: var(--color-accent-dark); white-space: nowrap; }
+.price-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 3rem; }
+@media (min-width: 860px) { .price-grid { grid-template-columns: 1fr 1fr; } }
+.price-card { background: var(--color-white); border: 4px solid var(--color-primary); padding: 1.5rem 1.25rem; }
+.price-card h2 { font-family: var(--font-display); font-size: 1.3rem; text-transform: uppercase; margin-bottom: 1rem; color: var(--color-primary); }
+.check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .8rem; }
+.check-list li { position: relative; padding-left: 1.6rem; line-height: 1.6; }
+.check-list li::before { content: "+"; position: absolute; left: 0; top: 0; font-family: var(--font-display); font-weight: 700; color: var(--color-accent); }
+.steps-list { counter-reset: step; list-style: none; padding: 0; margin: 0 0 2rem; display: grid; gap: 1rem; }
+.steps-list li { counter-increment: step; position: relative; padding: 1rem 1rem 1rem 3.5rem; background: var(--color-white); border: 3px solid var(--color-primary); line-height: 1.6; }
+.steps-list li::before { content: counter(step); position: absolute; left: 0; top: 0; bottom: 0; width: 2.5rem; display: flex; align-items: center; justify-content: center; background: var(--color-primary); color: var(--color-white); font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; }
+.price-ctas { display: flex; flex-wrap: wrap; gap: 1rem; }
+@media (max-width: 480px) { .price-ctas .btn { width: 100%; justify-content: center; } }
+.lang-note { background: var(--color-bg-alt); border-left: 6px solid var(--color-accent); padding: 1rem 1.25rem; margin: 2rem 0; line-height: 1.6; }
+/* Tabla de precios: en móvil cada fila pasa a ser una ficha (sin scroll lateral) */
+@media (max-width: 720px) {
+  .table-scroll { overflow: visible; border: 0; box-shadow: none; background: transparent; }
+  .price-table { min-width: 0; }
+  .price-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .price-table, .price-table tbody, .price-table tr, .price-table th, .price-table td { display: block; width: 100%; }
+  .price-table tr { background: var(--color-white); border: 4px solid var(--color-primary); box-shadow: var(--shadow-sm); margin-bottom: 1.25rem; }
+  .price-table tbody th { background: var(--color-primary); color: var(--color-white); }
+  .price-table td { border-bottom: 1px solid var(--color-bg-alt); }
+  .price-table td::before { content: attr(data-label); display: block; font-family: var(--font-display); font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: .2rem; }
+  .price-table .price-cell { font-size: 1.15rem; white-space: normal; }
+}

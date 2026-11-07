@@ -3,15 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14284B">
+  <script>
+    /* Google Consent Mode v2: todo denegado hasta que el usuario acepte (listo para GA4 / Google Ads / GTM) */
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500});
+    if (/(?:^|;\s*)re3_cookie_consent=all/.test(document.cookie)) {
+      gtag('consent', 'update', {ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted'});
+    }
+  </script>
   <title>Galería de Reformas en Ermua y Bizkaia | Reforma Elegant3</title>
-  <meta name="description" content="Galería de trabajos realizados por Reforma Elegant3: reformas de baños, cocinas, albañilería, pladur y suelos en Ermua, Eibar, Durango y Bizkaia.">
+  <meta name="description" content="Fotos reales de obras de Reforma Elegant3: reformas de baños, duchas, retirada de bajantes de uralita paso a paso, cocinas y albañilería en Ermua y comarca.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://reformaelegante.es/galeria.html">
   <meta property="og:title" content="Galería de Reformas | Reforma Elegant3 – Bizkaia">
   <meta property="og:description" content="Fotos de reformas realizadas en Ermua y comarca. Baños, cocinas, albañilería y más.">
   <meta property="og:url" content="https://reformaelegante.es/galeria.html">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://reformaelegante.es/assets/img/gallery/reforma-bano-integral-antes-despues.webp">
+  <meta property="og:image" content="https://reformaelegante.es/assets/img/og-reforma-elegant3-banos-ermua-eibar.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Reforma Elegant3: reformas de baños en Ermua, Eibar y Durango. Tu espacio, hecho realidad.">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="preload" href="assets/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -40,16 +53,348 @@
       ]
     },
     {
-      "@type": "CollectionPage",
+      "@type": [
+        "CollectionPage",
+        "ImageGallery"
+      ],
       "@id": "https://reformaelegante.es/galeria.html#webpage",
       "url": "https://reformaelegante.es/galeria.html",
       "name": "Galería de Reformas en Ermua y Bizkaia | Reforma Elegant3",
-      "description": "Fotos reales de reformas de baños, platos de ducha con saneamiento, alicatados y trabajos de mantenimiento en Ermua, Eibar y comarca.",
+      "description": "Fotos reales de obras de Reforma Elegant3: reformas de baños, duchas, retirada de bajantes de uralita paso a paso, cocinas y albañilería en Ermua y comarca.",
       "isPartOf": {
         "@type": "WebSite",
         "@id": "https://reformaelegante.es/#website",
         "name": "Reforma Elegant3"
-      }
+      },
+      "about": {
+        "@id": "https://reformaelegante.es/#business"
+      },
+      "associatedMedia": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/reforma-bano-antes-despues-ducha-mueble-madera.webp",
+          "caption": "Antes y después · Baño completo",
+          "description": "Antes y después de un baño reformado: de bañera y bidé antiguos a ducha con mampara y mueble de madera suspendido",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/ducha-microcemento-hornacinas-led.webp",
+          "caption": "Microcemento y hornacinas LED",
+          "description": "Ducha de microcemento continuo con hornacinas iluminadas con LED y grifería negra",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/revestimiento-ducha-marmol-calacatta.webp",
+          "caption": "Revestimiento efecto mármol · Inodoro suspendido",
+          "description": "Ducha con revestimiento porcelánico efecto mármol calacatta e inodoro suspendido",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/reforma-bano-mampara-curva-madera.webp",
+          "caption": "Ducha angular con mampara curva",
+          "description": "Ducha angular con mampara curva, plato extraplano y mueble de lavabo de madera",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-1080.webp",
+          "caption": "Mampara corredera · Día de entrega",
+          "description": "Ducha con mampara corredera recién instalada y sanitarios protegidos el día de la entrega",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-1080.webp",
+          "caption": "Porcelánico lineal y grifo termostático",
+          "description": "Ducha alicatada con porcelánico lineal gris y grifo termostático empotrado",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/obra-albanileria-alicatado-proceso.webp",
+          "caption": "Alicatado en obra · Nivelación de juntas",
+          "description": "Alicatado de baño en proceso con sistema de nivelación de piezas para juntas mínimas",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/armario-empotrado-termo-electrico-lavanderia.webp",
+          "caption": "Armario técnico: termo y lavandería",
+          "description": "Termo eléctrico, lavadora y secadora integrados en un armario empotrado a medida",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/proteccion-empapelado-zona-trabajo-mocheta.webp",
+          "caption": "1 · Protección de la estancia · Ermua",
+          "description": "Zona de trabajo protegida con papel antes de abrir la mocheta de la bajante en Ermua",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/picado-pared-localizacion-bajante-uralita.webp",
+          "caption": "2 · Picado y localización · Ermua",
+          "description": "Picado controlado del tabique para localizar la bajante de uralita en Ermua",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/inspeccion-tecnica-bajante-antigua-linterna.webp",
+          "caption": "3 · Inspección de la bajante · Ermua",
+          "description": "Inspección con linterna de la bajante antigua de fibrocemento dentro de la mocheta",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/tuberia-fibrocemento-uralita-bano-cocina.webp",
+          "caption": "4 · Uralita al descubierto · Ermua",
+          "description": "Bajante antigua de fibrocemento (uralita) al descubierto tras retirar el alicatado",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/operario-autorizado-retirada-amianto-epi.webp",
+          "caption": "5 · Retirada por empresa autorizada",
+          "description": "Operario de empresa autorizada RERA con EPI y mascarilla P3 retirando el fibrocemento",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/retirada-fibrocemento-apertura-mocheta-bajante.webp",
+          "caption": "6 · Nueva bajante de PVC · Ermua",
+          "description": "Nueva bajante de PVC insonorizado instalada en sustitución de la de uralita",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/cocina-madera-encimera-pared-gris.webp",
+          "caption": "Cocina en L efecto madera",
+          "description": "Cocina en L con muebles efecto madera, revestimiento gris y hueco para lavadora",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/cocina-muebles-efecto-marmol-encimera-madera.webp",
+          "caption": "Cocina lineal efecto mármol",
+          "description": "Cocina lineal con muebles efecto mármol, encimera de madera y columna de horno",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/modulo-cocina-lineal-beige.webp",
+          "caption": "Cocina lineal beige brillo",
+          "description": "Módulo de cocina lineal con frentes beige brillo, campana y columna de horno y microondas",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/techo-vigas-madera-tratada-buhardilla.webp",
+          "caption": "Techo de vigas de madera",
+          "description": "Techo de vigas y tablazón de madera tratada en buhardilla reformada",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/buhardilla-techo-madera-ventanas-tejado-suelo-laminado.webp",
+          "caption": "Buhardilla terminada · Suelo laminado",
+          "description": "Buhardilla reformada con techo de madera, ventanas de tejado y suelo laminado nuevo",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/pasillo-escalera-baldosa-hidraulica.webp",
+          "caption": "Pasillo con baldosa hidráulica",
+          "description": "Pasillo con suelo de baldosa hidráulica decorativa y escalera de acceso",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/pasillo-reforma-puertas-lacadas-blanco-led.webp",
+          "caption": "Pasillo con puertas lacadas y LED",
+          "description": "Pasillo reformado con puertas lacadas en blanco, suelo laminado e iluminación LED",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/detalle-esquina-curva-tabique-rodapie-blanco.webp",
+          "caption": "Detalle de tabique con esquina curva",
+          "description": "Detalle de esquina curva en tabique con rodapié blanco y suelo laminado",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/instalacion-puertas-interiores.webp",
+          "caption": "Colocación de puertas de paso",
+          "description": "Puerta de paso blanca recién colocada, aún con protección en el cristal",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/instalacion-ventanas-pvc.webp",
+          "caption": "Ventana de PVC antes del remate",
+          "description": "Ventana de PVC nueva colocada con premarco, antes del remate de yeso",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/rehabilitacion-fachadas-bizkaia.webp",
+          "caption": "Trabajos en fachada con plataforma",
+          "description": "Trabajo en fachada de edificio con plataforma elevadora",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/reforma-habitacion-suelo-laminado-mecanismos.webp",
+          "caption": "Habitación con suelo laminado",
+          "description": "Habitación reformada con suelo laminado, paredes lisas y mecanismos eléctricos nuevos",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://reformaelegante.es/assets/img/gallery/estancia-reformada-suelo-porcelanico-beige-fontaneria.webp",
+          "caption": "Porcelánico gran formato · Tomas preparadas",
+          "description": "Estancia reformada con suelo porcelánico beige de gran formato y tomas de fontanería preparadas",
+          "creator": {
+            "@id": "https://reformaelegante.es/#business"
+          },
+          "copyrightHolder": {
+            "@id": "https://reformaelegante.es/#business"
+          }
+        }
+      ]
     }
   ]
 }
@@ -60,12 +405,13 @@
   <header class="site-header" id="site-header" role="banner">
     <div class="container header-inner">
       <a href="index.html" class="logo" aria-label="Reforma Elegant3 – Inicio">
-        <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 Logo" width="229" height="55" decoding="async" style="height: 55px; width: auto;">
+        <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 – reformas de baños en Ermua" width="229" height="55" decoding="async" style="height: 55px; width: auto;">
       </a>
       <nav class="main-nav" role="navigation" aria-label="Navegación principal">
         <ul class="nav-list" role="list">
           <li><a href="index.html" class="nav-link">Inicio</a></li>
           <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="precio-reforma-bano-ermua-eibar.html" class="nav-link">Precios</a></li>
           <li><a href="zonas.html" class="nav-link">Zonas</a></li>
           <li><a href="galeria.html" class="nav-link active">Galería</a></li>
           <li><a href="nosotros.html" class="nav-link">Sobre nosotros</a></li>
@@ -81,6 +427,7 @@
       <ul class="mobile-nav-list" role="list">
         <li><a href="index.html" class="mobile-nav-link">Inicio</a></li>
         <li><a href="servicios.html" class="mobile-nav-link">Servicios</a></li>
+        <li><a href="precio-reforma-bano-ermua-eibar.html" class="mobile-nav-link">Precios orientativos</a></li>
         <li><a href="zonas.html" class="mobile-nav-link">Zonas de Servicio</a></li>
         <li><a href="galeria.html" class="mobile-nav-link">Galería</a></li>
         <li><a href="nosotros.html" class="mobile-nav-link">Sobre Nosotros</a></li>
@@ -104,7 +451,7 @@
     <section class="page-hero" aria-labelledby="gallery-hero-heading">
       <div class="container">
         <h1 id="gallery-hero-heading">Galería de reformas en Ermua y Bizkaia</h1>
-        <p>Fotos reales de nuestros trabajos. Hacemos clic en cada imagen para verla ampliada.</p>
+        <p>Solo fotos reales de obras de Hakim: sin renders ni imágenes de catálogo. Pulsa una foto para verla ampliada.</p>
       </div>
     </section>
 
@@ -112,193 +459,133 @@
       <div class="container">
 
         <!-- Filter tabs -->
-        <div class="gallery-filters" role="tablist" aria-label="Filtrar galería por categoría" style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem; justify-content:center;">
-          <button class="btn btn-primary btn-sm gallery-filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos</button>
-          <button class="btn btn-outline btn-sm gallery-filter-btn" data-filter="banos" role="tab" aria-selected="false">Baños</button>
-          <button class="btn btn-outline btn-sm gallery-filter-btn" data-filter="fibrocemento" role="tab" aria-selected="false">Fibrocemento / Amianto</button>
-          <button class="btn btn-outline btn-sm gallery-filter-btn" data-filter="cocinas" role="tab" aria-selected="false">Cocinas</button>
-          <button class="btn btn-outline btn-sm gallery-filter-btn" data-filter="albanileria" role="tab" aria-selected="false">Albañilería</button>
-          <button class="btn btn-outline btn-sm gallery-filter-btn" data-filter="suelos" role="tab" aria-selected="false">Suelos</button>
-          <button class="btn btn-outline btn-sm gallery-filter-btn" data-filter="pintura" role="tab" aria-selected="false">Pintura</button>
+        <div class="gallery-filters" role="group" aria-label="Filtrar galería por categoría">
+          <button type="button" class="btn btn-primary btn-sm gallery-filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+          <button type="button" class="btn btn-outline btn-sm gallery-filter-btn" data-filter="banos" aria-pressed="false">Baños</button>
+          <button type="button" class="btn btn-outline btn-sm gallery-filter-btn" data-filter="fibrocemento" aria-pressed="false">Retirada de uralita</button>
+          <button type="button" class="btn btn-outline btn-sm gallery-filter-btn" data-filter="cocinas" aria-pressed="false">Cocinas</button>
+          <button type="button" class="btn btn-outline btn-sm gallery-filter-btn" data-filter="albanileria" aria-pressed="false">Albañilería e interiores</button>
+          <button type="button" class="btn btn-outline btn-sm gallery-filter-btn" data-filter="suelos" aria-pressed="false">Suelos</button>
         </div>
 
         <div class="gallery-full-grid" id="gallery-full-grid">
 
-          <!-- Nuevas Fotos: Retirada y Gestión de Fibrocemento (Uralita) -->
-          <figure class="gallery-item" data-category="fibrocemento" tabindex="0" aria-label="Retirada de amianto por empresa autorizada – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/operario-autorizado-retirada-amianto-epi-480.avif 480w, assets/img/opt/operario-autorizado-retirada-amianto-epi-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/operario-autorizado-retirada-amianto-epi-480.webp 480w, assets/img/opt/operario-autorizado-retirada-amianto-epi-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/operario-autorizado-retirada-amianto-epi.webp" src="assets/img/gallery/operario-autorizado-retirada-amianto-epi.webp" alt="Operario autorizado con EPI homologado tipo 5/6 y mascarilla P3 en retirada de fibrocemento" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Retirada autorizada de amianto · EPI Homologado</figcaption>
+          <!-- Baños -->
+          <figure class="gallery-item" data-category="banos" aria-label="Antes y después · Baño completo – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-480.avif 480w, assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-480.webp 480w, assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-antes-despues-ducha-mueble-madera.webp" src="assets/img/opt/reforma-bano-antes-despues-ducha-mueble-madera-480.webp" alt="Antes y después de un baño reformado: de bañera y bidé antiguos a ducha con mampara y mueble de madera suspendido" width="480" height="320" loading="lazy" decoding="async"></picture>
+            <figcaption>Antes y después · Baño completo</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="fibrocemento" tabindex="0" aria-label="Picado cuidadoso y preparación previa de tabique – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/picado-pared-localizacion-bajante-uralita-480.avif 480w, assets/img/opt/picado-pared-localizacion-bajante-uralita-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/picado-pared-localizacion-bajante-uralita-480.webp 480w, assets/img/opt/picado-pared-localizacion-bajante-uralita-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/picado-pared-localizacion-bajante-uralita.webp" src="assets/img/gallery/picado-pared-localizacion-bajante-uralita.webp" alt="Picado cuidadoso de pared y protección de estancia para descubrir bajante antigua" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Picado previo y protección · Ermua</figcaption>
+          <figure class="gallery-item" data-category="banos" aria-label="Microcemento y hornacinas LED – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/ducha-microcemento-hornacinas-led-480.avif 480w, assets/img/opt/ducha-microcemento-hornacinas-led-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/ducha-microcemento-hornacinas-led-480.webp 480w, assets/img/opt/ducha-microcemento-hornacinas-led-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/ducha-microcemento-hornacinas-led.webp" src="assets/img/opt/ducha-microcemento-hornacinas-led-480.webp" alt="Ducha de microcemento continuo con hornacinas iluminadas con LED y grifería negra" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <figcaption>Microcemento y hornacinas LED</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="fibrocemento" tabindex="0" aria-label="Bajante antigua de fibrocemento en baño – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/tuberia-fibrocemento-uralita-bano-cocina-480.avif 480w, assets/img/opt/tuberia-fibrocemento-uralita-bano-cocina-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/tuberia-fibrocemento-uralita-bano-cocina-480.webp 480w, assets/img/opt/tuberia-fibrocemento-uralita-bano-cocina-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/tuberia-fibrocemento-uralita-bano-cocina.webp" src="assets/img/gallery/tuberia-fibrocemento-uralita-bano-cocina.webp" alt="Tubería de bajante de fibrocemento / uralita localizada tras el alicatado" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Bajante de fibrocemento localizada · Eibar</figcaption>
+          <figure class="gallery-item" data-category="banos" aria-label="Revestimiento efecto mármol · Inodoro suspendido – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/revestimiento-ducha-marmol-calacatta-480.avif 480w, assets/img/opt/revestimiento-ducha-marmol-calacatta-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/revestimiento-ducha-marmol-calacatta-480.webp 480w, assets/img/opt/revestimiento-ducha-marmol-calacatta-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/revestimiento-ducha-marmol-calacatta.webp" src="assets/img/opt/revestimiento-ducha-marmol-calacatta-480.webp" alt="Ducha con revestimiento porcelánico efecto mármol calacatta e inodoro suspendido" width="480" height="640" loading="lazy" decoding="async"></picture>
+            <figcaption>Revestimiento efecto mármol · Inodoro suspendido</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="fibrocemento" tabindex="0" aria-label="Apertura de mocheta y preparación de bajante – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/retirada-fibrocemento-apertura-mocheta-bajante-480.avif 480w, assets/img/opt/retirada-fibrocemento-apertura-mocheta-bajante-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/retirada-fibrocemento-apertura-mocheta-bajante-480.webp 480w, assets/img/opt/retirada-fibrocemento-apertura-mocheta-bajante-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/retirada-fibrocemento-apertura-mocheta-bajante.webp" src="assets/img/gallery/retirada-fibrocemento-apertura-mocheta-bajante.webp" alt="Apertura vertical completa de mocheta y preparación para sustitución de bajante" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Apertura mocheta para nueva bajante · Bizkaia</figcaption>
+          <figure class="gallery-item" data-category="banos" aria-label="Ducha angular con mampara curva – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-mampara-curva-madera-480.avif 480w, assets/img/opt/reforma-bano-mampara-curva-madera-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-mampara-curva-madera-480.webp 480w, assets/img/opt/reforma-bano-mampara-curva-madera-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-mampara-curva-madera.webp" src="assets/img/opt/reforma-bano-mampara-curva-madera-480.webp" alt="Ducha angular con mampara curva, plato extraplano y mueble de lavabo de madera" width="480" height="642" loading="lazy" decoding="async"></picture>
+            <figcaption>Ducha angular con mampara curva</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="fibrocemento" tabindex="0" aria-label="Inspección técnica de bajante comunitaria con linterna – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/inspeccion-tecnica-bajante-antigua-linterna-480.avif 480w, assets/img/opt/inspeccion-tecnica-bajante-antigua-linterna-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/inspeccion-tecnica-bajante-antigua-linterna-480.webp 480w, assets/img/opt/inspeccion-tecnica-bajante-antigua-linterna-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/inspeccion-tecnica-bajante-antigua-linterna.webp" src="assets/img/gallery/inspeccion-tecnica-bajante-antigua-linterna.webp" alt="Inspección visual técnica del estado de conservación de tubería bajante" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Inspección técnica de conducto · Durango</figcaption>
+          <figure class="gallery-item" data-category="banos" aria-label="Mampara corredera · Día de entrega – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-480.avif 480w, assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-480.webp 480w, assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-1080.webp" src="assets/img/banos-fibrocemento/ducha-mampara-corredera-entrega-obra-sanitarios-protegidos-bizkaia-480.webp" alt="Ducha con mampara corredera recién instalada y sanitarios protegidos el día de la entrega" width="480" height="600" loading="lazy" decoding="async"></picture>
+            <figcaption>Mampara corredera · Día de entrega</figcaption>
           </figure>
-
-          <!-- Nuevas Fotos: Mobiliario Técnico a Medida en Baños -->
-          <figure class="gallery-item" data-category="banos" tabindex="0" aria-label="Mobiliario a medida para termo, lavadora y secadora – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/armario-bano-medida-termo-lavadora-secadora-480.avif 480w, assets/img/opt/armario-bano-medida-termo-lavadora-secadora-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/armario-bano-medida-termo-lavadora-secadora-480.webp 480w, assets/img/opt/armario-bano-medida-termo-lavadora-secadora-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/armario-bano-medida-termo-lavadora-secadora.webp" src="assets/img/gallery/armario-bano-medida-termo-lavadora-secadora.webp" alt="Armario técnico a medida en baño integrando termo eléctrico vertical, lavadora, secadora y almacenamiento" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Armario técnico a medida: termo y lavandería</figcaption>
+          <figure class="gallery-item" data-category="banos" aria-label="Porcelánico lineal y grifo termostático – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-480.avif 480w, assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-480.webp 480w, assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-1080.webp" src="assets/img/banos-fibrocemento/revestimiento-ducha-porcelanico-lineal-grifo-termostatico-bizkaia-480.webp" alt="Ducha alicatada con porcelánico lineal gris y grifo termostático empotrado" width="480" height="600" loading="lazy" decoding="async"></picture>
+            <figcaption>Porcelánico lineal y grifo termostático</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="banos" tabindex="0" aria-label="Armario empotrado para termo y torre de lavado – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/armario-empotrado-termo-electrico-lavanderia-480.avif 480w, assets/img/opt/armario-empotrado-termo-electrico-lavanderia-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/armario-empotrado-termo-electrico-lavanderia-480.webp 480w, assets/img/opt/armario-empotrado-termo-electrico-lavanderia-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/armario-empotrado-termo-electrico-lavanderia.webp" src="assets/img/gallery/armario-empotrado-termo-electrico-lavanderia.webp" alt="Solución empotrada para termo eléctrico y electrodomésticos de lavado en baño" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Integración de termo y lavandería · Ermua</figcaption>
+          <figure class="gallery-item" data-category="banos" aria-label="Alicatado en obra · Nivelación de juntas – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/obra-albanileria-alicatado-proceso-480.avif 480w, assets/img/opt/obra-albanileria-alicatado-proceso-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/obra-albanileria-alicatado-proceso-480.webp 480w, assets/img/opt/obra-albanileria-alicatado-proceso-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/obra-albanileria-alicatado-proceso.webp" src="assets/img/opt/obra-albanileria-alicatado-proceso-480.webp" alt="Alicatado de baño en proceso con sistema de nivelación de piezas para juntas mínimas" width="480" height="640" loading="lazy" decoding="async"></picture>
+            <figcaption>Alicatado en obra · Nivelación de juntas</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="banos" tabindex="0" aria-label="Reforma integral de baño antes y después – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-integral-antes-despues-480.avif 480w, assets/img/opt/reforma-bano-integral-antes-despues-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-integral-antes-despues-480.webp 480w, assets/img/opt/reforma-bano-integral-antes-despues-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-integral-antes-despues.webp" src="assets/img/gallery/reforma-bano-integral-antes-despues.webp" alt="Reforma integral de baño con antes y después, sustitución de bañera por ducha" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Reforma de baño · Antes y Después</figcaption>
+          <figure class="gallery-item" data-category="banos" aria-label="Armario técnico: termo y lavandería – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/armario-empotrado-termo-electrico-lavanderia-480.avif 480w, assets/img/opt/armario-empotrado-termo-electrico-lavanderia-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/armario-empotrado-termo-electrico-lavanderia-480.webp 480w, assets/img/opt/armario-empotrado-termo-electrico-lavanderia-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/armario-empotrado-termo-electrico-lavanderia.webp" src="assets/img/opt/armario-empotrado-termo-electrico-lavanderia-480.webp" alt="Termo eléctrico, lavadora y secadora integrados en un armario empotrado a medida" width="480" height="638" loading="lazy" decoding="async"></picture>
+            <figcaption>Armario técnico: termo y lavandería</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="banos" tabindex="0" aria-label="Reforma de baño con lavabo suspendido efecto madera – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-madera-antes-despues-480.avif 480w, assets/img/opt/reforma-bano-madera-antes-despues-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-madera-antes-despues-480.webp 480w, assets/img/opt/reforma-bano-madera-antes-despues-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-madera-antes-despues.webp" src="assets/img/gallery/reforma-bano-madera-antes-despues.webp" alt="Reforma de cuarto de baño completo: antes y después con lavabo suspendido efecto madera" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Lavabo efecto madera · Durango</figcaption>
+          <!-- Retirada de uralita (obra en Ermua, paso a paso) -->
+          <figure class="gallery-item" data-category="fibrocemento" aria-label="1 · Protección de la estancia · Ermua – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/proteccion-empapelado-zona-trabajo-mocheta-480.avif 480w, assets/img/opt/proteccion-empapelado-zona-trabajo-mocheta-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/proteccion-empapelado-zona-trabajo-mocheta-480.webp 480w, assets/img/opt/proteccion-empapelado-zona-trabajo-mocheta-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/proteccion-empapelado-zona-trabajo-mocheta.webp" src="assets/img/opt/proteccion-empapelado-zona-trabajo-mocheta-480.webp" alt="Zona de trabajo protegida con papel antes de abrir la mocheta de la bajante en Ermua" width="480" height="640" loading="lazy" decoding="async"></picture>
+            <figcaption>1 · Protección de la estancia · Ermua</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="banos" tabindex="0" aria-label="Plato de ducha de resina – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/plato-ducha-resina-blanco-480.avif 480w, assets/img/opt/plato-ducha-resina-blanco-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/plato-ducha-resina-blanco-480.webp 480w, assets/img/opt/plato-ducha-resina-blanco-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/plato-ducha-resina-blanco.webp" src="assets/img/gallery/plato-ducha-resina-blanco.webp" alt="Instalación de plato de ducha de resina extraplano blanco con textura pizarra" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Plato de ducha extraplano · Comarca</figcaption>
+          <figure class="gallery-item" data-category="fibrocemento" aria-label="2 · Picado y localización · Ermua – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/picado-pared-localizacion-bajante-uralita-480.avif 480w, assets/img/opt/picado-pared-localizacion-bajante-uralita-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/picado-pared-localizacion-bajante-uralita-480.webp 480w, assets/img/opt/picado-pared-localizacion-bajante-uralita-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/picado-pared-localizacion-bajante-uralita.webp" src="assets/img/opt/picado-pared-localizacion-bajante-uralita-480.webp" alt="Picado controlado del tabique para localizar la bajante de uralita en Ermua" width="480" height="638" loading="lazy" decoding="async"></picture>
+            <figcaption>2 · Picado y localización · Ermua</figcaption>
           </figure>
-
-          <!-- Nuevas Fotos: Cocinas de Diseño Minimalista -->
-          <figure class="gallery-item" data-category="cocinas" tabindex="0" aria-label="Cocina minimalista negro mate y mármol Calacatta – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/cocina-minimalista-negro-mate-marmol-calacatta-480.avif 480w, assets/img/opt/cocina-minimalista-negro-mate-marmol-calacatta-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/cocina-minimalista-negro-mate-marmol-calacatta-480.webp 480w, assets/img/opt/cocina-minimalista-negro-mate-marmol-calacatta-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/cocina-minimalista-negro-mate-marmol-calacatta.webp" src="assets/img/gallery/cocina-minimalista-negro-mate-marmol-calacatta.webp" alt="Cocina de diseño minimalista con muebles negro mate, encimera y salpicadero de mármol Calacatta con iluminación LED integrada" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Cocina negro mate y Calacatta · Minimalista</figcaption>
+          <figure class="gallery-item" data-category="fibrocemento" aria-label="3 · Inspección de la bajante · Ermua – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/inspeccion-tecnica-bajante-antigua-linterna-480.avif 480w, assets/img/opt/inspeccion-tecnica-bajante-antigua-linterna-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/inspeccion-tecnica-bajante-antigua-linterna-480.webp 480w, assets/img/opt/inspeccion-tecnica-bajante-antigua-linterna-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/inspeccion-tecnica-bajante-antigua-linterna.webp" src="assets/img/opt/inspeccion-tecnica-bajante-antigua-linterna-480.webp" alt="Inspección con linterna de la bajante antigua de fibrocemento dentro de la mocheta" width="480" height="638" loading="lazy" decoding="async"></picture>
+            <figcaption>3 · Inspección de la bajante · Ermua</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="cocinas" tabindex="0" aria-label="Cocina moderna con isla y barra de desayuno – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/cocina-moderna-isla-barra-desayuno-480.avif 480w, assets/img/opt/cocina-moderna-isla-barra-desayuno-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/cocina-moderna-isla-barra-desayuno-480.webp 480w, assets/img/opt/cocina-moderna-isla-barra-desayuno-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/cocina-moderna-isla-barra-desayuno.webp" src="assets/img/gallery/cocina-moderna-isla-barra-desayuno.webp" alt="Cocina abierta con barra de desayuno en piedra natural, taburetes y columnas negras con electrodomésticos" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Cocina moderna con barra e isla · Eibar</figcaption>
+          <figure class="gallery-item" data-category="fibrocemento" aria-label="4 · Uralita al descubierto · Ermua – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/tuberia-fibrocemento-uralita-bano-cocina-480.avif 480w, assets/img/opt/tuberia-fibrocemento-uralita-bano-cocina-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/tuberia-fibrocemento-uralita-bano-cocina-480.webp 480w, assets/img/opt/tuberia-fibrocemento-uralita-bano-cocina-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/tuberia-fibrocemento-uralita-bano-cocina.webp" src="assets/img/opt/tuberia-fibrocemento-uralita-bano-cocina-480.webp" alt="Bajante antigua de fibrocemento (uralita) al descubierto tras retirar el alicatado" width="480" height="638" loading="lazy" decoding="async"></picture>
+            <figcaption>4 · Uralita al descubierto · Ermua</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="cocinas" tabindex="0" aria-label="Cocina blanca lineal con suelo porcelánico – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/cocina-blanca-alargada-porcelanico-brillante-480.avif 480w, assets/img/opt/cocina-blanca-alargada-porcelanico-brillante-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/cocina-blanca-alargada-porcelanico-brillante-480.webp 480w, assets/img/opt/cocina-blanca-alargada-porcelanico-brillante-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/cocina-blanca-alargada-porcelanico-brillante.webp" src="assets/img/gallery/cocina-blanca-alargada-porcelanico-brillante.webp" alt="Cocina lineal alargada blanca con suelo porcelánico brillante pulido y zona de comedor integrada" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Cocina lineal blanca y porcelánico pulido</figcaption>
+          <figure class="gallery-item" data-category="fibrocemento" aria-label="5 · Retirada por empresa autorizada – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/operario-autorizado-retirada-amianto-epi-480.avif 480w, assets/img/opt/operario-autorizado-retirada-amianto-epi-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/operario-autorizado-retirada-amianto-epi-480.webp 480w, assets/img/opt/operario-autorizado-retirada-amianto-epi-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/operario-autorizado-retirada-amianto-epi.webp" src="assets/img/opt/operario-autorizado-retirada-amianto-epi-480.webp" alt="Operario de empresa autorizada RERA con EPI y mascarilla P3 retirando el fibrocemento" width="480" height="638" loading="lazy" decoding="async"></picture>
+            <figcaption>5 · Retirada por empresa autorizada</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="cocinas" tabindex="0" aria-label="Comparativa cocina blanca y negra – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/comparativa-cocina-blanco-negro-marmol-480.avif 480w, assets/img/opt/comparativa-cocina-blanco-negro-marmol-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/comparativa-cocina-blanco-negro-marmol-480.webp 480w, assets/img/opt/comparativa-cocina-blanco-negro-marmol-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/comparativa-cocina-blanco-negro-marmol.webp" src="assets/img/gallery/comparativa-cocina-blanco-negro-marmol.webp" alt="Estudio comparativo de diseño para reforma de cocina en blanco nórdico versus negro mate" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Estudio de acabados · Blanco vs Negro</figcaption>
+          <figure class="gallery-item" data-category="fibrocemento" aria-label="6 · Nueva bajante de PVC · Ermua – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/retirada-fibrocemento-apertura-mocheta-bajante-480.avif 480w, assets/img/opt/retirada-fibrocemento-apertura-mocheta-bajante-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/retirada-fibrocemento-apertura-mocheta-bajante-480.webp 480w, assets/img/opt/retirada-fibrocemento-apertura-mocheta-bajante-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/retirada-fibrocemento-apertura-mocheta-bajante.webp" src="assets/img/opt/retirada-fibrocemento-apertura-mocheta-bajante-480.webp" alt="Nueva bajante de PVC insonorizado instalada en sustitución de la de uralita" width="480" height="640" loading="lazy" decoding="async"></picture>
+            <figcaption>6 · Nueva bajante de PVC · Ermua</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="cocinas" tabindex="0" aria-label="Proyecto acotado de cocina – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/proyecto-cocina-marmol-distribucion-cotas-480.avif 480w, assets/img/opt/proyecto-cocina-marmol-distribucion-cotas-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/proyecto-cocina-marmol-distribucion-cotas-480.webp 480w, assets/img/opt/proyecto-cocina-marmol-distribucion-cotas-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/proyecto-cocina-marmol-distribucion-cotas.webp" src="assets/img/gallery/proyecto-cocina-marmol-distribucion-cotas.webp" alt="Plano y distribución con cotas técnicas para reforma de cocina y mobiliario" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Plano técnico acotado · Distribución</figcaption>
+          <!-- Cocinas -->
+          <figure class="gallery-item" data-category="cocinas" aria-label="Cocina en L efecto madera – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/cocina-madera-encimera-pared-gris-480.avif 480w, assets/img/opt/cocina-madera-encimera-pared-gris-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/cocina-madera-encimera-pared-gris-480.webp 480w, assets/img/opt/cocina-madera-encimera-pared-gris-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/cocina-madera-encimera-pared-gris.webp" src="assets/img/opt/cocina-madera-encimera-pared-gris-480.webp" alt="Cocina en L con muebles efecto madera, revestimiento gris y hueco para lavadora" width="480" height="359" loading="lazy" decoding="async"></picture>
+            <figcaption>Cocina en L efecto madera</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="cocinas" tabindex="0" aria-label="Cocina moderna en madera – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-cocina-moderna-madera-480.avif 480w, assets/img/opt/reforma-cocina-moderna-madera-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-cocina-moderna-madera-480.webp 480w, assets/img/opt/reforma-cocina-moderna-madera-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-cocina-moderna-madera.webp" src="assets/img/gallery/reforma-cocina-moderna-madera.webp" alt="Cocina moderna con muebles en tono madera y electrodomésticos integrados" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Cocina diseño madera · Bizkaia</figcaption>
+          <figure class="gallery-item" data-category="cocinas" aria-label="Cocina lineal efecto mármol – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/cocina-muebles-efecto-marmol-encimera-madera-480.avif 480w, assets/img/opt/cocina-muebles-efecto-marmol-encimera-madera-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/cocina-muebles-efecto-marmol-encimera-madera-480.webp 480w, assets/img/opt/cocina-muebles-efecto-marmol-encimera-madera-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/cocina-muebles-efecto-marmol-encimera-madera.webp" src="assets/img/opt/cocina-muebles-efecto-marmol-encimera-madera-480.webp" alt="Cocina lineal con muebles efecto mármol, encimera de madera y columna de horno" width="480" height="357" loading="lazy" decoding="async"></picture>
+            <figcaption>Cocina lineal efecto mármol</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="cocinas" tabindex="0" aria-label="Cocina mármol blanco – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-cocina-marmol-blanco-480.avif 480w, assets/img/opt/reforma-cocina-marmol-blanco-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-cocina-marmol-blanco-480.webp 480w, assets/img/opt/reforma-cocina-marmol-blanco-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-cocina-marmol-blanco.webp" src="assets/img/gallery/reforma-cocina-marmol-blanco.webp" alt="Cocina renovada con armarios de diseño en mármol blanco y tiradores negros" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Cocina diseño mármol · Eibar</figcaption>
+          <figure class="gallery-item" data-category="cocinas" aria-label="Cocina lineal beige brillo – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/modulo-cocina-lineal-beige-480.avif 480w, assets/img/opt/modulo-cocina-lineal-beige-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/modulo-cocina-lineal-beige-480.webp 480w, assets/img/opt/modulo-cocina-lineal-beige-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/modulo-cocina-lineal-beige.webp" src="assets/img/opt/modulo-cocina-lineal-beige-480.webp" alt="Módulo de cocina lineal con frentes beige brillo, campana y columna de horno y microondas" width="480" height="363" loading="lazy" decoding="async"></picture>
+            <figcaption>Cocina lineal beige brillo</figcaption>
           </figure>
-
-          <!-- Nuevas Fotos: Albañilería, Pladur Curvo y Espacios Reformados -->
-          <figure class="gallery-item" data-category="albanileria" tabindex="0" aria-label="Detalle de esquina curva de tabiquería – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/detalle-esquina-curva-tabique-rodapie-blanco-480.avif 480w, assets/img/opt/detalle-esquina-curva-tabique-rodapie-blanco-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/detalle-esquina-curva-tabique-rodapie-blanco-480.webp 480w, assets/img/opt/detalle-esquina-curva-tabique-rodapie-blanco-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/detalle-esquina-curva-tabique-rodapie-blanco.webp" src="assets/img/gallery/detalle-esquina-curva-tabique-rodapie-blanco.webp" alt="Ejecución de tabique curvo redondeado y rodapié curvo blanco lacado con suelo laminado" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Detalle arquitectónico · Esquina curva</figcaption>
+          <!-- Albañilería e interiores -->
+          <figure class="gallery-item" data-category="albanileria" aria-label="Techo de vigas de madera – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/techo-vigas-madera-tratada-buhardilla-480.avif 480w, assets/img/opt/techo-vigas-madera-tratada-buhardilla-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/techo-vigas-madera-tratada-buhardilla-480.webp 480w, assets/img/opt/techo-vigas-madera-tratada-buhardilla-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/techo-vigas-madera-tratada-buhardilla.webp" src="assets/img/opt/techo-vigas-madera-tratada-buhardilla-480.webp" alt="Techo de vigas y tablazón de madera tratada en buhardilla reformada" width="480" height="640" loading="lazy" decoding="async"></picture>
+            <figcaption>Techo de vigas de madera</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="albanileria" tabindex="0" aria-label="Pasillo reformado con puertas lacadas e iluminación LED – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/pasillo-reforma-puertas-lacadas-blanco-led-480.avif 480w, assets/img/opt/pasillo-reforma-puertas-lacadas-blanco-led-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/pasillo-reforma-puertas-lacadas-blanco-led-480.webp 480w, assets/img/opt/pasillo-reforma-puertas-lacadas-blanco-led-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/pasillo-reforma-puertas-lacadas-blanco-led.webp" src="assets/img/gallery/pasillo-reforma-puertas-lacadas-blanco-led.webp" alt="Reforma integral de pasillo con puertas lacadas en blanco, focos LED empotrados y suelo laminado" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Pasillo con puertas lacadas y LED · Ermua</figcaption>
+          <figure class="gallery-item" data-category="albanileria" aria-label="Buhardilla terminada · Suelo laminado – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/buhardilla-techo-madera-ventanas-tejado-suelo-laminado-480.avif 480w, assets/img/opt/buhardilla-techo-madera-ventanas-tejado-suelo-laminado-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/buhardilla-techo-madera-ventanas-tejado-suelo-laminado-480.webp 480w, assets/img/opt/buhardilla-techo-madera-ventanas-tejado-suelo-laminado-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/buhardilla-techo-madera-ventanas-tejado-suelo-laminado.webp" src="assets/img/opt/buhardilla-techo-madera-ventanas-tejado-suelo-laminado-480.webp" alt="Buhardilla reformada con techo de madera, ventanas de tejado y suelo laminado nuevo" width="480" height="640" loading="lazy" decoding="async"></picture>
+            <figcaption>Buhardilla terminada · Suelo laminado</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="suelos" tabindex="0" aria-label="Habitación con suelo laminado nuevo – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-habitacion-suelo-laminado-mecanismos-480.avif 480w, assets/img/opt/reforma-habitacion-suelo-laminado-mecanismos-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-habitacion-suelo-laminado-mecanismos-480.webp 480w, assets/img/opt/reforma-habitacion-suelo-laminado-mecanismos-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-habitacion-suelo-laminado-mecanismos.webp" src="assets/img/gallery/reforma-habitacion-suelo-laminado-mecanismos.webp" alt="Habitación completamente renovada con suelo laminado de roble, paredes lisas y mecanismos modernos" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Suelo laminado y pintura lisa · Durango</figcaption>
+          <figure class="gallery-item" data-category="albanileria" aria-label="Pasillo con baldosa hidráulica – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/pasillo-escalera-baldosa-hidraulica-480.avif 480w, assets/img/opt/pasillo-escalera-baldosa-hidraulica-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/pasillo-escalera-baldosa-hidraulica-480.webp 480w, assets/img/opt/pasillo-escalera-baldosa-hidraulica-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/pasillo-escalera-baldosa-hidraulica.webp" src="assets/img/opt/pasillo-escalera-baldosa-hidraulica-480.webp" alt="Pasillo con suelo de baldosa hidráulica decorativa y escalera de acceso" width="480" height="638" loading="lazy" decoding="async"></picture>
+            <figcaption>Pasillo con baldosa hidráulica</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="suelos" tabindex="0" aria-label="Suelo porcelánico beige de gran formato – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/estancia-reformada-suelo-porcelanico-beige-fontaneria-480.avif 480w, assets/img/opt/estancia-reformada-suelo-porcelanico-beige-fontaneria-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/estancia-reformada-suelo-porcelanico-beige-fontaneria-480.webp 480w, assets/img/opt/estancia-reformada-suelo-porcelanico-beige-fontaneria-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/estancia-reformada-suelo-porcelanico-beige-fontaneria.webp" src="assets/img/gallery/estancia-reformada-suelo-porcelanico-beige-fontaneria.webp" alt="Suelo porcelánico beige de gran formato con tomas de fontanería y ventana Climalit" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Porcelánico gran formato e instalaciones</figcaption>
+          <figure class="gallery-item" data-category="albanileria" aria-label="Pasillo con puertas lacadas y LED – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/pasillo-reforma-puertas-lacadas-blanco-led-480.avif 480w, assets/img/opt/pasillo-reforma-puertas-lacadas-blanco-led-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/pasillo-reforma-puertas-lacadas-blanco-led-480.webp 480w, assets/img/opt/pasillo-reforma-puertas-lacadas-blanco-led-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/pasillo-reforma-puertas-lacadas-blanco-led.webp" src="assets/img/opt/pasillo-reforma-puertas-lacadas-blanco-led-480.webp" alt="Pasillo reformado con puertas lacadas en blanco, suelo laminado e iluminación LED" width="480" height="637" loading="lazy" decoding="async"></picture>
+            <figcaption>Pasillo con puertas lacadas y LED</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="albanileria" tabindex="0" aria-label="Revestimiento de ducha mármol – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/revestimiento-ducha-marmol-calacatta-480.avif 480w, assets/img/opt/revestimiento-ducha-marmol-calacatta-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/revestimiento-ducha-marmol-calacatta-480.webp 480w, assets/img/opt/revestimiento-ducha-marmol-calacatta-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/revestimiento-ducha-marmol-calacatta.webp" src="assets/img/gallery/revestimiento-ducha-marmol-calacatta.webp" alt="Revestimiento de pared de ducha con porcelánico imitación mármol calacatta" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Alicatado calacatta · Ermua</figcaption>
+          <figure class="gallery-item" data-category="albanileria" aria-label="Detalle de tabique con esquina curva – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/detalle-esquina-curva-tabique-rodapie-blanco-480.avif 480w, assets/img/opt/detalle-esquina-curva-tabique-rodapie-blanco-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/detalle-esquina-curva-tabique-rodapie-blanco-480.webp 480w, assets/img/opt/detalle-esquina-curva-tabique-rodapie-blanco-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/detalle-esquina-curva-tabique-rodapie-blanco.webp" src="assets/img/opt/detalle-esquina-curva-tabique-rodapie-blanco-480.webp" alt="Detalle de esquina curva en tabique con rodapié blanco y suelo laminado" width="480" height="853" loading="lazy" decoding="async"></picture>
+            <figcaption>Detalle de tabique con esquina curva</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="albanileria" tabindex="0" aria-label="Rehabilitación de fachada – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/rehabilitacion-fachadas-bizkaia-480.avif 480w, assets/img/opt/rehabilitacion-fachadas-bizkaia-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/rehabilitacion-fachadas-bizkaia-480.webp 480w, assets/img/opt/rehabilitacion-fachadas-bizkaia-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/rehabilitacion-fachadas-bizkaia.webp" src="assets/img/gallery/rehabilitacion-fachadas-bizkaia.webp" alt="Rehabilitación de fachada y tejado con plataforma elevadora en Bizkaia" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Rehabilitación fachada · Bizkaia</figcaption>
+          <figure class="gallery-item" data-category="albanileria" aria-label="Colocación de puertas de paso – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/instalacion-puertas-interiores-480.avif 480w, assets/img/opt/instalacion-puertas-interiores-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/instalacion-puertas-interiores-480.webp 480w, assets/img/opt/instalacion-puertas-interiores-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/instalacion-puertas-interiores.webp" src="assets/img/opt/instalacion-puertas-interiores-480.webp" alt="Puerta de paso blanca recién colocada, aún con protección en el cristal" width="480" height="853" loading="lazy" decoding="async"></picture>
+            <figcaption>Colocación de puertas de paso</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="albanileria" tabindex="0" aria-label="Instalación ventana PVC – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/instalacion-ventanas-pvc-480.avif 480w, assets/img/opt/instalacion-ventanas-pvc-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/instalacion-ventanas-pvc-480.webp 480w, assets/img/opt/instalacion-ventanas-pvc-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/instalacion-ventanas-pvc.webp" src="assets/img/gallery/instalacion-ventanas-pvc.webp" alt="Instalación de nueva ventana de PVC marca Rehau con aislamiento térmico" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Ventanas PVC (Rehau) · Ermua</figcaption>
+          <figure class="gallery-item" data-category="albanileria" aria-label="Ventana de PVC antes del remate – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/instalacion-ventanas-pvc-480.avif 480w, assets/img/opt/instalacion-ventanas-pvc-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/instalacion-ventanas-pvc-480.webp 480w, assets/img/opt/instalacion-ventanas-pvc-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/instalacion-ventanas-pvc.webp" src="assets/img/opt/instalacion-ventanas-pvc-480.webp" alt="Ventana de PVC nueva colocada con premarco, antes del remate de yeso" width="480" height="637" loading="lazy" decoding="async"></picture>
+            <figcaption>Ventana de PVC antes del remate</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="albanileria" tabindex="0" aria-label="Instalación puerta interior – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/instalacion-puertas-interiores-480.avif 480w, assets/img/opt/instalacion-puertas-interiores-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/instalacion-puertas-interiores-480.webp 480w, assets/img/opt/instalacion-puertas-interiores-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/instalacion-puertas-interiores.webp" src="assets/img/gallery/instalacion-puertas-interiores.webp" alt="Instalación de puerta de paso interior lacada en blanco durante reforma" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Puertas de paso · Zaldibar</figcaption>
+          <figure class="gallery-item" data-category="albanileria" aria-label="Trabajos en fachada con plataforma – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/rehabilitacion-fachadas-bizkaia-480.avif 480w, assets/img/opt/rehabilitacion-fachadas-bizkaia-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/rehabilitacion-fachadas-bizkaia-480.webp 480w, assets/img/opt/rehabilitacion-fachadas-bizkaia-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/rehabilitacion-fachadas-bizkaia.webp" src="assets/img/opt/rehabilitacion-fachadas-bizkaia-480.webp" alt="Trabajo en fachada de edificio con plataforma elevadora" width="480" height="640" loading="lazy" decoding="async"></picture>
+            <figcaption>Trabajos en fachada con plataforma</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="suelos" tabindex="0" aria-label="Instalación suelo laminado madera – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/instalacion-suelo-laminado-madera-480.avif 480w, assets/img/opt/instalacion-suelo-laminado-madera-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/instalacion-suelo-laminado-madera-480.webp 480w, assets/img/opt/instalacion-suelo-laminado-madera-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/instalacion-suelo-laminado-madera.webp" src="assets/img/gallery/instalacion-suelo-laminado-madera.webp" alt="Instalación de suelo laminado de madera AC5 en vivienda de Ermua" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Suelo laminado de roble · Ermua</figcaption>
+          <!-- Suelos -->
+          <figure class="gallery-item" data-category="suelos" aria-label="Habitación con suelo laminado – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/reforma-habitacion-suelo-laminado-mecanismos-480.avif 480w, assets/img/opt/reforma-habitacion-suelo-laminado-mecanismos-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-habitacion-suelo-laminado-mecanismos-480.webp 480w, assets/img/opt/reforma-habitacion-suelo-laminado-mecanismos-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-habitacion-suelo-laminado-mecanismos.webp" src="assets/img/opt/reforma-habitacion-suelo-laminado-mecanismos-480.webp" alt="Habitación reformada con suelo laminado, paredes lisas y mecanismos eléctricos nuevos" width="480" height="853" loading="lazy" decoding="async"></picture>
+            <figcaption>Habitación con suelo laminado</figcaption>
           </figure>
-
-          <figure class="gallery-item" data-category="suelos" tabindex="0" aria-label="Suelo vinílico moderno en interiores – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/suelo-vinilico-moderno-interiores-480.avif 480w, assets/img/opt/suelo-vinilico-moderno-interiores-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/suelo-vinilico-moderno-interiores-480.webp 480w, assets/img/opt/suelo-vinilico-moderno-interiores-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/suelo-vinilico-moderno-interiores.webp" src="assets/img/gallery/suelo-vinilico-moderno-interiores.webp" alt="Colocación de suelo vinílico 100% resistente al agua en piso de Eibar" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Suelo vinílico hidrófugo · Eibar</figcaption>
-          </figure>
-
-          <figure class="gallery-item" data-category="pintura" tabindex="0" aria-label="Pintura interior y alisado de paredes – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/pintura-interior-alisado-paredes-480.avif 480w, assets/img/opt/pintura-interior-alisado-paredes-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/pintura-interior-alisado-paredes-480.webp 480w, assets/img/opt/pintura-interior-alisado-paredes-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/pintura-interior-alisado-paredes.webp" src="assets/img/gallery/pintura-interior-alisado-paredes.webp" alt="Alisado de gotelé y pintura plástica lavable en salón blanco mate" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Alisado y pintura lisa · Durango</figcaption>
-          </figure>
-
-          <figure class="gallery-item" data-category="albanileria" tabindex="0" aria-label="Reforma de techo con vigas de madera antes y después – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-techo-vigas-madera-antes-despues-480.avif 480w, assets/img/opt/reforma-techo-vigas-madera-antes-despues-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-techo-vigas-madera-antes-despues-480.webp 480w, assets/img/opt/reforma-techo-vigas-madera-antes-despues-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-techo-vigas-madera-antes-despues.webp" src="assets/img/gallery/reforma-techo-vigas-madera-antes-despues.webp" alt="Antes y después de reforma integral de techo rústico con vigas de madera e iluminación integrada" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Reforma techo y vigas · Antes y Después</figcaption>
-          </figure>
-
-          <figure class="gallery-item" data-category="banos" tabindex="0" aria-label="Ducha de microcemento con hornacinas LED – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/ducha-microcemento-hornacinas-led-480.avif 480w, assets/img/opt/ducha-microcemento-hornacinas-led-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/ducha-microcemento-hornacinas-led-480.webp 480w, assets/img/opt/ducha-microcemento-hornacinas-led-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/ducha-microcemento-hornacinas-led.webp" src="assets/img/gallery/ducha-microcemento-hornacinas-led.webp" alt="Ducha de obra en microcemento beige con hornacinas retroiluminadas por LED y rociador negro mate" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Microcemento y hornacinas LED · Ermua</figcaption>
-          </figure>
-
-          <figure class="gallery-item" data-category="albanileria" tabindex="0" aria-label="Proceso de alicatado y nivelación de azulejos – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/obra-albanileria-alicatado-proceso-480.avif 480w, assets/img/opt/obra-albanileria-alicatado-proceso-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/obra-albanileria-alicatado-proceso-480.webp 480w, assets/img/opt/obra-albanileria-alicatado-proceso-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/obra-albanileria-alicatado-proceso.webp" src="assets/img/gallery/obra-albanileria-alicatado-proceso.webp" alt="Trabajo real de alicatado de paredes con calzos autonivelantes de alta precisión" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Alicatado de alta precisión · Obra real</figcaption>
-          </figure>
-
-          <figure class="gallery-item" data-category="banos" tabindex="0" aria-label="Baño mármol Calacatta con grifería negra – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-marmol-negro-ducha-480.avif 480w, assets/img/opt/reforma-bano-marmol-negro-ducha-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-marmol-negro-ducha-480.webp 480w, assets/img/opt/reforma-bano-marmol-negro-ducha-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-marmol-negro-ducha.webp" src="assets/img/gallery/reforma-bano-marmol-negro-ducha.webp" alt="Plato de ducha con azulejos porcelánicos imitación mármol Calacatta y conjunto de ducha negro" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Ducha mármol y grifería negra · Eibar</figcaption>
-          </figure>
-
-          <figure class="gallery-item" data-category="banos" tabindex="0" aria-label="Reforma de baño con mampara curva – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/reforma-bano-mampara-curva-madera-480.avif 480w, assets/img/opt/reforma-bano-mampara-curva-madera-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/reforma-bano-mampara-curva-madera-480.webp 480w, assets/img/opt/reforma-bano-mampara-curva-madera-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/reforma-bano-mampara-curva-madera.webp" src="assets/img/gallery/reforma-bano-mampara-curva-madera.webp" alt="Reforma completa de cuarto de baño con mampara semicircular de cristal y lavabo mueble madera" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Baño mampara curva · Durango</figcaption>
-          </figure>
-
-          <figure class="gallery-item" data-category="pintura" tabindex="0" aria-label="Pintura decorativa en salón moderno – ver imagen">
-            <picture><source type="image/avif" srcset="assets/img/opt/pintura-decorativa-salon-moderno-480.avif 480w, assets/img/opt/pintura-decorativa-salon-moderno-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/pintura-decorativa-salon-moderno-480.webp 480w, assets/img/opt/pintura-decorativa-salon-moderno-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/pintura-decorativa-salon-moderno.webp" src="assets/img/gallery/pintura-decorativa-salon-moderno.webp" alt="Pintura decorativa con pared de acento gris neutro y acabados perfectos" width="400" height="300" loading="lazy"></picture>
-            <figcaption>Pintura decorativa salón · Elgoibar</figcaption>
+          <figure class="gallery-item" data-category="suelos" aria-label="Porcelánico gran formato · Tomas preparadas – ampliar foto">
+            <picture><source type="image/avif" srcset="assets/img/opt/estancia-reformada-suelo-porcelanico-beige-fontaneria-480.avif 480w, assets/img/opt/estancia-reformada-suelo-porcelanico-beige-fontaneria-800.avif 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><source type="image/webp" srcset="assets/img/opt/estancia-reformada-suelo-porcelanico-beige-fontaneria-480.webp 480w, assets/img/opt/estancia-reformada-suelo-porcelanico-beige-fontaneria-800.webp 800w" sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 400px"><img data-full="assets/img/gallery/estancia-reformada-suelo-porcelanico-beige-fontaneria.webp" src="assets/img/opt/estancia-reformada-suelo-porcelanico-beige-fontaneria-480.webp" alt="Estancia reformada con suelo porcelánico beige de gran formato y tomas de fontanería preparadas" width="480" height="637" loading="lazy" decoding="async"></picture>
+            <figcaption>Porcelánico gran formato · Tomas preparadas</figcaption>
           </figure>
 
         </div>
+        <p class="gallery-note">¿Te ha aparecido una bajante de uralita al reformar? Mira <a href="banos-minimalista-fibrocemento.html">cómo la retiramos y dejamos el baño terminado</a>.</p>
       </div>
     </section>
 
@@ -319,7 +606,7 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="logo footer-logo">
-          <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 Logo" width="229" height="55" decoding="async" style="height: 55px; width: auto; filter: invert(1);">
+          <img src="assets/img/logo-horizontal.svg" alt="Reforma Elegant3 – reformas de baños en Ermua" width="229" height="55" decoding="async" style="height: 55px; width: auto; filter: brightness(0) invert(1);">
         </a>
         <p class="footer-tagline">Tu empresa de reformas de confianza en Ermua y Bizkaia</p>
         <address class="footer-address">Calle San Isidro 13, 48260 Ermua (Bizkaia)<br><a href="tel:+34613601880">613 601 880</a> · <a href="mailto:reformaelegant3@gmail.com">reformaelegant3@gmail.com</a></address>
@@ -329,10 +616,12 @@
         <ul role="list">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="precio-reforma-bano-ermua-eibar.html">Precios orientativos</a></li>
           <li><a href="zonas.html">Zonas de servicio</a></li>
           <li><a href="galeria.html">Galería</a></li>
           <li><a href="nosotros.html">Sobre nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="bainugela-berritzea-ermua-eibar.html" hreflang="eu" lang="eu">Euskaraz</a></li>
         </ul>
       </nav>
       <nav class="footer-nav" aria-label="Servicios">
