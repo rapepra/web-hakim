@@ -3,3 +3,8 @@ imagenes /
 imagenes_originales/
 imagenes_seleccionadas/
 __pycache__/
+
+# Material de trabajo (no se publica)
+nuevas imagenes/
+web pepe/
+*.py

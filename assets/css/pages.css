@@ -135,7 +135,7 @@
   box-shadow: 4px 4px 0px var(--color-primary);
 }
 
-.zone-card h2 {
+.zone-card h2, .zone-card h3 {
   font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 700;

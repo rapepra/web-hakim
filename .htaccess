@@ -11,6 +11,10 @@
   RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
   RewriteRule ^index\.html$ / [L,R=301]
 
+  # URLs antiguas de las páginas por localidad (la empresa solo hace baños)
+  RewriteRule ^reformas-integrales-(ermua|eibar|elgoibar|durango)\.html$ /reforma-banos-$1.html [L,R=301,NC]
+  RewriteRule ^assets/img/(gallery|opt)/tuberia-fibrocemento-uralita-bano-cocina(.*)$ /assets/img/$1/tuberia-fibrocemento-uralita-bano$2 [L,R=301]
+
   # Archivos de trabajo que no deben publicarse
   RewriteRule ^(nuevas\ imagenes|imagenes|imagenes_seleccionadas)(/|$) - [R=404,L,NC]
   RewriteRule \.(py|md|sh)$ - [R=404,L,NC]

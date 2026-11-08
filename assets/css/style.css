@@ -1940,3 +1940,9 @@ select.form-control {
 @media (max-width: 860px) {
   .hamburger { margin-left: auto; }
 }
+
+/* Pie: los enlaces legales con el mismo estilo que el resto de columnas */
+.footer-legal-col ul { display: flex; flex-direction: column; gap: 0.5rem; }
+.footer-legal-col ul a { font-size: 0.87rem; color: rgba(255,255,255,.6); transition: color var(--transition); }
+.footer-legal-col ul a:hover { color: var(--color-accent-light); }
+.footer-nav li { font-size: 0.87rem; color: rgba(255,255,255,.6); }
