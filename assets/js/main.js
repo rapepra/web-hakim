@@ -97,6 +97,17 @@
     });
   }
 
+  /* Botón «Cambiar mis preferencias» (política de cookies): borra la elección y vuelve a mostrar el aviso */
+  const cookieReset = document.getElementById('cookie-reset');
+  if (cookieReset && cookieBanner) {
+    cookieReset.addEventListener('click', function () {
+      document.cookie = 're3_cookie_consent=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;SameSite=Lax';
+      updateConsent(false);
+      cookieBanner.setAttribute('aria-hidden', 'false');
+      cookieBanner.classList.add('is-visible');
+    });
+  }
+
   function hideCookieBanner() {
     if (!cookieBanner) return;
     cookieBanner.classList.remove('is-visible');

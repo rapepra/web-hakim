@@ -1,0 +1,16 @@
+{
+  "name": "Reforma Elegant3 – Reformas de baños en Ermua",
+  "short_name": "Elegant3",
+  "description": "Especialistas en reforma de baños en Ermua, Eibar y comarca. Trato directo con Hakim: 613 601 880.",
+  "lang": "es",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#F7F5EF",
+  "theme_color": "#14284B",
+  "icons": [
+    { "src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

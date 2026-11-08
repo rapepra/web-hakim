@@ -32,6 +32,7 @@ ErrorDocument 404 /404.html
   AddType image/avif .avif
   AddType image/webp .webp
   AddType font/woff2 .woff2
+  AddType application/manifest+json .webmanifest
   AddCharset utf-8 .txt .xml .css .js
 </IfModule>
 

@@ -1937,3 +1937,6 @@ select.form-control {
   .hero-b-image-column { height: auto; max-height: none; }
 }
 .hero-b-image-column .blueprint-crosshair.bottom-left, .hero-b-image-column .blueprint-crosshair.bottom-right { display: none; }
+@media (max-width: 860px) {
+  .hamburger { margin-left: auto; }
+}
